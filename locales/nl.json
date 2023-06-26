@@ -1,0 +1,70 @@
+{
+  "deviceNames": {
+    "thermostat": "Slimme Thermostaat",
+    "valve": "Slimme Radiatorknop",
+    "ac": "Slimme Aircobediening",
+    "hotWater": "Warm water"
+  },
+  "acModes": {
+    "COOL": "Cool",
+    "HEAT": "Heat",
+    "DRY": "Dry",
+    "FAN": "Fan",
+    "AUTO": "Auto",
+    "OFF": "Uit"
+  },
+  "fanSpeeds": {
+    "AUTO": "Automatisch",
+    "LOW": "Laag",
+    "MIDDLE": "Middel",
+    "HIGH": "Hoog"
+  },
+  "fanLevels": {
+    "AUTO": "Automatisch",
+    "SILENT": "Stil",
+    "LEVEL1": "Niveau 1",
+    "LEVEL2": "Niveau 2",
+    "LEVEL3": "Niveau 3",
+    "LEVEL4": "Niveau 4",
+    "LEVEL5": "Niveau 5"
+  },
+  "swings": {
+    "ON": "Aan",
+    "OFF": "Uit"
+  },
+  "verticalSwings": {
+    "ON": "Aan",
+    "AUTO": "Automatisch",
+    "UP": "Omhoog",
+    "MID_UP": "Midden-Omhoog",
+    "MID": "Midden",
+    "MID_DOWN": "Midden-Beneden",
+    "DOWN": "Beneden",
+    "OFF": "Uit"
+  },
+  "horizontalSwings": {
+    "ON": "Aan",
+    "AUTO": "Automatisch",
+    "LEFT": "Links",
+    "MID_LEFT": "Midden-Links",
+    "MID": "Midden",
+    "MID_RIGHT": "Midden-Rechts",
+    "RIGHT": "Rechts",
+    "OFF": "Uit"
+  },
+  "errors": {
+    "notConnected": "Apparaat is niet verbonden.",
+    "notFound": "Apparaat kan niet worden gevonden.",
+    "setTempRange": "De temperatuur is buiten de toegestaande waardes. Minimum: __min__, Maximum: __max__.",
+    "no_fanSpeeds": "De ventilatorsnelheid is niet selecteerbaar in deze modus.",
+    "incorrect_fanSpeeds": "De geselecteerde ventilatorsnelheid is niet beschikbaar voor deze modus. De beschikbare opties zijn: __values__.",
+    "no_swings": "Swing is niet selecteerbaar in deze modus.",
+    "incorrect_swings": "De geselecteerde swing is niet beschikbaar voor deze modus. De beschikbare opties zijn: __values__.",
+    "no_verticalSwings": "Swing is niet selecteerbaar in deze modus.",
+    "incorrect_verticalSwings": "De geselecteerde swing is niet beschikbaar voor deze modus. De beschikbare opties zijn: __values__.",
+    "no_horizontalSwings": "Swing is niet selecteerbaar in deze modus.",
+    "incorrect_horizontalSwings": "De geselecteerde swing is niet beschikbaar voor deze modus. De beschikbare opties zijn: __values__.",
+    "setDurationRange": "De maximale tijd is 24 uur.",
+    "incorrectCapabilities": "De gekozen instellingen zijn niet correct."
+  }
+}

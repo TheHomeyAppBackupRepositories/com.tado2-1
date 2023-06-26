@@ -1,0 +1,72 @@
+{
+  "deviceNames": {
+    "thermostat" : "Smart Thermostat",
+    "valve": "Smart Radiator Thermostat",
+    "ac": "Smart AC Control",
+    "hotWater": "Hot water"
+  },
+  "acModes": {
+    "COOL": "Cool",
+    "HEAT": "Heat",
+    "DRY": "Dry",
+    "FAN": "Fan",
+    "AUTO": "Auto",
+    "OFF": "Off"
+  },
+  "fanSpeeds": {
+    "AUTO": "Auto",
+    "LOW": "Low",
+    "MIDDLE": "Middle",
+    "HIGH": "High"
+  },
+  "fanLevels": {
+    "AUTO": "Auto",
+    "SILENT": "Silent",
+    "LEVEL1": "Level 1",
+    "LEVEL2": "Level 2",
+    "LEVEL3": "Level 3",
+    "LEVEL4": "Level 4",
+    "LEVEL5": "Level 5"
+  },
+  "swings": {
+    "ON": "On",
+    "OFF": "Off"
+  },
+  "verticalSwings": {
+    "ON": "On",
+    "AUTO": "Auto",
+    "UP": "Up",
+    "MID_UP": "Mid-Up",
+    "MID": "Mid",
+    "MID_DOWN": "Mid-Down",
+    "DOWN": "Down",
+    "OFF": "Off"
+  },
+  "horizontalSwings": {
+    "ON": "On",
+    "AUTO": "Auto",
+    "LEFT": "Left",
+    "MID_LEFT": "Mid-Left",
+    "MID": "Mid",
+    "MID_RIGHT": "Mid-Right",
+    "RIGHT": "Right",
+    "OFF": "Off"
+  },
+  "errors": {
+    "notConnected": "Device is not connected.",
+    "notFound": "Device cannot be found.",
+    "setTempRange": "The set temperature is out of range. Minimum: __min__, Maximum: __max__.",
+    "no_fanSpeeds": "Fan speed is not selectable in this mode.",
+    "incorrect_fanSpeeds": "The selected fan speed is not available for this mode. Allowed values: __values__.",
+    "no_fanLevels": "Fan speed is not selectable in this mode.",
+    "incorrect_fanLevels": "The selected fan speed is not available for this mode. Allowed values: __values__.",
+    "no_swings": "Swing is not selectable in this mode.",
+    "incorrect_swings": "The selected swing is not available for this mode. Allowed values: __values__.",
+    "no_verticalSwings": "Swing is not selectable in this mode.",
+    "incorrect_verticalSwings": "The selected swing is not available for this mode. Allowed values: __values__.",
+    "no_horizontalSwings": "Swing is not selectable in this mode.",
+    "incorrect_horizontalSwings": "The selected swing is not available for this mode. Allowed values: __values__.",
+    "setDurationRange": "The maximum duration is 24 hours.",
+    "incorrectCapabilities": "The selected settings are not correct."
+  }
+}

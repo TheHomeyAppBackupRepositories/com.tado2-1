@@ -1,0 +1,70 @@
+{
+  "deviceNames": {
+    "thermostat": "Smartes Thermostat",
+    "valve": "Smartes Heizkörper-Thermostat",
+    "ac": "Smarte Klimaanlagen-Steuerung",
+    "hotWater": "Heißes Wasser"
+  },
+  "acModes": {
+    "COOL": "Cool",
+    "HEAT": "Heat",
+    "DRY": "Dry",
+    "FAN": "Fan",
+    "AUTO": "Auto",
+    "OFF": "Aus"
+  },
+  "fanSpeeds": {
+    "AUTO": "Automatisch",
+    "LOW": "Niedrig",
+    "MIDDLE": "Mitte",
+    "HIGH": "Hoch"
+  },
+  "fanLevels": {
+    "AUTO": "Automatisch",
+    "SILENT": "Leise",
+    "LEVEL1": "Level 1",
+    "LEVEL2": "Level 2",
+    "LEVEL3": "Level 3",
+    "LEVEL4": "Level 4",
+    "LEVEL5": "Level 5"
+  },
+  "swings": {
+    "ON": "Ein",
+    "OFF": "Aus"
+  },
+  "verticalSwings": {
+    "ON": "Ein",
+    "AUTO": "Automatisch",
+    "UP": "Oben",
+    "MID_UP": "Mitte-Oben",
+    "MID": "Mitte",
+    "MID_DOWN": "Mitte-Unten",
+    "DOWN": "Unten",
+    "OFF": "Aus"
+  },
+  "horizontalSwings": {
+    "ON": "Ein",
+    "AUTO": "Automatisch",
+    "LEFT": "Links",
+    "MID_LEFT": "Mitte-Links",
+    "MID": "Mitte",
+    "MID_RIGHT": "Mitte-Rechts",
+    "RIGHT": "Rechts",
+    "OFF": "Aus"
+  },
+  "errors": {
+    "notConnected": "Gerät ist nicht verbunden.",
+    "notFound": "Gerät kann nicht gefunden werden.",
+    "setTempRange": "Die Temperatur liegt außerhalb der erlaubten Werte. Minimum: __min__, Maximal __max__.",
+    "no_fanSpeeds": "Die Lüftergeschwindigkeit ist in diesem Modus nicht wählbar.",
+    "incorrect_fanSpeeds": "Die ausgewählte Lüftergeschwindigkeit ist für diesen Modus nicht verfügbar. Die verfügbaren Optionen sind: __values__.",
+    "no_swings": "Swing ist in diesem Modus nicht wählbar.",
+    "incorrect_swings": "Der ausgewählte Schwung ist für diesen Modus nicht verfügbar. Die verfügbaren Optionen sind: __values__.",
+    "no_verticalSwings": "Swing ist in diesem Modus nicht wählbar.",
+    "incorrect_verticalSwings": "Der ausgewählte Schwung ist für diesen Modus nicht verfügbar. Die verfügbaren Optionen sind: __values__.",
+    "no_horizontalSwings": "Swing ist in diesem Modus nicht wählbar.",
+    "incorrect_horizontalSwings": "Der ausgewählte Schwung ist für diesen Modus nicht verfügbar. Die verfügbaren Optionen sind: __values__.",
+    "setDurationRange": "Die maximale Dauer beträgt 24 Stunden.",
+    "incorrectCapabilities": "Die ausgewählten Einstellungen sind nicht korrekt."
+  }
+}

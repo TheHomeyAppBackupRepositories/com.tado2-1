@@ -1,0 +1,14 @@
+{
+  "name": "com.tado",
+  "version": "1.0.0",
+  "dependencies": {
+    "homey-oauth2app": "^3.5.2",
+    "querystring": "^0.2.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node12": "^1.0.11",
+    "@types/homey": "npm:homey-apps-sdk-v3-types@^0.3.3",
+    "eslint": "^6.8.0",
+    "eslint-config-athom": "^2.1.0"
+  }
+}
