@@ -1,1 +1,2579 @@
-{"_comment":"This file is generated. Please edit .homeycompose/app.json instead.","id":"com.tado2","sdk":3,"name":{"en":"tado°"},"description":{"en":"Everyone's comfort zone","nl":"Comfortzones voor iedereen","de":"Komfortzonen für alle"},"brandColor":"#FFB121","tags":{"en":["tado","thermostat","radiator thermostat","heating","hot water","air conditioning"],"nl":["tado","thermostaat","radiator thermostaat","verwarming","warm water","airconditioning","airco"]},"platforms":["local","cloud"],"category":"climate","version":"1.1.3","compatibility":">=5","author":{"name":"Athom B.V."},"images":{"xlarge":"/assets/images/xlarge.png","large":"/assets/images/large.png","small":"/assets/images/small.png"},"support":"https://support.athom.com/hc/en-us/requests/new","flow":{"triggers":[{"id":"open_window_detected","title":{"en":"Open window is detected","nl":"Open raam is gedetecteerd","de":"Offenes Fenster wird erkannt"},"args":[{"type":"device","name":"device","title":{"en":"Device"},"filter":"driver_id=thermostat|airconditioning|valve&capabilities=detect_open_window"}]},{"id":"power_mode_off","title":{"en":"Turned off","nl":"Uitgezet","de":"Ausgeschaltet"},"args":[{"type":"device","name":"device","title":{"en":"Device"},"filter":"driver_id=thermostat|valve&capabilities=power_mode"}]},{"id":"power_mode_on","title":{"en":"Turned on","nl":"Aangezet","de":"Angeschaltet"},"args":[{"type":"device","name":"device","title":{"en":"Device"},"filter":"driver_id=thermostat|valve&capabilities=power_mode"}]},{"id":"smart_schedule_activated","title":{"en":"Smart Schedule is activated","nl":"Slimme Schema is geactiveerd","de":"Intelligenter Zeitplan ist aktiviert"},"args":[{"type":"device","name":"device","title":{"en":"Device"},"filter":"driver_id=airconditioning|thermostat|valve"}]},{"id":"smart_schedule_deactivated","title":{"en":"Smart Schedule is deactivated","nl":"Slimme Schema is gedeactiveerd","de":"Intelligenter Zeitplan ist deaktiviert"},"args":[{"type":"device","name":"device","title":{"en":"Device"},"filter":"driver_id=airconditioning|thermostat|valve"}]},{"id":"ac_mode_changed","title":{"en":"Air conditioning mode changed","nl":"Airco modus is veranderd","de":"Klimamodus hat sich geändert"},"tokens":[{"name":"ac_mode","type":"string","title":{"en":"Mode","nl":"Modus","de":"Modus"},"example":{"en":"Cool"}}],"args":[{"type":"device","name":"device","filter":"driver_id=airconditioning&capabilities=ac_mode"}]},{"id":"fan_speed_changed","title":{"en":"Fan speed changed","nl":"Ventilator snelheid is veranderd","de":"Lüftergeschwindigkeit hat sich geändert"},"tokens":[{"name":"fan_speed","type":"string","title":{"en":"Fan speed","nl":"Ventilator snelheid","de":"Lüftergeschwindigkeit"},"example":{"en":"Low","nl":"Laag","de":"Niedrig"}}],"args":[{"type":"device","name":"device","filter":"driver_id=airconditioning&capabilities=fan_speed"}]},{"id":"fan_level_changed","title":{"en":"Fan speed changed","nl":"Ventilator snelheid is veranderd","de":"Lüftergeschwindigkeit hat sich geändert"},"tokens":[{"name":"fan_level","type":"string","title":{"en":"Fan speed","nl":"Ventilator snelheid","de":"Lüftergeschwindigkeit"},"example":{"en":"Low","nl":"Laag","de":"Niedrig"}}],"args":[{"type":"device","name":"device","filter":"driver_id=airconditioning&capabilities=fan_level"}]},{"id":"swing_changed","title":{"en":"Swing changed","nl":"Swing is veranderd","de":"Swing hat sich geändert"},"tokens":[{"name":"swing","type":"string","title":{"en":"Swing"},"example":{"en":"On","nl":"Aan","de":"Ein"}}],"args":[{"type":"device","name":"device","filter":"driver_id=airconditioning&capabilities=swing"}]},{"id":"vertical_swing_changed","title":{"en":"Vertical swing changed","nl":"Verticale swing is veranderd","de":"Vertikaler swing hat sich geändert"},"tokens":[{"name":"vertical_swing","type":"string","title":{"en":"Vertical swing","nl":"Verticale swing","de":"Vertikaler swing"},"example":{"en":"On","nl":"Aan","de":"Ein"}}],"args":[{"type":"device","name":"device","filter":"driver_id=airconditioning&capabilities=vertical_swing"}]},{"id":"horizontal_swing_changed","title":{"en":"Horizontal swing changed","nl":"Horizontale swing is veranderd","de":"Horizontaler swing hat sich geändert"},"tokens":[{"name":"horizontal_swing","type":"string","title":{"en":"Horizontal swing","nl":"Horizontale swing","de":"Horizontaler swing"},"example":{"en":"On","nl":"Aan","de":"Ein"}}],"args":[{"type":"device","name":"device","filter":"driver_id=airconditioning&capabilities=horizontal_swing"}]},{"id":"hot_water_onoff_true","title":{"en":"Hot water is switched on","nl":"Warm water wordt ingeschakeld","de":"Warmwasser ist eingeschaltet"},"args":[{"type":"device","name":"device","filter":"driver_id=thermostat&capabilities=hot_water_onoff"}]},{"id":"hot_water_onoff_false","title":{"en":"Hot water is switched off","nl":"Warm water wordt uitgeschakeld","de":"Warmwasser ist abgeschaltet"},"args":[{"type":"device","name":"device","filter":"driver_id=thermostat&capabilities=hot_water_onoff"}]},{"id":"target_temperature.hot_water_changed","title":{"en":"The Hot Water temperature changed","nl":"De warmwatertemperatuur is gewijzigd","de":"Die Warmwassertemperatur hat sich geändert"},"tokens":[{"name":"target_temperature.hot_water","title":{"en":"Hot Water temperature","nl":"Warmwatertemperatuur","de":"Warmwassertemperatur"},"type":"number","example":50}],"args":[{"type":"device","name":"device","filter":"driver_id=thermostat&capabilities=target_temperature.hot_water"}]}],"conditions":[{"id":"is_measure_humidity_between","title":{"en":"The humidity !{{is between|is not between}}","nl":"De luchtvochtigheid !{{ligt tussen|ligt niet tussen}}","de":"Die Luftfeuchtigkeit !{{liegt zwischen|liegt nicht zwischen}}"},"titleFormatted":{"en":"The humidity !{{is between|is not between}} [[humidity_1]] and [[humidity_2]]","nl":"De luchtvochtigheid !{{ligt tussen|ligt niet tussen}} [[humidity_1]] en [[humidity_2]]","de":"Die Luftfeuchtigkeit !{{liegt zwischen|liegt nicht zwischen}} [[humidity_1]] und [[humidity_2]]"},"hint":{"en":"Use this to determine whether or not the measured humidity is between two values. The specified values are also valid.","nl":"ebruik dit om te bepalen of gemeten luchtvochtigheid tussen twee waarden ligt. De opgegeven waarden zijn ook geldig.","de":"Verwenden Sie dies, um festzustellen, ob die gemessene Luftfeuchtigkeit zwischen zwei Werten liegt. Die angegebenen Werte sind ebenfalls gültig."},"args":[{"type":"device","name":"device","title":{"en":"Device"},"filter":"driver_id=airconditioning|thermostat|valve&capabilities=measure_humidity"},{"type":"range","name":"humidity_1","min":0,"max":100,"step":1,"label":"%","title":{"en":"Minimum","nl":"Minimum","de":"Minimum"},"placeholder":{"en":"%","nl":"%"}},{"type":"range","name":"humidity_2","min":0,"max":100,"step":1,"label":"%","title":{"en":"Maximum","nl":"Maximum","de":"Maximal"},"placeholder":{"en":"%","nl":"%"}}]},{"id":"is_measure_temperature_between","title":{"en":"The temperature !{{is between|is not between}}","nl":"De temperatuur !{{ligt tussen|ligt niet tussen}}","de":"Die Temperatuur !{{liegt zwischen|liegt nicht zwischen}}"},"titleFormatted":{"en":"The temperature !{{is between|is not between}} [[temperature_1]] and [[temperature_2]]","nl":"De temperatuur !{{ligt tussen|ligt niet tussen}} [[temperature_1]] en [[temperature_2]]","de":"Die Temperatuur !{{liegt zwischen|liegt nicht zwischen}} [[temperature_1]] und [[temperature_2]]"},"hint":{"en":"Use this to determine whether or not the measured temperature is between two values. The specified values are also valid.","nl":"Gebruik dit om te bepalen of gemeten temperatuur tussen twee waarden ligt. De opgegeven waarden zijn ook geldig.","de":"Verwenden Sie dies, um festzustellen, ob die gemessene Temperatur zwischen zwei Werten liegt. Die angegebenen Werte sind ebenfalls gültig."},"args":[{"type":"device","name":"device","title":{"en":"Device"},"filter":"driver_id=airconditioning|thermostat|valve&capabilities=measure_temperature"},{"type":"range","name":"temperature_1","min":-20,"max":60,"step":0.5,"label":"°C","title":{"en":"Minimum","nl":"Minimum","de":"Minimum"},"placeholder":{"en":"°C","nl":"°C"}},{"type":"range","name":"temperature_2","min":-20,"max":60,"step":0.5,"label":"°C","title":{"en":"Maximum","nl":"Maximum","de":"Maximal"},"placeholder":{"en":"°C","nl":"°C"}}]},{"id":"is_open_window_detected","title":{"en":"An open window is !{{|not}} detected","nl":"Een open raam is !{{|niet}} gedetecteerd","de":"Ein offenes Fenster wird !{{|nicht}} erkannt"},"args":[{"type":"device","name":"device","title":{"en":"Device"},"filter":"driver_id=thermostat|airconditioning|valve&capabilities=detect_open_window"}]},{"id":"is_power_mode_on","title":{"en":"Is turned !{{on|off}}","nl":"Is !{{aan|uit}}","de":"Ist !{{an|aus}}"},"args":[{"type":"device","name":"device","title":{"en":"Device"},"filter":"driver_id=thermostat|valve&capabilities=power_mode"}]},{"id":"is_smart_schedule","title":{"en":"Smart Schedule is !{{|not}} activated","nl":"Slimme Schema is !{{|niet}} geactiveerd","de":"Intelligenten Zeitplan ist !{{|nicht}} aktiviert"},"args":[{"type":"device","name":"device","title":{"en":"Device"},"filter":"driver_id=airconditioning|thermostat|valve"}]},{"id":"is_target_temperature_between","title":{"en":"The target temperature !{{is between|is not between}}","nl":"De ingestelde temeratuur !{{ligt tussen|ligt niet tussen}}","de":"Die eingestellte Temperatuur !{{liegt zwischen|liegt nicht zwischen}}"},"titleFormatted":{"en":"The target temperature !{{is between|is not between}} [[temperature_1]] and [[temperature_2]]","nl":"De ingestelde temeratuur !{{ligt tussen|ligt niet tussen}} [[temperature_1]] en [[temperature_2]]","de":"Die eingestellte Temperatuur !{{liegt zwischen|liegt nicht zwischen}} [[temperature_1]] und [[temperature_2]]"},"hint":{"en":"Use this to determine whether or not the target temperature is between given values. The specified values are also valid.","nl":"Gebruik dit om te bepalen of ingestelde temperatuur tussen twee waarden ligt. De opgegeven waarden zijn ook geldig.","de":"Verwenden Sie dies, um festzustellen, ob die eingestellte Temperatur zwischen zwei Werten liegt. Die angegebenen Werte sind ebenfalls gültig."},"args":[{"type":"device","name":"device","title":{"en":"Device"},"filter":"driver_id=thermostat|valve&capabilities=measure_temperature"},{"type":"range","name":"temperature_1","min":0,"max":40,"step":0.5,"label":"°C","title":{"en":"Minimum","nl":"Minimum","de":"Minimum"},"placeholder":{"en":"°C","nl":"°C"}},{"type":"range","name":"temperature_2","min":0,"max":40,"step":0.5,"label":"°C","title":{"en":"Maximum","nl":"Maximum","de":"Maximal"},"placeholder":{"en":"°C","nl":"°C"}}]},{"id":"ac_mode_is","title":{"en":"Air conditioning mode is !{{|not}}","nl":"Airco modus is !{{|niet}}","de":"Klimaanlagenmodus ist !{{|nicht}}"},"titleFormatted":{"en":"Air conditioning mode is !{{|not}} [[acMode]]","nl":"Airco modus is !{{|niet}} [[acMode]]","de":"Klimaanlagenmodus ist !{{|nicht}} [[acMode]]"},"args":[{"type":"device","name":"device","filter":"driver_id=airconditioning&capabilities=ac_mode"},{"type":"dropdown","name":"acMode","title":{"en":"Mode","nl":"Modus","de":"Modus"},"values":[{"id":"COOL","label":{"en":"Cool"}},{"id":"HEAT","label":{"en":"Heat"}},{"id":"DRY","label":{"en":"Dry"}},{"id":"FAN","label":{"en":"Fan"}},{"id":"AUTO","label":{"en":"Auto"}},{"id":"OFF","label":{"en":"Off","nl":"Uit","de":"Aus"}}]}]},{"id":"fan_speed_is","title":{"en":"Fan speed is !{{|not}}","nl":"Ventilator snelheid is !{{|niet}}","de":"Lüftergeschwindigkeit ist !{{|nicht}}"},"titleFormatted":{"en":"Fan speed is !{{|not}} [[fanSpeed]]","nl":"Ventilator snelheid is !{{|niet}} [[fanSpeed]]","de":"Lüftergeschwindigkeit ist !{{|nicht}} [[fanSpeed]]"},"args":[{"type":"device","name":"device","filter":"driver_id=airconditioning&capabilities=fan_speed"},{"type":"dropdown","name":"fanSpeed","title":{"en":"Fan speed","nl":"Ventilator snelheid","de":"Lüftergeschwindigkeit"},"values":[{"id":"AUTO","label":{"en":"Auto","nl":"Automatisch","de":"Automatisch"}},{"id":"LOW","label":{"en":"Low","nl":"Laag","de":"Niedrig"}},{"id":"MIDDLE","label":{"en":"Middle","nl":"Middel","de":"Mitte"}},{"id":"HIGH","label":{"en":"High","nl":"Hoog","de":"Hoch"}}]}]},{"id":"fan_level_is","title":{"en":"Fan speed is !{{|not}}","nl":"Ventilator snelheid is !{{|niet}}","de":"Lüftergeschwindigkeit ist !{{|nicht}}"},"titleFormatted":{"en":"Fan speed is !{{|not}} [[fanLevel]]","nl":"Ventilator snelheid is !{{|niet}} [[fanLevel]]","de":"Lüftergeschwindigkeit ist !{{|nicht}} [[fanLevel]]"},"args":[{"type":"device","name":"device","filter":"driver_id=airconditioning&capabilities=fan_level"},{"type":"dropdown","name":"fanLevel","title":{"en":"Fan speed","nl":"Ventilator snelheid","de":"Lüftergeschwindigkeit"},"values":[{"id":"AUTO","label":{"en":"Auto","nl":"Automatisch","de":"Automatisch"}},{"id":"SILENT","label":{"en":"Silent","nl":"Stil","de":"Leise"}},{"id":"LEVEL1","label":{"en":"Level 1","nl":"Niveau 1","de":"Level 1"}},{"id":"LEVEL2","label":{"en":"Level 2","nl":"Niveau 2","de":"Level 2"}},{"id":"LEVEL3","label":{"en":"Level 3","nl":"Niveau 3","de":"Level 3"}},{"id":"LEVEL4","label":{"en":"Level 4","nl":"Niveau 4","de":"Level 4"}},{"id":"LEVEL5","label":{"en":"Level 5","nl":"Niveau 5","de":"Level 5"}}]}]},{"id":"swing_is","title":{"en":"Swing is !{{|not}}","nl":"Swing is !{{|niet}}","de":"Swing ist !{{|nicht}}"},"titleFormatted":{"en":"Swing is !{{|not}} [[swing]]","nl":"Swing is !{{|niet}} [[swing]]","de":"Swing ist !{{|nicht}} [[swing]]"},"args":[{"type":"device","name":"device","filter":"driver_id=airconditioning&capabilities=swing"},{"type":"dropdown","name":"swing","title":{"en":"Swing","nl":"Swing","de":"Swing"},"values":[{"id":"ON","label":{"en":"On","nl":"Aan","de":"Ein"}},{"id":"OFF","label":{"en":"Off","nl":"Uit","de":"Aus"}}]}]},{"id":"vertical_swing_is","title":{"en":"Vertical swing is !{{|not}}","nl":"Verticale swing is !{{|niet}}","de":"Vertikaler swing ist !{{|nicht}}"},"titleFormatted":{"en":"Vertical swing is !{{|not}} [[verticalSwing]]","nl":"Verticale swing is !{{|niet}} [[verticalSwing]]","de":"Vertikaler swing ist !{{|nicht}} [[verticalSwing]]"},"args":[{"type":"device","name":"device","filter":"driver_id=airconditioning&capabilities=vertical_swing"},{"type":"dropdown","name":"verticalSwing","title":{"en":"Vertical swing","nl":"Verticale swing","de":"Vertikaler swing"},"values":[{"id":"ON","label":{"en":"On","nl":"Aan","de":"Ein"}},{"id":"AUTO","label":{"en":"Auto","nl":"Automatisch","de":"Automatisch"}},{"id":"UP","label":{"en":"Up","nl":"Omhoog","de":"Oben"}},{"id":"MID_UP","label":{"en":"Mid-Up","nl":"Midden-Omhoog","de":"Mitte-Oben"}},{"id":"MID","label":{"en":"Mid","nl":"Midden","de":"Mitte"}},{"id":"MID_DOWN","label":{"en":"Mid-Down","nl":"Midden-Beneden","de":"Mitte-Unten"}},{"id":"DOWN","label":{"en":"Down","nl":"Beneden","de":"Unten"}},{"id":"OFF","label":{"en":"Off","nl":"Uit","de":"Aus"}}]}]},{"id":"horizontal_swing_is","title":{"en":"Horizontal swing is !{{|not}}","nl":"Horizontale swing is !{{|niet}}","de":"Horizontaler swing ist !{{|nicht}}"},"titleFormatted":{"en":"Horizontal swing is !{{|not}} [[horizontalSwing]]","nl":"Horizontale swing is !{{|niet}} [[horizontalSwing]]","de":"Horizontaler swing ist !{{|nicht}} [[horizontalSwing]]"},"args":[{"type":"device","name":"device","filter":"driver_id=airconditioning&capabilities=horizontal_swing"},{"type":"dropdown","name":"horizontalSwing","title":{"en":"Horizontal swing","nl":"Horizontale swing","de":"Horizontaler swing"},"values":[{"id":"ON","label":{"en":"On","nl":"Aan","de":"Ein"}},{"id":"AUTO","label":{"en":"Auto","nl":"Automatisch","de":"Automatisch"}},{"id":"LEFT","label":{"en":"Left","nl":"Links","de":"Links"}},{"id":"MID_LEFT","label":{"en":"Mid-Left","nl":"Midden-Links","de":"Mitte-Links"}},{"id":"MID","label":{"en":"Mid","nl":"Midden","de":"Mitte"}},{"id":"MID_RIGHT","label":{"en":"Mid-Right","nl":"Midden-Rechts","de":"Mitte-Rechts"}},{"id":"RIGHT","label":{"en":"Right","nl":"Rechts","de":"Rechts"}},{"id":"OFF","label":{"en":"Off","nl":"Uit","de":"Aus"}}]}]},{"id":"hot_water_onoff_is","title":{"en":"Hot water is !{{on|off}}","nl":"Warm water is !{{ingeschakeld|uitgeschakeld}}","de":"Warmwasser ist !{{eingeschaltet|abgeschaltet}}"},"args":[{"type":"device","name":"device","filter":"driver_id=thermostat&capabilities=hot_water_onoff"}]}],"actions":[{"id":"set_boost_heating","title":{"en":"Boost heating","nl":"Maximaal verwarmen","de":"Maximale Erwärmung"},"args":[{"type":"device","name":"device","title":{"en":"Device"},"filter":"driver_id=thermostat|valve&capabilities=target_temperature"}]},{"id":"set_power_mode_off","title":{"en":"Turn off","nl":"Zet uit","de":"Ausschalten"},"duration":true,"args":[{"type":"device","name":"device","title":{"en":"Device"},"filter":"driver_id=thermostat|valve&capabilities=power_mode"}]},{"id":"set_power_mode_on","title":{"en":"Turn on","nl":"Zet aan","de":"Einschalten"},"duration":true,"args":[{"type":"device","name":"device","title":{"en":"Device"},"filter":"driver_id=thermostat|valve&capabilities=power_mode"}]},{"id":"set_smart_schedule","title":{"en":"Resume Smart Schedule","nl":"Slimme Schema hervatten","de":"Intelligenten Zeitplan fortsetzen"},"args":[{"type":"device","name":"device","title":{"en":"Device"},"filter":"driver_id=airconditioning|thermostat|valve"}]},{"id":"set_ac_mode","duration":true,"title":{"en":"Set Air conditioning mode to","nl":"Zet Airco modus naar","de":"Stell den Klimaanlagenmodus auf"},"titleFormatted":{"en":"Set Air conditioning mode to [[acMode]]","nl":"Zet Airco modus naar [[acMode]]","de":"Stell den Klimaanlagenmodus auf [[acMode]]"},"args":[{"type":"device","name":"device","filter":"driver_id=airconditioning&capabilities=ac_mode"},{"type":"dropdown","name":"acMode","title":{"en":"Mode","nl":"Modus","de":"Modus"},"values":[{"id":"COOL","label":{"en":"Cool"}},{"id":"HEAT","label":{"en":"Heat"}},{"id":"DRY","label":{"en":"Dry"}},{"id":"FAN","label":{"en":"Fan"}},{"id":"AUTO","label":{"en":"Auto"}},{"id":"OFF","label":{"en":"Off","nl":"Uit","de":"Aus"}}]}]},{"id":"set_fan_speed","duration":true,"title":{"en":"Set fan speed to","nl":"Zet ventilator snelheid naar","de":"Stell die Lüftergeschwindigkeit auf"},"titleFormatted":{"en":"Set fan speed to [[fanSpeed]]","nl":"Zet ventilator snelheid naar [[fanSpeed]]","de":"Stell die Lüftergeschwindigkeit auf [[fanSpeed]]"},"args":[{"type":"device","name":"device","filter":"driver_id=airconditioning&capabilities=fan_speed"},{"type":"dropdown","name":"fanSpeed","title":{"en":"Fan speed","nl":"Ventilator snelheid","de":"Lüftergeschwindigkeit"},"values":[{"id":"AUTO","label":{"en":"Auto","nl":"Automatisch","de":"Automatisch"}},{"id":"LOW","label":{"en":"Low","nl":"Laag","de":"Niedrig"}},{"id":"MIDDLE","label":{"en":"Middle","nl":"Middel","de":"Mitte"}},{"id":"HIGH","label":{"en":"High","nl":"Hoog","de":"Hoch"}}]}]},{"id":"set_fan_level","duration":true,"title":{"en":"Set fan speed to","nl":"Zet ventilator snelheid naar","de":"Stell die Lüftergeschwindigkeit auf"},"titleFormatted":{"en":"Set fan speed to [[fanLevel]]","nl":"Zet ventilator snelheid naar [[fanLevel]]","de":"Stell die Lüftergeschwindigkeit auf [[fanLevel]]"},"args":[{"type":"device","name":"device","filter":"driver_id=airconditioning&capabilities=fan_level"},{"type":"dropdown","name":"fanLevel","title":{"en":"Fan speed","nl":"Ventilator snelheid","de":"Lüftergeschwindigkeit"},"values":[{"id":"AUTO","label":{"en":"Auto","nl":"Automatisch","de":"Automatisch"}},{"id":"SILENT","label":{"en":"Silent","nl":"Stil","de":"Leise"}},{"id":"LEVEL1","label":{"en":"Level 1","nl":"Niveau 1","de":"Level 1"}},{"id":"LEVEL2","label":{"en":"Level 2","nl":"Niveau 2","de":"Level 2"}},{"id":"LEVEL3","label":{"en":"Level 3","nl":"Niveau 3","de":"Level 3"}},{"id":"LEVEL4","label":{"en":"Level 4","nl":"Niveau 4","de":"Level 4"}},{"id":"LEVEL5","label":{"en":"Level 5","nl":"Niveau 5","de":"Level 5"}}]}]},{"id":"set_swing","duration":true,"title":{"en":"Set swing to","nl":"Zet swing naar","de":"Stell swing auf"},"titleFormatted":{"en":"Set swing to [[swing]]","nl":"Zet swing naar [[swing]]","de":"Stell swing auf [[swing]]"},"args":[{"type":"device","name":"device","filter":"driver_id=airconditioning&capabilities=swing"},{"type":"dropdown","name":"swing","title":{"en":"Swing","nl":"Swing","de":"Swing"},"values":[{"id":"ON","label":{"en":"On","nl":"Aan","de":"Ein"}},{"id":"OFF","label":{"en":"Off","nl":"Uit","de":"Aus"}}]}]},{"id":"set_vertical_swing","duration":true,"title":{"en":"Set vertical swing to","nl":"Zet verticale swing naar","de":"Stell vertikaler swing auf"},"titleFormatted":{"en":"Set vertical swing to [[verticalSwing]]","nl":"Zet verticale swing naar [[verticalSwing]]","de":"Stell vertikaler swing auf [[verticalSwing]]"},"args":[{"type":"device","name":"device","filter":"driver_id=airconditioning&capabilities=vertical_swing"},{"type":"dropdown","name":"verticalSwing","title":{"en":"Vertical swing","nl":"Verticale swing","de":"Vertikaler swing"},"values":[{"id":"ON","label":{"en":"On","nl":"Aan","de":"Ein"}},{"id":"AUTO","label":{"en":"Auto","nl":"Automatisch","de":"Automatisch"}},{"id":"UP","label":{"en":"Up","nl":"Omhoog","de":"Oben"}},{"id":"MID_UP","label":{"en":"Mid-Up","nl":"Midden-Omhoog","de":"Mitte-Oben"}},{"id":"MID","label":{"en":"Mid","nl":"Midden","de":"Mitte"}},{"id":"MID_DOWN","label":{"en":"Mid-Down","nl":"Midden-Beneden","de":"Mitte-Unten"}},{"id":"DOWN","label":{"en":"Down","nl":"Beneden","de":"Unten"}},{"id":"OFF","label":{"en":"Off","nl":"Uit","de":"Aus"}}]}]},{"id":"set_horizontal_swing","duration":true,"title":{"en":"Set horizontal swing to","nl":"Zet horizontale swing naar","de":"Stell horizontaler swing auf"},"titleFormatted":{"en":"Set horizontal swing to [[horizontalSwing]]","nl":"Zet horizontale swing naar [[horizontalSwing]]","de":"Stell horizontaler swing auf [[horizontalSwing]]"},"args":[{"type":"device","name":"device","filter":"driver_id=airconditioning&capabilities=horizontal_swing"},{"type":"dropdown","name":"horizontalSwing","title":{"en":"Horizontal swing","nl":"Horizontale swing","de":"Horizontaler swing"},"values":[{"id":"ON","label":{"en":"On","nl":"Aan","de":"Ein"}},{"id":"AUTO","label":{"en":"Auto","nl":"Automatisch","de":"Automatisch"}},{"id":"LEFT","label":{"en":"Left","nl":"Links","de":"Links"}},{"id":"MID_LEFT","label":{"en":"Mid-Left","nl":"Midden-Links","de":"Mitte-Links"}},{"id":"MID","label":{"en":"Mid","nl":"Midden","de":"Mitte"}},{"id":"MID_RIGHT","label":{"en":"Mid-Right","nl":"Midden-Rechts","de":"Mitte-Rechts"}},{"id":"RIGHT","label":{"en":"Right","nl":"Rechts","de":"Rechts"}},{"id":"OFF","label":{"en":"Off","nl":"Uit","de":"Aus"}}]}]},{"id":"set_hot_water_onoff_on","duration":true,"title":{"en":"Switch the Hot Water on","nl":"Schakel het warm water in","de":"Schalte das heiße Wasser ein"},"args":[{"type":"device","name":"device","filter":"driver_id=thermostat&capabilities=hot_water_onoff"}]},{"id":"set_hot_water_onoff_off","duration":true,"title":{"en":"Switch the Hot Water off","nl":"Schakel het warm water uit","de":"Schalte das heiße Wasser aus"},"args":[{"type":"device","name":"device","filter":"driver_id=thermostat&capabilities=hot_water_onoff"}]},{"id":"set_hot_water_target_temperature","duration":true,"title":{"en":"Set the Hot Water temperature to","nl":"Zet de warmwatertemperatuur naar","de":"Stell die Warmwassertemperatur auf"},"titleFormatted":{"en":"Set the Hot Water temperature to [[hotWaterTemperature]]","nl":"Zet de warmwatertemperatuur naar [[hotWaterTemperature]]","de":"Stell die Warmwassertemperatur auf [[hotWaterTemperature]]"},"args":[{"type":"device","name":"device","filter":"driver_id=thermostat&capabilities=target_temperature.hot_water"},{"name":"hotWaterTemperature","title":{"en":"Hot Water temperature","nl":"Warmwatertemperatuur","de":"Warmwassertemperatur"},"type":"range","min":30,"max":70,"step":1,"label":"°C","labelDecimals":0}]}]},"drivers":[{"capabilities":[],"images":{"xlarge":"/drivers/airconditioning/assets/images/xlarge.png","large":"/drivers/airconditioning/assets/images/large.png","small":"/drivers/airconditioning/assets/images/small.png"},"platforms":["local","cloud"],"connectivity":["cloud"],"pair":[{"id":"login_oauth2","template":"login_oauth2"},{"id":"list_devices","template":"list_devices","navigation":{"next":"add_devices"}},{"id":"add_devices","template":"add_devices"}],"repair":[{"id":"login_oauth2","template":"login_oauth2"}],"class":"thermostat","name":{"en":"Smart Air conditioning","nl":"Slimme Airconditioning","de":"Smarte Klimaanlage"},"id":"airconditioning","settings":[{"id":"manual-control","type":"group","label":{"en":"Operation","nl":"Bediening","de":"Betrieb"},"collapsed":false,"children":[{"id":"overlayMode","type":"dropdown","label":{"en":"Manual control","nl":"Handmatige bediening","de":"Manuelle Kontrolle"},"value":"MANUAL","values":[{"id":"MANUAL","label":{"en":"Until ended by user","nl":"Tot beëindiging  gebruiker","de":"Bis vom Benutzer beendet"}},{"id":"TIMER","label":{"en":"Timer"}},{"id":"TADO_MODE","label":{"en":"Until next change","nl":"Tot de volgende wijziging","de":"Bis zur nächsten Änderung"}}],"hint":{"en":"This sets the default behaviour when operating the device.","nl":"Dit stelt het standaardgedrag in bij het bedienen van het apparaat.","de":"Damit wird das Standardverhalten beim Betrieb des Geräts festgelegt."}},{"id":"timerDuration","type":"number","label":{"en":"Timer duration","nl":"Timerduur","de":"Timer-Dauer"},"value":10,"min":1,"max":1440,"units":{"en":"minutes","nl":"minuten","de":"Minuten"},"hint":{"en":"This sets the default duration when selecting: Timer.","nl":"Dit stelt de standaard duur in bij het selecteren van: Timer.","de":"Dies legt die Standarddauer bei der Auswahl fest: Timer."}}]},{"id":"serial-number","type":"group","label":{"en":"Device","nl":"Apparaat","de":"Gerät"},"collapsed":false,"children":[{"id":"serialNumber","type":"label","label":{"en":"Serial Number","nl":"Serienummer","de":"Seriennummer"}}]}]},{"capabilities":[],"images":{"xlarge":"/drivers/thermostat/assets/images/xlarge.png","large":"/drivers/thermostat/assets/images/large.png","small":"/drivers/thermostat/assets/images/small.png"},"platforms":["local","cloud"],"connectivity":["cloud"],"pair":[{"id":"login_oauth2","template":"login_oauth2"},{"id":"list_devices","template":"list_devices","navigation":{"next":"add_devices"}},{"id":"add_devices","template":"add_devices"}],"repair":[{"id":"login_oauth2","template":"login_oauth2"}],"class":"thermostat","name":{"en":"Smart Thermostat","nl":"Slimme Thermostaat","de":"Smartes Thermostat"},"id":"thermostat","settings":[{"id":"manual-control","type":"group","label":{"en":"Operation","nl":"Bediening","de":"Betrieb"},"collapsed":false,"children":[{"id":"overlayMode","type":"dropdown","label":{"en":"Manual control","nl":"Handmatige bediening","de":"Manuelle Kontrolle"},"value":"MANUAL","values":[{"id":"MANUAL","label":{"en":"Until ended by user","nl":"Tot beëindiging  gebruiker","de":"Bis vom Benutzer beendet"}},{"id":"TIMER","label":{"en":"Timer"}},{"id":"TADO_MODE","label":{"en":"Until next change","nl":"Tot de volgende wijziging","de":"Bis zur nächsten Änderung"}}],"hint":{"en":"This sets the default behaviour when operating the device.","nl":"Dit stelt het standaardgedrag in bij het bedienen van het apparaat.","de":"Damit wird das Standardverhalten beim Betrieb des Geräts festgelegt."}},{"id":"timerDuration","type":"number","label":{"en":"Timer duration","nl":"Timerduur","de":"Timer-Dauer"},"value":10,"min":1,"max":1440,"units":{"en":"minutes","nl":"minuten","de":"Minuten"},"hint":{"en":"This sets the default duration when selecting: Timer.","nl":"Dit stelt de standaard duur in bij het selecteren van: Timer.","de":"Dies legt die Standarddauer bei der Auswahl fest: Timer."}}]},{"id":"serial-number","type":"group","label":{"en":"Device","nl":"Apparaat","de":"Gerät"},"collapsed":false,"children":[{"id":"serialNumber","type":"label","label":{"en":"Serial Number","nl":"Serienummer","de":"Seriennummer"}}]}]},{"capabilities":[],"images":{"xlarge":"/drivers/valve/assets/images/xlarge.png","large":"/drivers/valve/assets/images/large.png","small":"/drivers/valve/assets/images/small.png"},"platforms":["local","cloud"],"connectivity":["cloud"],"pair":[{"id":"login_oauth2","template":"login_oauth2"},{"id":"list_devices","template":"list_devices","navigation":{"next":"add_devices"}},{"id":"add_devices","template":"add_devices"}],"repair":[{"id":"login_oauth2","template":"login_oauth2"}],"class":"thermostat","name":{"en":"Smart Radiator Thermostat","nl":"Slimme Radiatorknop","de":"Smartes Heizkörper-Thermostat"},"id":"valve","settings":[{"id":"manual-control","type":"group","label":{"en":"Operation","nl":"Bediening","de":"Betrieb"},"collapsed":false,"children":[{"id":"overlayMode","type":"dropdown","label":{"en":"Manual control","nl":"Handmatige bediening","de":"Manuelle Kontrolle"},"value":"MANUAL","values":[{"id":"MANUAL","label":{"en":"Until ended by user","nl":"Tot beëindiging  gebruiker","de":"Bis vom Benutzer beendet"}},{"id":"TIMER","label":{"en":"Timer"}},{"id":"TADO_MODE","label":{"en":"Until next change","nl":"Tot de volgende wijziging","de":"Bis zur nächsten Änderung"}}],"hint":{"en":"This sets the default behaviour when operating the device.","nl":"Dit stelt het standaardgedrag in bij het bedienen van het apparaat.","de":"Damit wird das Standardverhalten beim Betrieb des Geräts festgelegt."}},{"id":"timerDuration","type":"number","label":{"en":"Timer duration","nl":"Timerduur","de":"Timer-Dauer"},"value":10,"min":1,"max":1440,"units":{"en":"minutes","nl":"minuten","de":"Minuten"},"hint":{"en":"This sets the default duration when selecting: Timer.","nl":"Dit stelt de standaard duur in bij het selecteren van: Timer.","de":"Dies legt die Standarddauer bei der Auswahl fest: Timer."}}]},{"id":"serial-number","type":"group","label":{"en":"Device","nl":"Apparaat","de":"Gerät"},"collapsed":false,"children":[{"id":"serialNumber","type":"label","label":{"en":"Serial Number","nl":"Serienummer","de":"Seriennummer"}}]}]}],"capabilities":{"ac_light":{"title":{"en":"Light ","nl":"Licht","de":"Licht"},"type":"enum","getable":true,"setable":true,"duration":true,"uiComponent":"picker","values":[{"id":"ON","title":{"en":"On","nl":"Aan","de":"Ein"}},{"id":"OFF","title":{"en":"Off","nl":"Uit","de":"Aus"}}]},"ac_mode":{"title":{"en":"Mode","nl":"Modus","de":"Modus"},"type":"enum","getable":true,"setable":true,"duration":true,"uiComponent":"picker","values":[{"id":"COOL","title":{"en":"Cool"}},{"id":"HEAT","title":{"en":"Heat"}},{"id":"DRY","title":{"en":"Dry"}},{"id":"FAN","title":{"en":"Fan"}},{"id":"AUTO","title":{"en":"Auto"}},{"id":"OFF","title":{"en":"Off","nl":"Uit","de":"Aus"}}]},"detect_open_window":{"type":"boolean","title":{"en":"Open window detection","nl":"Open raam detectie","de":"Offenes-Fenster-Erkennung"},"icon":"/assets/capabilities/detect_open_window.svg","getable":true,"setable":false},"fan_level":{"title":{"en":"Fan level","nl":"Ventilator niveau","de":"Lüftergeschwindigkeit"},"type":"enum","getable":true,"setable":true,"duration":true,"uiComponent":"picker","values":[{"id":"AUTO","title":{"en":"Auto","nl":"Automatisch","de":"Automatisch"}},{"id":"SILENT","title":{"en":"Silent","nl":"Stil","de":"Leise"}},{"id":"LEVEL1","title":{"en":"Level 1","nl":"Niveau 1","de":"Level 1"}},{"id":"LEVEL2","title":{"en":"Level 2","nl":"Niveau 2","de":"Level 2"}},{"id":"LEVEL3","title":{"en":"Level 3","nl":"Niveau 3","de":"Level 3"}},{"id":"LEVEL4","title":{"en":"Level 4","nl":"Niveau 4","de":"Level 4"}},{"id":"LEVEL5","title":{"en":"Level 5","nl":"Niveau 5","de":"Level 5"}}]},"fan_speed":{"title":{"en":"Fan Speed","nl":"Ventilator snelheid","de":"Lüftergeschwindigkeit"},"type":"enum","getable":true,"setable":true,"duration":true,"uiComponent":"picker","values":[{"id":"AUTO","title":{"en":"Auto","nl":"Automatisch","de":"Automatisch"}},{"id":"LOW","title":{"en":"Low","nl":"Laag","de":"Niedrig"}},{"id":"MIDDLE","title":{"en":"Middle","nl":"Middel","de":"Mitte"}},{"id":"HIGH","title":{"en":"High","nl":"Hoog","de":"Hoch"}}]},"heating_power":{"type":"number","title":{"en":"Heating capacity","nl":"Verwarming capaciteit","de":"Heizkapazität"},"icon":"/assets/capabilities/heating_power.svg","getable":true,"setable":false,"units":{"en":"%"},"step":1,"min":0,"max":100},"horizontal_swing":{"title":{"en":"Horizontal swing","nl":"Horizontale swing","de":"Horizontaler swing"},"type":"enum","getable":true,"setable":true,"duration":true,"uiComponent":"picker","values":[{"id":"ON","title":{"en":"On","nl":"Aan","de":"Ein"}},{"id":"AUTO","title":{"en":"Auto","nl":"Automatisch","de":"Automatisch"}},{"id":"LEFT","title":{"en":"Left","nl":"Links","de":"Links"}},{"id":"MID_LEFT","title":{"en":"Mid-Left","nl":"Midden-Links","de":"Mitte-Links"}},{"id":"MID","title":{"en":"Mid","nl":"Midden","de":"Mitte"}},{"id":"MID_RIGHT","title":{"en":"Mid-Right","nl":"Midden-Rechts","de":"Mitte-Rechts"}},{"id":"RIGHT","title":{"en":"Right","nl":"Rechts","de":"Rechts"}},{"id":"OFF","title":{"en":"Off","nl":"Uit","de":"Aus"}}]},"hot_water_onoff":{"type":"boolean","title":{"en":"Hot Water","nl":"Warm Water","de":"Warmwasser"},"getable":true,"setable":true},"power_mode":{"title":{"en":"Thermostat mode","nl":"Thermostaat modus","de":"Thermostat-Modus"},"type":"enum","getable":true,"setable":true,"duration":true,"uiComponent":"picker","values":[{"id":"ON","title":{"en":"On","nl":"Aan","de":"Ein"}},{"id":"OFF","title":{"en":"Off","nl":"Uit","de":"Aus"}}]},"swing":{"title":{"en":"Swing mode","nl":"Swing-modus","de":"Swing-Modus"},"type":"enum","getable":true,"setable":true,"duration":true,"uiComponent":"picker","values":[{"id":"ON","title":{"en":"On","nl":"Aan","de":"Ein"}},{"id":"OFF","title":{"en":"Off","nl":"Uit","de":"Aus"}}]},"vertical_swing":{"title":{"en":"Vertical swing","nl":"Verticale swing","de":"Vertikaler swing"},"type":"enum","getable":true,"setable":true,"duration":true,"uiComponent":"picker","values":[{"id":"ON","title":{"en":"On","nl":"Aan","de":"Ein"}},{"id":"AUTO","title":{"en":"Auto","nl":"Automatisch","de":"Automatisch"}},{"id":"UP","title":{"en":"Up","nl":"Omhoog","de":"Oben"}},{"id":"MID_UP","title":{"en":"Mid-Up","nl":"Midden-Omhoog","de":"Mitte-Oben"}},{"id":"MID","title":{"en":"Mid","nl":"Midden","de":"Mitte"}},{"id":"MID_DOWN","title":{"en":"Mid-Down","nl":"Midden-Beneden","de":"Mitte-Unten"}},{"id":"DOWN","title":{"en":"Down","nl":"Beneden","de":"Unten"}},{"id":"OFF","title":{"en":"Off","nl":"Uit","de":"Aus"}}]}}}
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "com.tado2",
+  "sdk": 3,
+  "name": {
+    "en": "tado°"
+  },
+  "description": {
+    "en": "Everyone's comfort zone",
+    "nl": "Comfortzones voor iedereen",
+    "de": "Komfortzonen für alle"
+  },
+  "brandColor": "#FFB121",
+  "tags": {
+    "en": [
+      "tado",
+      "thermostat",
+      "radiator thermostat",
+      "heating",
+      "hot water",
+      "air conditioning"
+    ],
+    "nl": [
+      "tado",
+      "thermostaat",
+      "radiator thermostaat",
+      "verwarming",
+      "warm water",
+      "airconditioning",
+      "airco"
+    ]
+  },
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "category": "climate",
+  "version": "1.1.3",
+  "compatibility": ">=5",
+  "author": {
+    "name": "Athom B.V."
+  },
+  "images": {
+    "xlarge": "/assets/images/xlarge.png",
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "support": "https://support.athom.com/hc/en-us/requests/new",
+  "flow": {
+    "triggers": [
+      {
+        "id": "open_window_detected",
+        "title": {
+          "en": "Open window is detected",
+          "nl": "Open raam is gedetecteerd",
+          "de": "Offenes Fenster wird erkannt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device"
+            },
+            "filter": "driver_id=thermostat|airconditioning|valve&capabilities=detect_open_window"
+          }
+        ]
+      },
+      {
+        "id": "power_mode_off",
+        "title": {
+          "en": "Turned off",
+          "nl": "Uitgezet",
+          "de": "Ausgeschaltet"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device"
+            },
+            "filter": "driver_id=thermostat|valve&capabilities=power_mode"
+          }
+        ]
+      },
+      {
+        "id": "power_mode_on",
+        "title": {
+          "en": "Turned on",
+          "nl": "Aangezet",
+          "de": "Angeschaltet"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device"
+            },
+            "filter": "driver_id=thermostat|valve&capabilities=power_mode"
+          }
+        ]
+      },
+      {
+        "id": "smart_schedule_activated",
+        "title": {
+          "en": "Smart Schedule is activated",
+          "nl": "Slimme Schema is geactiveerd",
+          "de": "Intelligenter Zeitplan ist aktiviert"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device"
+            },
+            "filter": "driver_id=airconditioning|thermostat|valve"
+          }
+        ]
+      },
+      {
+        "id": "smart_schedule_deactivated",
+        "title": {
+          "en": "Smart Schedule is deactivated",
+          "nl": "Slimme Schema is gedeactiveerd",
+          "de": "Intelligenter Zeitplan ist deaktiviert"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device"
+            },
+            "filter": "driver_id=airconditioning|thermostat|valve"
+          }
+        ]
+      },
+      {
+        "id": "ac_mode_changed",
+        "title": {
+          "en": "Air conditioning mode changed",
+          "nl": "Airco modus is veranderd",
+          "de": "Klimamodus hat sich geändert"
+        },
+        "tokens": [
+          {
+            "name": "ac_mode",
+            "type": "string",
+            "title": {
+              "en": "Mode",
+              "nl": "Modus",
+              "de": "Modus"
+            },
+            "example": {
+              "en": "Cool"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=airconditioning&capabilities=ac_mode"
+          }
+        ]
+      },
+      {
+        "id": "fan_speed_changed",
+        "title": {
+          "en": "Fan speed changed",
+          "nl": "Ventilator snelheid is veranderd",
+          "de": "Lüftergeschwindigkeit hat sich geändert"
+        },
+        "tokens": [
+          {
+            "name": "fan_speed",
+            "type": "string",
+            "title": {
+              "en": "Fan speed",
+              "nl": "Ventilator snelheid",
+              "de": "Lüftergeschwindigkeit"
+            },
+            "example": {
+              "en": "Low",
+              "nl": "Laag",
+              "de": "Niedrig"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=airconditioning&capabilities=fan_speed"
+          }
+        ]
+      },
+      {
+        "id": "fan_level_changed",
+        "title": {
+          "en": "Fan speed changed",
+          "nl": "Ventilator snelheid is veranderd",
+          "de": "Lüftergeschwindigkeit hat sich geändert"
+        },
+        "tokens": [
+          {
+            "name": "fan_level",
+            "type": "string",
+            "title": {
+              "en": "Fan speed",
+              "nl": "Ventilator snelheid",
+              "de": "Lüftergeschwindigkeit"
+            },
+            "example": {
+              "en": "Low",
+              "nl": "Laag",
+              "de": "Niedrig"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=airconditioning&capabilities=fan_level"
+          }
+        ]
+      },
+      {
+        "id": "swing_changed",
+        "title": {
+          "en": "Swing changed",
+          "nl": "Swing is veranderd",
+          "de": "Swing hat sich geändert"
+        },
+        "tokens": [
+          {
+            "name": "swing",
+            "type": "string",
+            "title": {
+              "en": "Swing"
+            },
+            "example": {
+              "en": "On",
+              "nl": "Aan",
+              "de": "Ein"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=airconditioning&capabilities=swing"
+          }
+        ]
+      },
+      {
+        "id": "vertical_swing_changed",
+        "title": {
+          "en": "Vertical swing changed",
+          "nl": "Verticale swing is veranderd",
+          "de": "Vertikaler swing hat sich geändert"
+        },
+        "tokens": [
+          {
+            "name": "vertical_swing",
+            "type": "string",
+            "title": {
+              "en": "Vertical swing",
+              "nl": "Verticale swing",
+              "de": "Vertikaler swing"
+            },
+            "example": {
+              "en": "On",
+              "nl": "Aan",
+              "de": "Ein"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=airconditioning&capabilities=vertical_swing"
+          }
+        ]
+      },
+      {
+        "id": "horizontal_swing_changed",
+        "title": {
+          "en": "Horizontal swing changed",
+          "nl": "Horizontale swing is veranderd",
+          "de": "Horizontaler swing hat sich geändert"
+        },
+        "tokens": [
+          {
+            "name": "horizontal_swing",
+            "type": "string",
+            "title": {
+              "en": "Horizontal swing",
+              "nl": "Horizontale swing",
+              "de": "Horizontaler swing"
+            },
+            "example": {
+              "en": "On",
+              "nl": "Aan",
+              "de": "Ein"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=airconditioning&capabilities=horizontal_swing"
+          }
+        ]
+      },
+      {
+        "id": "hot_water_onoff_true",
+        "title": {
+          "en": "Hot water is switched on",
+          "nl": "Warm water wordt ingeschakeld",
+          "de": "Warmwasser ist eingeschaltet"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=thermostat&capabilities=hot_water_onoff"
+          }
+        ]
+      },
+      {
+        "id": "hot_water_onoff_false",
+        "title": {
+          "en": "Hot water is switched off",
+          "nl": "Warm water wordt uitgeschakeld",
+          "de": "Warmwasser ist abgeschaltet"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=thermostat&capabilities=hot_water_onoff"
+          }
+        ]
+      },
+      {
+        "id": "target_temperature.hot_water_changed",
+        "title": {
+          "en": "The Hot Water temperature changed",
+          "nl": "De warmwatertemperatuur is gewijzigd",
+          "de": "Die Warmwassertemperatur hat sich geändert"
+        },
+        "tokens": [
+          {
+            "name": "target_temperature.hot_water",
+            "title": {
+              "en": "Hot Water temperature",
+              "nl": "Warmwatertemperatuur",
+              "de": "Warmwassertemperatur"
+            },
+            "type": "number",
+            "example": 50
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=thermostat&capabilities=target_temperature.hot_water"
+          }
+        ]
+      }
+    ],
+    "conditions": [
+      {
+        "id": "is_measure_humidity_between",
+        "title": {
+          "en": "The humidity !{{is between|is not between}}",
+          "nl": "De luchtvochtigheid !{{ligt tussen|ligt niet tussen}}",
+          "de": "Die Luftfeuchtigkeit !{{liegt zwischen|liegt nicht zwischen}}"
+        },
+        "titleFormatted": {
+          "en": "The humidity !{{is between|is not between}} [[humidity_1]] and [[humidity_2]]",
+          "nl": "De luchtvochtigheid !{{ligt tussen|ligt niet tussen}} [[humidity_1]] en [[humidity_2]]",
+          "de": "Die Luftfeuchtigkeit !{{liegt zwischen|liegt nicht zwischen}} [[humidity_1]] und [[humidity_2]]"
+        },
+        "hint": {
+          "en": "Use this to determine whether or not the measured humidity is between two values. The specified values are also valid.",
+          "nl": "ebruik dit om te bepalen of gemeten luchtvochtigheid tussen twee waarden ligt. De opgegeven waarden zijn ook geldig.",
+          "de": "Verwenden Sie dies, um festzustellen, ob die gemessene Luftfeuchtigkeit zwischen zwei Werten liegt. Die angegebenen Werte sind ebenfalls gültig."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device"
+            },
+            "filter": "driver_id=airconditioning|thermostat|valve&capabilities=measure_humidity"
+          },
+          {
+            "type": "range",
+            "name": "humidity_1",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "label": "%",
+            "title": {
+              "en": "Minimum",
+              "nl": "Minimum",
+              "de": "Minimum"
+            },
+            "placeholder": {
+              "en": "%",
+              "nl": "%"
+            }
+          },
+          {
+            "type": "range",
+            "name": "humidity_2",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "label": "%",
+            "title": {
+              "en": "Maximum",
+              "nl": "Maximum",
+              "de": "Maximal"
+            },
+            "placeholder": {
+              "en": "%",
+              "nl": "%"
+            }
+          }
+        ]
+      },
+      {
+        "id": "is_measure_temperature_between",
+        "title": {
+          "en": "The temperature !{{is between|is not between}}",
+          "nl": "De temperatuur !{{ligt tussen|ligt niet tussen}}",
+          "de": "Die Temperatuur !{{liegt zwischen|liegt nicht zwischen}}"
+        },
+        "titleFormatted": {
+          "en": "The temperature !{{is between|is not between}} [[temperature_1]] and [[temperature_2]]",
+          "nl": "De temperatuur !{{ligt tussen|ligt niet tussen}} [[temperature_1]] en [[temperature_2]]",
+          "de": "Die Temperatuur !{{liegt zwischen|liegt nicht zwischen}} [[temperature_1]] und [[temperature_2]]"
+        },
+        "hint": {
+          "en": "Use this to determine whether or not the measured temperature is between two values. The specified values are also valid.",
+          "nl": "Gebruik dit om te bepalen of gemeten temperatuur tussen twee waarden ligt. De opgegeven waarden zijn ook geldig.",
+          "de": "Verwenden Sie dies, um festzustellen, ob die gemessene Temperatur zwischen zwei Werten liegt. Die angegebenen Werte sind ebenfalls gültig."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device"
+            },
+            "filter": "driver_id=airconditioning|thermostat|valve&capabilities=measure_temperature"
+          },
+          {
+            "type": "range",
+            "name": "temperature_1",
+            "min": -20,
+            "max": 60,
+            "step": 0.5,
+            "label": "°C",
+            "title": {
+              "en": "Minimum",
+              "nl": "Minimum",
+              "de": "Minimum"
+            },
+            "placeholder": {
+              "en": "°C",
+              "nl": "°C"
+            }
+          },
+          {
+            "type": "range",
+            "name": "temperature_2",
+            "min": -20,
+            "max": 60,
+            "step": 0.5,
+            "label": "°C",
+            "title": {
+              "en": "Maximum",
+              "nl": "Maximum",
+              "de": "Maximal"
+            },
+            "placeholder": {
+              "en": "°C",
+              "nl": "°C"
+            }
+          }
+        ]
+      },
+      {
+        "id": "is_open_window_detected",
+        "title": {
+          "en": "An open window is !{{|not}} detected",
+          "nl": "Een open raam is !{{|niet}} gedetecteerd",
+          "de": "Ein offenes Fenster wird !{{|nicht}} erkannt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device"
+            },
+            "filter": "driver_id=thermostat|airconditioning|valve&capabilities=detect_open_window"
+          }
+        ]
+      },
+      {
+        "id": "is_power_mode_on",
+        "title": {
+          "en": "Is turned !{{on|off}}",
+          "nl": "Is !{{aan|uit}}",
+          "de": "Ist !{{an|aus}}"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device"
+            },
+            "filter": "driver_id=thermostat|valve&capabilities=power_mode"
+          }
+        ]
+      },
+      {
+        "id": "is_smart_schedule",
+        "title": {
+          "en": "Smart Schedule is !{{|not}} activated",
+          "nl": "Slimme Schema is !{{|niet}} geactiveerd",
+          "de": "Intelligenten Zeitplan ist !{{|nicht}} aktiviert"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device"
+            },
+            "filter": "driver_id=airconditioning|thermostat|valve"
+          }
+        ]
+      },
+      {
+        "id": "is_target_temperature_between",
+        "title": {
+          "en": "The target temperature !{{is between|is not between}}",
+          "nl": "De ingestelde temeratuur !{{ligt tussen|ligt niet tussen}}",
+          "de": "Die eingestellte Temperatuur !{{liegt zwischen|liegt nicht zwischen}}"
+        },
+        "titleFormatted": {
+          "en": "The target temperature !{{is between|is not between}} [[temperature_1]] and [[temperature_2]]",
+          "nl": "De ingestelde temeratuur !{{ligt tussen|ligt niet tussen}} [[temperature_1]] en [[temperature_2]]",
+          "de": "Die eingestellte Temperatuur !{{liegt zwischen|liegt nicht zwischen}} [[temperature_1]] und [[temperature_2]]"
+        },
+        "hint": {
+          "en": "Use this to determine whether or not the target temperature is between given values. The specified values are also valid.",
+          "nl": "Gebruik dit om te bepalen of ingestelde temperatuur tussen twee waarden ligt. De opgegeven waarden zijn ook geldig.",
+          "de": "Verwenden Sie dies, um festzustellen, ob die eingestellte Temperatur zwischen zwei Werten liegt. Die angegebenen Werte sind ebenfalls gültig."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device"
+            },
+            "filter": "driver_id=thermostat|valve&capabilities=measure_temperature"
+          },
+          {
+            "type": "range",
+            "name": "temperature_1",
+            "min": 0,
+            "max": 40,
+            "step": 0.5,
+            "label": "°C",
+            "title": {
+              "en": "Minimum",
+              "nl": "Minimum",
+              "de": "Minimum"
+            },
+            "placeholder": {
+              "en": "°C",
+              "nl": "°C"
+            }
+          },
+          {
+            "type": "range",
+            "name": "temperature_2",
+            "min": 0,
+            "max": 40,
+            "step": 0.5,
+            "label": "°C",
+            "title": {
+              "en": "Maximum",
+              "nl": "Maximum",
+              "de": "Maximal"
+            },
+            "placeholder": {
+              "en": "°C",
+              "nl": "°C"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ac_mode_is",
+        "title": {
+          "en": "Air conditioning mode is !{{|not}}",
+          "nl": "Airco modus is !{{|niet}}",
+          "de": "Klimaanlagenmodus ist !{{|nicht}}"
+        },
+        "titleFormatted": {
+          "en": "Air conditioning mode is !{{|not}} [[acMode]]",
+          "nl": "Airco modus is !{{|niet}} [[acMode]]",
+          "de": "Klimaanlagenmodus ist !{{|nicht}} [[acMode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=airconditioning&capabilities=ac_mode"
+          },
+          {
+            "type": "dropdown",
+            "name": "acMode",
+            "title": {
+              "en": "Mode",
+              "nl": "Modus",
+              "de": "Modus"
+            },
+            "values": [
+              {
+                "id": "COOL",
+                "label": {
+                  "en": "Cool"
+                }
+              },
+              {
+                "id": "HEAT",
+                "label": {
+                  "en": "Heat"
+                }
+              },
+              {
+                "id": "DRY",
+                "label": {
+                  "en": "Dry"
+                }
+              },
+              {
+                "id": "FAN",
+                "label": {
+                  "en": "Fan"
+                }
+              },
+              {
+                "id": "AUTO",
+                "label": {
+                  "en": "Auto"
+                }
+              },
+              {
+                "id": "OFF",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit",
+                  "de": "Aus"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fan_speed_is",
+        "title": {
+          "en": "Fan speed is !{{|not}}",
+          "nl": "Ventilator snelheid is !{{|niet}}",
+          "de": "Lüftergeschwindigkeit ist !{{|nicht}}"
+        },
+        "titleFormatted": {
+          "en": "Fan speed is !{{|not}} [[fanSpeed]]",
+          "nl": "Ventilator snelheid is !{{|niet}} [[fanSpeed]]",
+          "de": "Lüftergeschwindigkeit ist !{{|nicht}} [[fanSpeed]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=airconditioning&capabilities=fan_speed"
+          },
+          {
+            "type": "dropdown",
+            "name": "fanSpeed",
+            "title": {
+              "en": "Fan speed",
+              "nl": "Ventilator snelheid",
+              "de": "Lüftergeschwindigkeit"
+            },
+            "values": [
+              {
+                "id": "AUTO",
+                "label": {
+                  "en": "Auto",
+                  "nl": "Automatisch",
+                  "de": "Automatisch"
+                }
+              },
+              {
+                "id": "LOW",
+                "label": {
+                  "en": "Low",
+                  "nl": "Laag",
+                  "de": "Niedrig"
+                }
+              },
+              {
+                "id": "MIDDLE",
+                "label": {
+                  "en": "Middle",
+                  "nl": "Middel",
+                  "de": "Mitte"
+                }
+              },
+              {
+                "id": "HIGH",
+                "label": {
+                  "en": "High",
+                  "nl": "Hoog",
+                  "de": "Hoch"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fan_level_is",
+        "title": {
+          "en": "Fan speed is !{{|not}}",
+          "nl": "Ventilator snelheid is !{{|niet}}",
+          "de": "Lüftergeschwindigkeit ist !{{|nicht}}"
+        },
+        "titleFormatted": {
+          "en": "Fan speed is !{{|not}} [[fanLevel]]",
+          "nl": "Ventilator snelheid is !{{|niet}} [[fanLevel]]",
+          "de": "Lüftergeschwindigkeit ist !{{|nicht}} [[fanLevel]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=airconditioning&capabilities=fan_level"
+          },
+          {
+            "type": "dropdown",
+            "name": "fanLevel",
+            "title": {
+              "en": "Fan speed",
+              "nl": "Ventilator snelheid",
+              "de": "Lüftergeschwindigkeit"
+            },
+            "values": [
+              {
+                "id": "AUTO",
+                "label": {
+                  "en": "Auto",
+                  "nl": "Automatisch",
+                  "de": "Automatisch"
+                }
+              },
+              {
+                "id": "SILENT",
+                "label": {
+                  "en": "Silent",
+                  "nl": "Stil",
+                  "de": "Leise"
+                }
+              },
+              {
+                "id": "LEVEL1",
+                "label": {
+                  "en": "Level 1",
+                  "nl": "Niveau 1",
+                  "de": "Level 1"
+                }
+              },
+              {
+                "id": "LEVEL2",
+                "label": {
+                  "en": "Level 2",
+                  "nl": "Niveau 2",
+                  "de": "Level 2"
+                }
+              },
+              {
+                "id": "LEVEL3",
+                "label": {
+                  "en": "Level 3",
+                  "nl": "Niveau 3",
+                  "de": "Level 3"
+                }
+              },
+              {
+                "id": "LEVEL4",
+                "label": {
+                  "en": "Level 4",
+                  "nl": "Niveau 4",
+                  "de": "Level 4"
+                }
+              },
+              {
+                "id": "LEVEL5",
+                "label": {
+                  "en": "Level 5",
+                  "nl": "Niveau 5",
+                  "de": "Level 5"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "swing_is",
+        "title": {
+          "en": "Swing is !{{|not}}",
+          "nl": "Swing is !{{|niet}}",
+          "de": "Swing ist !{{|nicht}}"
+        },
+        "titleFormatted": {
+          "en": "Swing is !{{|not}} [[swing]]",
+          "nl": "Swing is !{{|niet}} [[swing]]",
+          "de": "Swing ist !{{|nicht}} [[swing]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=airconditioning&capabilities=swing"
+          },
+          {
+            "type": "dropdown",
+            "name": "swing",
+            "title": {
+              "en": "Swing",
+              "nl": "Swing",
+              "de": "Swing"
+            },
+            "values": [
+              {
+                "id": "ON",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan",
+                  "de": "Ein"
+                }
+              },
+              {
+                "id": "OFF",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit",
+                  "de": "Aus"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "vertical_swing_is",
+        "title": {
+          "en": "Vertical swing is !{{|not}}",
+          "nl": "Verticale swing is !{{|niet}}",
+          "de": "Vertikaler swing ist !{{|nicht}}"
+        },
+        "titleFormatted": {
+          "en": "Vertical swing is !{{|not}} [[verticalSwing]]",
+          "nl": "Verticale swing is !{{|niet}} [[verticalSwing]]",
+          "de": "Vertikaler swing ist !{{|nicht}} [[verticalSwing]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=airconditioning&capabilities=vertical_swing"
+          },
+          {
+            "type": "dropdown",
+            "name": "verticalSwing",
+            "title": {
+              "en": "Vertical swing",
+              "nl": "Verticale swing",
+              "de": "Vertikaler swing"
+            },
+            "values": [
+              {
+                "id": "ON",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan",
+                  "de": "Ein"
+                }
+              },
+              {
+                "id": "AUTO",
+                "label": {
+                  "en": "Auto",
+                  "nl": "Automatisch",
+                  "de": "Automatisch"
+                }
+              },
+              {
+                "id": "UP",
+                "label": {
+                  "en": "Up",
+                  "nl": "Omhoog",
+                  "de": "Oben"
+                }
+              },
+              {
+                "id": "MID_UP",
+                "label": {
+                  "en": "Mid-Up",
+                  "nl": "Midden-Omhoog",
+                  "de": "Mitte-Oben"
+                }
+              },
+              {
+                "id": "MID",
+                "label": {
+                  "en": "Mid",
+                  "nl": "Midden",
+                  "de": "Mitte"
+                }
+              },
+              {
+                "id": "MID_DOWN",
+                "label": {
+                  "en": "Mid-Down",
+                  "nl": "Midden-Beneden",
+                  "de": "Mitte-Unten"
+                }
+              },
+              {
+                "id": "DOWN",
+                "label": {
+                  "en": "Down",
+                  "nl": "Beneden",
+                  "de": "Unten"
+                }
+              },
+              {
+                "id": "OFF",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit",
+                  "de": "Aus"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "horizontal_swing_is",
+        "title": {
+          "en": "Horizontal swing is !{{|not}}",
+          "nl": "Horizontale swing is !{{|niet}}",
+          "de": "Horizontaler swing ist !{{|nicht}}"
+        },
+        "titleFormatted": {
+          "en": "Horizontal swing is !{{|not}} [[horizontalSwing]]",
+          "nl": "Horizontale swing is !{{|niet}} [[horizontalSwing]]",
+          "de": "Horizontaler swing ist !{{|nicht}} [[horizontalSwing]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=airconditioning&capabilities=horizontal_swing"
+          },
+          {
+            "type": "dropdown",
+            "name": "horizontalSwing",
+            "title": {
+              "en": "Horizontal swing",
+              "nl": "Horizontale swing",
+              "de": "Horizontaler swing"
+            },
+            "values": [
+              {
+                "id": "ON",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan",
+                  "de": "Ein"
+                }
+              },
+              {
+                "id": "AUTO",
+                "label": {
+                  "en": "Auto",
+                  "nl": "Automatisch",
+                  "de": "Automatisch"
+                }
+              },
+              {
+                "id": "LEFT",
+                "label": {
+                  "en": "Left",
+                  "nl": "Links",
+                  "de": "Links"
+                }
+              },
+              {
+                "id": "MID_LEFT",
+                "label": {
+                  "en": "Mid-Left",
+                  "nl": "Midden-Links",
+                  "de": "Mitte-Links"
+                }
+              },
+              {
+                "id": "MID",
+                "label": {
+                  "en": "Mid",
+                  "nl": "Midden",
+                  "de": "Mitte"
+                }
+              },
+              {
+                "id": "MID_RIGHT",
+                "label": {
+                  "en": "Mid-Right",
+                  "nl": "Midden-Rechts",
+                  "de": "Mitte-Rechts"
+                }
+              },
+              {
+                "id": "RIGHT",
+                "label": {
+                  "en": "Right",
+                  "nl": "Rechts",
+                  "de": "Rechts"
+                }
+              },
+              {
+                "id": "OFF",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit",
+                  "de": "Aus"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "hot_water_onoff_is",
+        "title": {
+          "en": "Hot water is !{{on|off}}",
+          "nl": "Warm water is !{{ingeschakeld|uitgeschakeld}}",
+          "de": "Warmwasser ist !{{eingeschaltet|abgeschaltet}}"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=thermostat&capabilities=hot_water_onoff"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "id": "set_boost_heating",
+        "title": {
+          "en": "Boost heating",
+          "nl": "Maximaal verwarmen",
+          "de": "Maximale Erwärmung"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device"
+            },
+            "filter": "driver_id=thermostat|valve&capabilities=target_temperature"
+          }
+        ]
+      },
+      {
+        "id": "set_power_mode_off",
+        "title": {
+          "en": "Turn off",
+          "nl": "Zet uit",
+          "de": "Ausschalten"
+        },
+        "duration": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device"
+            },
+            "filter": "driver_id=thermostat|valve&capabilities=power_mode"
+          }
+        ]
+      },
+      {
+        "id": "set_power_mode_on",
+        "title": {
+          "en": "Turn on",
+          "nl": "Zet aan",
+          "de": "Einschalten"
+        },
+        "duration": true,
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device"
+            },
+            "filter": "driver_id=thermostat|valve&capabilities=power_mode"
+          }
+        ]
+      },
+      {
+        "id": "set_smart_schedule",
+        "title": {
+          "en": "Resume Smart Schedule",
+          "nl": "Slimme Schema hervatten",
+          "de": "Intelligenten Zeitplan fortsetzen"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device"
+            },
+            "filter": "driver_id=airconditioning|thermostat|valve"
+          }
+        ]
+      },
+      {
+        "id": "set_ac_mode",
+        "duration": true,
+        "title": {
+          "en": "Set Air conditioning mode to",
+          "nl": "Zet Airco modus naar",
+          "de": "Stell den Klimaanlagenmodus auf"
+        },
+        "titleFormatted": {
+          "en": "Set Air conditioning mode to [[acMode]]",
+          "nl": "Zet Airco modus naar [[acMode]]",
+          "de": "Stell den Klimaanlagenmodus auf [[acMode]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=airconditioning&capabilities=ac_mode"
+          },
+          {
+            "type": "dropdown",
+            "name": "acMode",
+            "title": {
+              "en": "Mode",
+              "nl": "Modus",
+              "de": "Modus"
+            },
+            "values": [
+              {
+                "id": "COOL",
+                "label": {
+                  "en": "Cool"
+                }
+              },
+              {
+                "id": "HEAT",
+                "label": {
+                  "en": "Heat"
+                }
+              },
+              {
+                "id": "DRY",
+                "label": {
+                  "en": "Dry"
+                }
+              },
+              {
+                "id": "FAN",
+                "label": {
+                  "en": "Fan"
+                }
+              },
+              {
+                "id": "AUTO",
+                "label": {
+                  "en": "Auto"
+                }
+              },
+              {
+                "id": "OFF",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit",
+                  "de": "Aus"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "set_fan_speed",
+        "duration": true,
+        "title": {
+          "en": "Set fan speed to",
+          "nl": "Zet ventilator snelheid naar",
+          "de": "Stell die Lüftergeschwindigkeit auf"
+        },
+        "titleFormatted": {
+          "en": "Set fan speed to [[fanSpeed]]",
+          "nl": "Zet ventilator snelheid naar [[fanSpeed]]",
+          "de": "Stell die Lüftergeschwindigkeit auf [[fanSpeed]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=airconditioning&capabilities=fan_speed"
+          },
+          {
+            "type": "dropdown",
+            "name": "fanSpeed",
+            "title": {
+              "en": "Fan speed",
+              "nl": "Ventilator snelheid",
+              "de": "Lüftergeschwindigkeit"
+            },
+            "values": [
+              {
+                "id": "AUTO",
+                "label": {
+                  "en": "Auto",
+                  "nl": "Automatisch",
+                  "de": "Automatisch"
+                }
+              },
+              {
+                "id": "LOW",
+                "label": {
+                  "en": "Low",
+                  "nl": "Laag",
+                  "de": "Niedrig"
+                }
+              },
+              {
+                "id": "MIDDLE",
+                "label": {
+                  "en": "Middle",
+                  "nl": "Middel",
+                  "de": "Mitte"
+                }
+              },
+              {
+                "id": "HIGH",
+                "label": {
+                  "en": "High",
+                  "nl": "Hoog",
+                  "de": "Hoch"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "set_fan_level",
+        "duration": true,
+        "title": {
+          "en": "Set fan speed to",
+          "nl": "Zet ventilator snelheid naar",
+          "de": "Stell die Lüftergeschwindigkeit auf"
+        },
+        "titleFormatted": {
+          "en": "Set fan speed to [[fanLevel]]",
+          "nl": "Zet ventilator snelheid naar [[fanLevel]]",
+          "de": "Stell die Lüftergeschwindigkeit auf [[fanLevel]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=airconditioning&capabilities=fan_level"
+          },
+          {
+            "type": "dropdown",
+            "name": "fanLevel",
+            "title": {
+              "en": "Fan speed",
+              "nl": "Ventilator snelheid",
+              "de": "Lüftergeschwindigkeit"
+            },
+            "values": [
+              {
+                "id": "AUTO",
+                "label": {
+                  "en": "Auto",
+                  "nl": "Automatisch",
+                  "de": "Automatisch"
+                }
+              },
+              {
+                "id": "SILENT",
+                "label": {
+                  "en": "Silent",
+                  "nl": "Stil",
+                  "de": "Leise"
+                }
+              },
+              {
+                "id": "LEVEL1",
+                "label": {
+                  "en": "Level 1",
+                  "nl": "Niveau 1",
+                  "de": "Level 1"
+                }
+              },
+              {
+                "id": "LEVEL2",
+                "label": {
+                  "en": "Level 2",
+                  "nl": "Niveau 2",
+                  "de": "Level 2"
+                }
+              },
+              {
+                "id": "LEVEL3",
+                "label": {
+                  "en": "Level 3",
+                  "nl": "Niveau 3",
+                  "de": "Level 3"
+                }
+              },
+              {
+                "id": "LEVEL4",
+                "label": {
+                  "en": "Level 4",
+                  "nl": "Niveau 4",
+                  "de": "Level 4"
+                }
+              },
+              {
+                "id": "LEVEL5",
+                "label": {
+                  "en": "Level 5",
+                  "nl": "Niveau 5",
+                  "de": "Level 5"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "set_swing",
+        "duration": true,
+        "title": {
+          "en": "Set swing to",
+          "nl": "Zet swing naar",
+          "de": "Stell swing auf"
+        },
+        "titleFormatted": {
+          "en": "Set swing to [[swing]]",
+          "nl": "Zet swing naar [[swing]]",
+          "de": "Stell swing auf [[swing]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=airconditioning&capabilities=swing"
+          },
+          {
+            "type": "dropdown",
+            "name": "swing",
+            "title": {
+              "en": "Swing",
+              "nl": "Swing",
+              "de": "Swing"
+            },
+            "values": [
+              {
+                "id": "ON",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan",
+                  "de": "Ein"
+                }
+              },
+              {
+                "id": "OFF",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit",
+                  "de": "Aus"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "set_vertical_swing",
+        "duration": true,
+        "title": {
+          "en": "Set vertical swing to",
+          "nl": "Zet verticale swing naar",
+          "de": "Stell vertikaler swing auf"
+        },
+        "titleFormatted": {
+          "en": "Set vertical swing to [[verticalSwing]]",
+          "nl": "Zet verticale swing naar [[verticalSwing]]",
+          "de": "Stell vertikaler swing auf [[verticalSwing]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=airconditioning&capabilities=vertical_swing"
+          },
+          {
+            "type": "dropdown",
+            "name": "verticalSwing",
+            "title": {
+              "en": "Vertical swing",
+              "nl": "Verticale swing",
+              "de": "Vertikaler swing"
+            },
+            "values": [
+              {
+                "id": "ON",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan",
+                  "de": "Ein"
+                }
+              },
+              {
+                "id": "AUTO",
+                "label": {
+                  "en": "Auto",
+                  "nl": "Automatisch",
+                  "de": "Automatisch"
+                }
+              },
+              {
+                "id": "UP",
+                "label": {
+                  "en": "Up",
+                  "nl": "Omhoog",
+                  "de": "Oben"
+                }
+              },
+              {
+                "id": "MID_UP",
+                "label": {
+                  "en": "Mid-Up",
+                  "nl": "Midden-Omhoog",
+                  "de": "Mitte-Oben"
+                }
+              },
+              {
+                "id": "MID",
+                "label": {
+                  "en": "Mid",
+                  "nl": "Midden",
+                  "de": "Mitte"
+                }
+              },
+              {
+                "id": "MID_DOWN",
+                "label": {
+                  "en": "Mid-Down",
+                  "nl": "Midden-Beneden",
+                  "de": "Mitte-Unten"
+                }
+              },
+              {
+                "id": "DOWN",
+                "label": {
+                  "en": "Down",
+                  "nl": "Beneden",
+                  "de": "Unten"
+                }
+              },
+              {
+                "id": "OFF",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit",
+                  "de": "Aus"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "set_horizontal_swing",
+        "duration": true,
+        "title": {
+          "en": "Set horizontal swing to",
+          "nl": "Zet horizontale swing naar",
+          "de": "Stell horizontaler swing auf"
+        },
+        "titleFormatted": {
+          "en": "Set horizontal swing to [[horizontalSwing]]",
+          "nl": "Zet horizontale swing naar [[horizontalSwing]]",
+          "de": "Stell horizontaler swing auf [[horizontalSwing]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=airconditioning&capabilities=horizontal_swing"
+          },
+          {
+            "type": "dropdown",
+            "name": "horizontalSwing",
+            "title": {
+              "en": "Horizontal swing",
+              "nl": "Horizontale swing",
+              "de": "Horizontaler swing"
+            },
+            "values": [
+              {
+                "id": "ON",
+                "label": {
+                  "en": "On",
+                  "nl": "Aan",
+                  "de": "Ein"
+                }
+              },
+              {
+                "id": "AUTO",
+                "label": {
+                  "en": "Auto",
+                  "nl": "Automatisch",
+                  "de": "Automatisch"
+                }
+              },
+              {
+                "id": "LEFT",
+                "label": {
+                  "en": "Left",
+                  "nl": "Links",
+                  "de": "Links"
+                }
+              },
+              {
+                "id": "MID_LEFT",
+                "label": {
+                  "en": "Mid-Left",
+                  "nl": "Midden-Links",
+                  "de": "Mitte-Links"
+                }
+              },
+              {
+                "id": "MID",
+                "label": {
+                  "en": "Mid",
+                  "nl": "Midden",
+                  "de": "Mitte"
+                }
+              },
+              {
+                "id": "MID_RIGHT",
+                "label": {
+                  "en": "Mid-Right",
+                  "nl": "Midden-Rechts",
+                  "de": "Mitte-Rechts"
+                }
+              },
+              {
+                "id": "RIGHT",
+                "label": {
+                  "en": "Right",
+                  "nl": "Rechts",
+                  "de": "Rechts"
+                }
+              },
+              {
+                "id": "OFF",
+                "label": {
+                  "en": "Off",
+                  "nl": "Uit",
+                  "de": "Aus"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "set_hot_water_onoff_on",
+        "duration": true,
+        "title": {
+          "en": "Switch the Hot Water on",
+          "nl": "Schakel het warm water in",
+          "de": "Schalte das heiße Wasser ein"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=thermostat&capabilities=hot_water_onoff"
+          }
+        ]
+      },
+      {
+        "id": "set_hot_water_onoff_off",
+        "duration": true,
+        "title": {
+          "en": "Switch the Hot Water off",
+          "nl": "Schakel het warm water uit",
+          "de": "Schalte das heiße Wasser aus"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=thermostat&capabilities=hot_water_onoff"
+          }
+        ]
+      },
+      {
+        "id": "set_hot_water_target_temperature",
+        "duration": true,
+        "title": {
+          "en": "Set the Hot Water temperature to",
+          "nl": "Zet de warmwatertemperatuur naar",
+          "de": "Stell die Warmwassertemperatur auf"
+        },
+        "titleFormatted": {
+          "en": "Set the Hot Water temperature to [[hotWaterTemperature]]",
+          "nl": "Zet de warmwatertemperatuur naar [[hotWaterTemperature]]",
+          "de": "Stell die Warmwassertemperatur auf [[hotWaterTemperature]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=thermostat&capabilities=target_temperature.hot_water"
+          },
+          {
+            "name": "hotWaterTemperature",
+            "title": {
+              "en": "Hot Water temperature",
+              "nl": "Warmwatertemperatuur",
+              "de": "Warmwassertemperatur"
+            },
+            "type": "range",
+            "min": 30,
+            "max": 70,
+            "step": 1,
+            "label": "°C",
+            "labelDecimals": 0
+          }
+        ]
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "capabilities": [],
+      "images": {
+        "xlarge": "/drivers/airconditioning/assets/images/xlarge.png",
+        "large": "/drivers/airconditioning/assets/images/large.png",
+        "small": "/drivers/airconditioning/assets/images/small.png"
+      },
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "pair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "class": "thermostat",
+      "name": {
+        "en": "Smart Air conditioning",
+        "nl": "Slimme Airconditioning",
+        "de": "Smarte Klimaanlage"
+      },
+      "id": "airconditioning",
+      "settings": [
+        {
+          "id": "manual-control",
+          "type": "group",
+          "label": {
+            "en": "Operation",
+            "nl": "Bediening",
+            "de": "Betrieb"
+          },
+          "collapsed": false,
+          "children": [
+            {
+              "id": "overlayMode",
+              "type": "dropdown",
+              "label": {
+                "en": "Manual control",
+                "nl": "Handmatige bediening",
+                "de": "Manuelle Kontrolle"
+              },
+              "value": "MANUAL",
+              "values": [
+                {
+                  "id": "MANUAL",
+                  "label": {
+                    "en": "Until ended by user",
+                    "nl": "Tot beëindiging  gebruiker",
+                    "de": "Bis vom Benutzer beendet"
+                  }
+                },
+                {
+                  "id": "TIMER",
+                  "label": {
+                    "en": "Timer"
+                  }
+                },
+                {
+                  "id": "TADO_MODE",
+                  "label": {
+                    "en": "Until next change",
+                    "nl": "Tot de volgende wijziging",
+                    "de": "Bis zur nächsten Änderung"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "This sets the default behaviour when operating the device.",
+                "nl": "Dit stelt het standaardgedrag in bij het bedienen van het apparaat.",
+                "de": "Damit wird das Standardverhalten beim Betrieb des Geräts festgelegt."
+              }
+            },
+            {
+              "id": "timerDuration",
+              "type": "number",
+              "label": {
+                "en": "Timer duration",
+                "nl": "Timerduur",
+                "de": "Timer-Dauer"
+              },
+              "value": 10,
+              "min": 1,
+              "max": 1440,
+              "units": {
+                "en": "minutes",
+                "nl": "minuten",
+                "de": "Minuten"
+              },
+              "hint": {
+                "en": "This sets the default duration when selecting: Timer.",
+                "nl": "Dit stelt de standaard duur in bij het selecteren van: Timer.",
+                "de": "Dies legt die Standarddauer bei der Auswahl fest: Timer."
+              }
+            }
+          ]
+        },
+        {
+          "id": "serial-number",
+          "type": "group",
+          "label": {
+            "en": "Device",
+            "nl": "Apparaat",
+            "de": "Gerät"
+          },
+          "collapsed": false,
+          "children": [
+            {
+              "id": "serialNumber",
+              "type": "label",
+              "label": {
+                "en": "Serial Number",
+                "nl": "Serienummer",
+                "de": "Seriennummer"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "capabilities": [],
+      "images": {
+        "xlarge": "/drivers/thermostat/assets/images/xlarge.png",
+        "large": "/drivers/thermostat/assets/images/large.png",
+        "small": "/drivers/thermostat/assets/images/small.png"
+      },
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "pair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "class": "thermostat",
+      "name": {
+        "en": "Smart Thermostat",
+        "nl": "Slimme Thermostaat",
+        "de": "Smartes Thermostat"
+      },
+      "id": "thermostat",
+      "settings": [
+        {
+          "id": "manual-control",
+          "type": "group",
+          "label": {
+            "en": "Operation",
+            "nl": "Bediening",
+            "de": "Betrieb"
+          },
+          "collapsed": false,
+          "children": [
+            {
+              "id": "overlayMode",
+              "type": "dropdown",
+              "label": {
+                "en": "Manual control",
+                "nl": "Handmatige bediening",
+                "de": "Manuelle Kontrolle"
+              },
+              "value": "MANUAL",
+              "values": [
+                {
+                  "id": "MANUAL",
+                  "label": {
+                    "en": "Until ended by user",
+                    "nl": "Tot beëindiging  gebruiker",
+                    "de": "Bis vom Benutzer beendet"
+                  }
+                },
+                {
+                  "id": "TIMER",
+                  "label": {
+                    "en": "Timer"
+                  }
+                },
+                {
+                  "id": "TADO_MODE",
+                  "label": {
+                    "en": "Until next change",
+                    "nl": "Tot de volgende wijziging",
+                    "de": "Bis zur nächsten Änderung"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "This sets the default behaviour when operating the device.",
+                "nl": "Dit stelt het standaardgedrag in bij het bedienen van het apparaat.",
+                "de": "Damit wird das Standardverhalten beim Betrieb des Geräts festgelegt."
+              }
+            },
+            {
+              "id": "timerDuration",
+              "type": "number",
+              "label": {
+                "en": "Timer duration",
+                "nl": "Timerduur",
+                "de": "Timer-Dauer"
+              },
+              "value": 10,
+              "min": 1,
+              "max": 1440,
+              "units": {
+                "en": "minutes",
+                "nl": "minuten",
+                "de": "Minuten"
+              },
+              "hint": {
+                "en": "This sets the default duration when selecting: Timer.",
+                "nl": "Dit stelt de standaard duur in bij het selecteren van: Timer.",
+                "de": "Dies legt die Standarddauer bei der Auswahl fest: Timer."
+              }
+            }
+          ]
+        },
+        {
+          "id": "serial-number",
+          "type": "group",
+          "label": {
+            "en": "Device",
+            "nl": "Apparaat",
+            "de": "Gerät"
+          },
+          "collapsed": false,
+          "children": [
+            {
+              "id": "serialNumber",
+              "type": "label",
+              "label": {
+                "en": "Serial Number",
+                "nl": "Serienummer",
+                "de": "Seriennummer"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "capabilities": [],
+      "images": {
+        "xlarge": "/drivers/valve/assets/images/xlarge.png",
+        "large": "/drivers/valve/assets/images/large.png",
+        "small": "/drivers/valve/assets/images/small.png"
+      },
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "pair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "class": "thermostat",
+      "name": {
+        "en": "Smart Radiator Thermostat",
+        "nl": "Slimme Radiatorknop",
+        "de": "Smartes Heizkörper-Thermostat"
+      },
+      "id": "valve",
+      "settings": [
+        {
+          "id": "manual-control",
+          "type": "group",
+          "label": {
+            "en": "Operation",
+            "nl": "Bediening",
+            "de": "Betrieb"
+          },
+          "collapsed": false,
+          "children": [
+            {
+              "id": "overlayMode",
+              "type": "dropdown",
+              "label": {
+                "en": "Manual control",
+                "nl": "Handmatige bediening",
+                "de": "Manuelle Kontrolle"
+              },
+              "value": "MANUAL",
+              "values": [
+                {
+                  "id": "MANUAL",
+                  "label": {
+                    "en": "Until ended by user",
+                    "nl": "Tot beëindiging  gebruiker",
+                    "de": "Bis vom Benutzer beendet"
+                  }
+                },
+                {
+                  "id": "TIMER",
+                  "label": {
+                    "en": "Timer"
+                  }
+                },
+                {
+                  "id": "TADO_MODE",
+                  "label": {
+                    "en": "Until next change",
+                    "nl": "Tot de volgende wijziging",
+                    "de": "Bis zur nächsten Änderung"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "This sets the default behaviour when operating the device.",
+                "nl": "Dit stelt het standaardgedrag in bij het bedienen van het apparaat.",
+                "de": "Damit wird das Standardverhalten beim Betrieb des Geräts festgelegt."
+              }
+            },
+            {
+              "id": "timerDuration",
+              "type": "number",
+              "label": {
+                "en": "Timer duration",
+                "nl": "Timerduur",
+                "de": "Timer-Dauer"
+              },
+              "value": 10,
+              "min": 1,
+              "max": 1440,
+              "units": {
+                "en": "minutes",
+                "nl": "minuten",
+                "de": "Minuten"
+              },
+              "hint": {
+                "en": "This sets the default duration when selecting: Timer.",
+                "nl": "Dit stelt de standaard duur in bij het selecteren van: Timer.",
+                "de": "Dies legt die Standarddauer bei der Auswahl fest: Timer."
+              }
+            }
+          ]
+        },
+        {
+          "id": "serial-number",
+          "type": "group",
+          "label": {
+            "en": "Device",
+            "nl": "Apparaat",
+            "de": "Gerät"
+          },
+          "collapsed": false,
+          "children": [
+            {
+              "id": "serialNumber",
+              "type": "label",
+              "label": {
+                "en": "Serial Number",
+                "nl": "Serienummer",
+                "de": "Seriennummer"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "capabilities": {
+    "ac_light": {
+      "title": {
+        "en": "Light ",
+        "nl": "Licht",
+        "de": "Licht"
+      },
+      "type": "enum",
+      "getable": true,
+      "setable": true,
+      "duration": true,
+      "uiComponent": "picker",
+      "values": [
+        {
+          "id": "ON",
+          "title": {
+            "en": "On",
+            "nl": "Aan",
+            "de": "Ein"
+          }
+        },
+        {
+          "id": "OFF",
+          "title": {
+            "en": "Off",
+            "nl": "Uit",
+            "de": "Aus"
+          }
+        }
+      ]
+    },
+    "ac_mode": {
+      "title": {
+        "en": "Mode",
+        "nl": "Modus",
+        "de": "Modus"
+      },
+      "type": "enum",
+      "getable": true,
+      "setable": true,
+      "duration": true,
+      "uiComponent": "picker",
+      "values": [
+        {
+          "id": "COOL",
+          "title": {
+            "en": "Cool"
+          }
+        },
+        {
+          "id": "HEAT",
+          "title": {
+            "en": "Heat"
+          }
+        },
+        {
+          "id": "DRY",
+          "title": {
+            "en": "Dry"
+          }
+        },
+        {
+          "id": "FAN",
+          "title": {
+            "en": "Fan"
+          }
+        },
+        {
+          "id": "AUTO",
+          "title": {
+            "en": "Auto"
+          }
+        },
+        {
+          "id": "OFF",
+          "title": {
+            "en": "Off",
+            "nl": "Uit",
+            "de": "Aus"
+          }
+        }
+      ]
+    },
+    "detect_open_window": {
+      "type": "boolean",
+      "title": {
+        "en": "Open window detection",
+        "nl": "Open raam detectie",
+        "de": "Offenes-Fenster-Erkennung"
+      },
+      "icon": "/assets/capabilities/detect_open_window.svg",
+      "getable": true,
+      "setable": false
+    },
+    "fan_level": {
+      "title": {
+        "en": "Fan level",
+        "nl": "Ventilator niveau",
+        "de": "Lüftergeschwindigkeit"
+      },
+      "type": "enum",
+      "getable": true,
+      "setable": true,
+      "duration": true,
+      "uiComponent": "picker",
+      "values": [
+        {
+          "id": "AUTO",
+          "title": {
+            "en": "Auto",
+            "nl": "Automatisch",
+            "de": "Automatisch"
+          }
+        },
+        {
+          "id": "SILENT",
+          "title": {
+            "en": "Silent",
+            "nl": "Stil",
+            "de": "Leise"
+          }
+        },
+        {
+          "id": "LEVEL1",
+          "title": {
+            "en": "Level 1",
+            "nl": "Niveau 1",
+            "de": "Level 1"
+          }
+        },
+        {
+          "id": "LEVEL2",
+          "title": {
+            "en": "Level 2",
+            "nl": "Niveau 2",
+            "de": "Level 2"
+          }
+        },
+        {
+          "id": "LEVEL3",
+          "title": {
+            "en": "Level 3",
+            "nl": "Niveau 3",
+            "de": "Level 3"
+          }
+        },
+        {
+          "id": "LEVEL4",
+          "title": {
+            "en": "Level 4",
+            "nl": "Niveau 4",
+            "de": "Level 4"
+          }
+        },
+        {
+          "id": "LEVEL5",
+          "title": {
+            "en": "Level 5",
+            "nl": "Niveau 5",
+            "de": "Level 5"
+          }
+        }
+      ]
+    },
+    "fan_speed": {
+      "title": {
+        "en": "Fan Speed",
+        "nl": "Ventilator snelheid",
+        "de": "Lüftergeschwindigkeit"
+      },
+      "type": "enum",
+      "getable": true,
+      "setable": true,
+      "duration": true,
+      "uiComponent": "picker",
+      "values": [
+        {
+          "id": "AUTO",
+          "title": {
+            "en": "Auto",
+            "nl": "Automatisch",
+            "de": "Automatisch"
+          }
+        },
+        {
+          "id": "LOW",
+          "title": {
+            "en": "Low",
+            "nl": "Laag",
+            "de": "Niedrig"
+          }
+        },
+        {
+          "id": "MIDDLE",
+          "title": {
+            "en": "Middle",
+            "nl": "Middel",
+            "de": "Mitte"
+          }
+        },
+        {
+          "id": "HIGH",
+          "title": {
+            "en": "High",
+            "nl": "Hoog",
+            "de": "Hoch"
+          }
+        }
+      ]
+    },
+    "heating_power": {
+      "type": "number",
+      "title": {
+        "en": "Heating capacity",
+        "nl": "Verwarming capaciteit",
+        "de": "Heizkapazität"
+      },
+      "icon": "/assets/capabilities/heating_power.svg",
+      "getable": true,
+      "setable": false,
+      "units": {
+        "en": "%"
+      },
+      "step": 1,
+      "min": 0,
+      "max": 100
+    },
+    "horizontal_swing": {
+      "title": {
+        "en": "Horizontal swing",
+        "nl": "Horizontale swing",
+        "de": "Horizontaler swing"
+      },
+      "type": "enum",
+      "getable": true,
+      "setable": true,
+      "duration": true,
+      "uiComponent": "picker",
+      "values": [
+        {
+          "id": "ON",
+          "title": {
+            "en": "On",
+            "nl": "Aan",
+            "de": "Ein"
+          }
+        },
+        {
+          "id": "AUTO",
+          "title": {
+            "en": "Auto",
+            "nl": "Automatisch",
+            "de": "Automatisch"
+          }
+        },
+        {
+          "id": "LEFT",
+          "title": {
+            "en": "Left",
+            "nl": "Links",
+            "de": "Links"
+          }
+        },
+        {
+          "id": "MID_LEFT",
+          "title": {
+            "en": "Mid-Left",
+            "nl": "Midden-Links",
+            "de": "Mitte-Links"
+          }
+        },
+        {
+          "id": "MID",
+          "title": {
+            "en": "Mid",
+            "nl": "Midden",
+            "de": "Mitte"
+          }
+        },
+        {
+          "id": "MID_RIGHT",
+          "title": {
+            "en": "Mid-Right",
+            "nl": "Midden-Rechts",
+            "de": "Mitte-Rechts"
+          }
+        },
+        {
+          "id": "RIGHT",
+          "title": {
+            "en": "Right",
+            "nl": "Rechts",
+            "de": "Rechts"
+          }
+        },
+        {
+          "id": "OFF",
+          "title": {
+            "en": "Off",
+            "nl": "Uit",
+            "de": "Aus"
+          }
+        }
+      ]
+    },
+    "hot_water_onoff": {
+      "type": "boolean",
+      "title": {
+        "en": "Hot Water",
+        "nl": "Warm Water",
+        "de": "Warmwasser"
+      },
+      "getable": true,
+      "setable": true
+    },
+    "power_mode": {
+      "title": {
+        "en": "Thermostat mode",
+        "nl": "Thermostaat modus",
+        "de": "Thermostat-Modus"
+      },
+      "type": "enum",
+      "getable": true,
+      "setable": true,
+      "duration": true,
+      "uiComponent": "picker",
+      "values": [
+        {
+          "id": "ON",
+          "title": {
+            "en": "On",
+            "nl": "Aan",
+            "de": "Ein"
+          }
+        },
+        {
+          "id": "OFF",
+          "title": {
+            "en": "Off",
+            "nl": "Uit",
+            "de": "Aus"
+          }
+        }
+      ]
+    },
+    "swing": {
+      "title": {
+        "en": "Swing mode",
+        "nl": "Swing-modus",
+        "de": "Swing-Modus"
+      },
+      "type": "enum",
+      "getable": true,
+      "setable": true,
+      "duration": true,
+      "uiComponent": "picker",
+      "values": [
+        {
+          "id": "ON",
+          "title": {
+            "en": "On",
+            "nl": "Aan",
+            "de": "Ein"
+          }
+        },
+        {
+          "id": "OFF",
+          "title": {
+            "en": "Off",
+            "nl": "Uit",
+            "de": "Aus"
+          }
+        }
+      ]
+    },
+    "vertical_swing": {
+      "title": {
+        "en": "Vertical swing",
+        "nl": "Verticale swing",
+        "de": "Vertikaler swing"
+      },
+      "type": "enum",
+      "getable": true,
+      "setable": true,
+      "duration": true,
+      "uiComponent": "picker",
+      "values": [
+        {
+          "id": "ON",
+          "title": {
+            "en": "On",
+            "nl": "Aan",
+            "de": "Ein"
+          }
+        },
+        {
+          "id": "AUTO",
+          "title": {
+            "en": "Auto",
+            "nl": "Automatisch",
+            "de": "Automatisch"
+          }
+        },
+        {
+          "id": "UP",
+          "title": {
+            "en": "Up",
+            "nl": "Omhoog",
+            "de": "Oben"
+          }
+        },
+        {
+          "id": "MID_UP",
+          "title": {
+            "en": "Mid-Up",
+            "nl": "Midden-Omhoog",
+            "de": "Mitte-Oben"
+          }
+        },
+        {
+          "id": "MID",
+          "title": {
+            "en": "Mid",
+            "nl": "Midden",
+            "de": "Mitte"
+          }
+        },
+        {
+          "id": "MID_DOWN",
+          "title": {
+            "en": "Mid-Down",
+            "nl": "Midden-Beneden",
+            "de": "Mitte-Unten"
+          }
+        },
+        {
+          "id": "DOWN",
+          "title": {
+            "en": "Down",
+            "nl": "Beneden",
+            "de": "Unten"
+          }
+        },
+        {
+          "id": "OFF",
+          "title": {
+            "en": "Off",
+            "nl": "Uit",
+            "de": "Aus"
+          }
+        }
+      ]
+    }
+  }
+}
