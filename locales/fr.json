@@ -1,0 +1,73 @@
+{
+  "deviceNames": {
+    "thermostat": "Thermostat Intelligent",
+    "valve": "Thermostat de Radiateur Intelligent",
+    "ac": "Contrôle de Clim Intelligent",
+    "hotWater": "Eau chaude"
+  },
+  "acModes": {
+    "COOL": "Froid",
+    "HEAT": "Chaud",
+    "DRY": "Sec",
+    "FAN": "Ventilateur",
+    "AUTO": "Auto",
+    "OFF": "Éteint"
+  },
+  "fanSpeeds": {
+    "AUTO": "Auto",
+    "LOW": "Bas",
+    "MIDDLE": "Moyen",
+    "HIGH": "Élevé"
+  },
+  "fanLevels": {
+    "AUTO": "Auto",
+    "SILENT": "Silencieux",
+    "LEVEL1": "Niveau 1",
+    "LEVEL2": "Niveau 2",
+    "LEVEL3": "Niveau 3",
+    "LEVEL4": "Niveau 4",
+    "LEVEL5": "Niveau 5"
+  },
+  "swings": {
+    "ON": "Allumé",
+    "OFF": "Éteint"
+  },
+  "verticalSwings": {
+    "ON": "Allumé",
+    "AUTO": "Auto",
+    "UP": "Haut",
+    "MID_UP": "Milieu-Haut",
+    "MID": "Milieu",
+    "MID_DOWN": "Milieu-Bas",
+    "DOWN": "Bas",
+    "OFF": "Éteint"
+  },
+  "horizontalSwings": {
+    "ON": "Allumé",
+    "AUTO": "Auto",
+    "LEFT": "Gauche",
+    "MID_LEFT": "Milieu-Gauche",
+    "MID": "Milieu",
+    "MID_RIGHT": "Milieu-Droite",
+    "RIGHT": "Droite",
+    "OFF": "Éteint"
+  },
+  "errors": {
+    "notConnected": "L'appareil n'est pas connecté.",
+    "notFound": "L'appareil est introuvable.",
+    "setTempRange": "La température définie est hors de portée. Minimum : __min__, Maximum : __max__.",
+    "no_fanSpeeds": "La vitesse du ventilateur n'est pas sélectionnable dans ce mode.",
+    "incorrect_fanSpeeds": "La vitesse de ventilateur sélectionnée n'est pas disponible pour ce mode. Valeurs autorisées : __values__.",
+    "no_fanLevels": "La vitesse du ventilateur n'est pas sélectionnable dans ce mode.",
+    "incorrect_fanLevels": "La vitesse de ventilateur sélectionnée n'est pas disponible pour ce mode. Valeurs autorisées : __values__.",
+    "no_swings": "L'oscillation n'est pas sélectionnable dans ce mode.",
+    "incorrect_swings": "L'oscillation sélectionnée n'est pas disponible pour ce mode. Valeurs autorisées : __values__.",
+    "no_verticalSwings": "L'oscillation n'est pas sélectionnable dans ce mode.",
+    "incorrect_verticalSwings": "L'oscillation sélectionnée n'est pas disponible pour ce mode. Valeurs autorisées : __values__.",
+    "no_horizontalSwings": "L'oscillation n'est pas sélectionnable dans ce mode.",
+    "incorrect_horizontalSwings": "L'oscillation sélectionnée n'est pas disponible pour ce mode. Valeurs autorisées : __values__.",
+    "setDurationRange": "La durée maximale est de 24 heures.",
+    "incorrectCapabilities": "Les paramètres sélectionnés ne sont pas corrects.",
+    "invalid_refresh_token": "Il semble que le jeton de rafraîchissement soit invalide. Veuillez réparer votre appareil Tado."
+  }
+}

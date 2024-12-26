@@ -65,6 +65,7 @@
     "no_horizontalSwings": "Swing is niet selecteerbaar in deze modus.",
     "incorrect_horizontalSwings": "De geselecteerde swing is niet beschikbaar voor deze modus. De beschikbare opties zijn: __values__.",
     "setDurationRange": "De maximale tijd is 24 uur.",
-    "incorrectCapabilities": "De gekozen instellingen zijn niet correct."
+    "incorrectCapabilities": "De gekozen instellingen zijn niet correct.",
+    "invalid_refresh_token": "Het refresh token is ongeldig. Repareer je Tado apparaat om dit te verhelpen."
   }
 }

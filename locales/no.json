@@ -1,0 +1,73 @@
+{
+  "deviceNames": {
+    "thermostat": "Smart Termostat",
+    "valve": "Smart Radiatortermostat",
+    "ac": "Smart AC-kontroll",
+    "hotWater": "Varmt vann"
+  },
+  "acModes": {
+    "COOL": "Kjøling",
+    "HEAT": "Varme",
+    "DRY": "Tørk",
+    "FAN": "Vifte",
+    "AUTO": "Auto",
+    "OFF": "Av"
+  },
+  "fanSpeeds": {
+    "AUTO": "Auto",
+    "LOW": "Lav",
+    "MIDDLE": "Middels",
+    "HIGH": "Høy"
+  },
+  "fanLevels": {
+    "AUTO": "Auto",
+    "SILENT": "Stille",
+    "LEVEL1": "Nivå 1",
+    "LEVEL2": "Nivå 2",
+    "LEVEL3": "Nivå 3",
+    "LEVEL4": "Nivå 4",
+    "LEVEL5": "Nivå 5"
+  },
+  "swings": {
+    "ON": "På",
+    "OFF": "Av"
+  },
+  "verticalSwings": {
+    "ON": "På",
+    "AUTO": "Auto",
+    "UP": "Opp",
+    "MID_UP": "Midt-opp",
+    "MID": "Midt",
+    "MID_DOWN": "Midt-ned",
+    "DOWN": "Ned",
+    "OFF": "Av"
+  },
+  "horizontalSwings": {
+    "ON": "På",
+    "AUTO": "Auto",
+    "LEFT": "Venstre",
+    "MID_LEFT": "Midt-venstre",
+    "MID": "Midt",
+    "MID_RIGHT": "Midt-høyre",
+    "RIGHT": "Høyre",
+    "OFF": "Av"
+  },
+  "errors": {
+    "notConnected": "Enheten er ikke koblet til.",
+    "notFound": "Enheten kan ikke bli funnet.",
+    "setTempRange": "Den innstilte temperaturen er utenfor rekkevidde. Minimum: __min__, Maksimum: __max__.",
+    "no_fanSpeeds": "Viftehastighet er ikke valgfri i denne modusen.",
+    "incorrect_fanSpeeds": "Den valgte viftehastigheten er ikke tilgjengelig for denne modusen. Tillatte verdier: __values__.",
+    "no_fanLevels": "Viftehastighet er ikke valgfri i denne modusen.",
+    "incorrect_fanLevels": "Den valgte viftehastigheten er ikke tilgjengelig for denne modusen. Tillatte verdier: __values__.",
+    "no_swings": "Sving er ikke valgfri i denne modusen.",
+    "incorrect_swings": "Den valgte svingingen er ikke tilgjengelig for denne modusen. Tillatte verdier: __values__.",
+    "no_verticalSwings": "Sving er ikke valgfri i denne modusen.",
+    "incorrect_verticalSwings": "Den valgte vertikale svingingen er ikke tilgjengelig for denne modusen. Tillatte verdier: __values__.",
+    "no_horizontalSwings": "Sving er ikke valgfri i denne modusen.",
+    "incorrect_horizontalSwings": "Den valgte horisontale svingingen er ikke tilgjengelig for denne modusen. Tillatte verdier: __values__.",
+    "setDurationRange": "Maksimum varighet er 24 timer.",
+    "incorrectCapabilities": "De valgte innstillingene er ikke korrekte.",
+    "invalid_refresh_token": "Det ser ut som refresh token er ugyldig. Vennligst reparer din Tado-enhet."
+  }
+}

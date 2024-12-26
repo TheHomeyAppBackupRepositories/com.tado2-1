@@ -1,0 +1,73 @@
+{
+  "deviceNames": {
+    "thermostat": "Termostato Intelligente",
+    "valve": "Termostato Intelligente per Radiatore",
+    "ac": "Controllo Intelligente AC",
+    "hotWater": "Acqua Calda"
+  },
+  "acModes": {
+    "COOL": "Raffredda",
+    "HEAT": "Riscalda",
+    "DRY": "Asciuga",
+    "FAN": "Ventola",
+    "AUTO": "Auto",
+    "OFF": "Spento"
+  },
+  "fanSpeeds": {
+    "AUTO": "Auto",
+    "LOW": "Basso",
+    "MIDDLE": "Medio",
+    "HIGH": "Alto"
+  },
+  "fanLevels": {
+    "AUTO": "Auto",
+    "SILENT": "Silenzioso",
+    "LEVEL1": "Livello 1",
+    "LEVEL2": "Livello 2",
+    "LEVEL3": "Livello 3",
+    "LEVEL4": "Livello 4",
+    "LEVEL5": "Livello 5"
+  },
+  "swings": {
+    "ON": "Acceso",
+    "OFF": "Spento"
+  },
+  "verticalSwings": {
+    "ON": "Acceso",
+    "AUTO": "Auto",
+    "UP": "Su",
+    "MID_UP": "Mezzo-Su",
+    "MID": "Mezzo",
+    "MID_DOWN": "Mezzo-Giù",
+    "DOWN": "Giù",
+    "OFF": "Spento"
+  },
+  "horizontalSwings": {
+    "ON": "Acceso",
+    "AUTO": "Auto",
+    "LEFT": "Sinistra",
+    "MID_LEFT": "Mezzo-Sinistra",
+    "MID": "Mezzo",
+    "MID_RIGHT": "Mezzo-Destra",
+    "RIGHT": "Destra",
+    "OFF": "Spento"
+  },
+  "errors": {
+    "notConnected": "Il dispositivo non è connesso.",
+    "notFound": "Il dispositivo non può essere trovato.",
+    "setTempRange": "La temperatura impostata è fuori dal range. Minimo: __min__, Massimo: __max__.",
+    "no_fanSpeeds": "La velocità della ventola non è selezionabile in questa modalità.",
+    "incorrect_fanSpeeds": "La velocità della ventola selezionata non è disponibile per questa modalità. Valori consentiti: __values__.",
+    "no_fanLevels": "La velocità della ventola non è selezionabile in questa modalità.",
+    "incorrect_fanLevels": "La velocità della ventola selezionata non è disponibile per questa modalità. Valori consentiti: __values__.",
+    "no_swings": "Il movimento della ventola non è selezionabile in questa modalità.",
+    "incorrect_swings": "Il movimento della ventola selezionato non è disponibile per questa modalità. Valori consentiti: __values__.",
+    "no_verticalSwings": "Il movimento verticale non è selezionabile in questa modalità.",
+    "incorrect_verticalSwings": "Il movimento verticale selezionato non è disponibile per questa modalità. Valori consentiti: __values__.",
+    "no_horizontalSwings": "Il movimento orizzontale non è selezionabile in questa modalità.",
+    "incorrect_horizontalSwings": "Il movimento orizzontale selezionato non è disponibile per questa modalità. Valori consentiti: __values__.",
+    "setDurationRange": "La durata massima è di 24 ore.",
+    "incorrectCapabilities": "Le impostazioni selezionate non sono corrette.",
+    "invalid_refresh_token": "Sembra che il token di aggiornamento sia non valido. Per favore, ripara il tuo dispositivo Tado."
+  }
+}

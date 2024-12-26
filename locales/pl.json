@@ -1,0 +1,73 @@
+{
+  "deviceNames": {
+    "thermostat": "Inteligentny Termostat",
+    "valve": "Inteligentna Głowica Termostatyczna",
+    "ac": "Inteligentna Klimatyzacja",
+    "hotWater": "Ciepła woda"
+  },
+  "acModes": {
+    "COOL": "Chłodzenie",
+    "HEAT": "Ogrzewanie",
+    "DRY": "Osuszanie",
+    "FAN": "Wentylator",
+    "AUTO": "Auto",
+    "OFF": "Wyłączone"
+  },
+  "fanSpeeds": {
+    "AUTO": "Auto",
+    "LOW": "Niski",
+    "MIDDLE": "Średni",
+    "HIGH": "Wysoki"
+  },
+  "fanLevels": {
+    "AUTO": "Auto",
+    "SILENT": "Cichy",
+    "LEVEL1": "Poziom 1",
+    "LEVEL2": "Poziom 2",
+    "LEVEL3": "Poziom 3",
+    "LEVEL4": "Poziom 4",
+    "LEVEL5": "Poziom 5"
+  },
+  "swings": {
+    "ON": "Włączony",
+    "OFF": "Wyłączony"
+  },
+  "verticalSwings": {
+    "ON": "Włączony",
+    "AUTO": "Auto",
+    "UP": "Góra",
+    "MID_UP": "Środek-Góra",
+    "MID": "Środek",
+    "MID_DOWN": "Środek-Dół",
+    "DOWN": "Dół",
+    "OFF": "Wyłączony"
+  },
+  "horizontalSwings": {
+    "ON": "Włączony",
+    "AUTO": "Auto",
+    "LEFT": "Lewo",
+    "MID_LEFT": "Środek-Lewo",
+    "MID": "Środek",
+    "MID_RIGHT": "Środek-Prawo",
+    "RIGHT": "Prawo",
+    "OFF": "Wyłączony"
+  },
+  "errors": {
+    "notConnected": "Urządzenie nie jest podłączone.",
+    "notFound": "Nie można znaleźć urządzenia.",
+    "setTempRange": "Ustawiona temperatura jest poza zakresem. Minimum: __min__, Maksimum: __max__.",
+    "no_fanSpeeds": "Szybkość wentylatora nie jest dostępna w tym trybie.",
+    "incorrect_fanSpeeds": "Wybrana szybkość wentylatora nie jest dostępna w tym trybie. Dozwolone wartości: __values__.",
+    "no_fanLevels": "Szybkość wentylatora nie jest dostępna w tym trybie.",
+    "incorrect_fanLevels": "Wybrana szybkość wentylatora nie jest dostępna w tym trybie. Dozwolone wartości: __values__.",
+    "no_swings": "Swing nie jest dostępny w tym trybie.",
+    "incorrect_swings": "Wybrany swing nie jest dostępny w tym trybie. Dozwolone wartości: __values__.",
+    "no_verticalSwings": "Swing nie jest dostępny w tym trybie.",
+    "incorrect_verticalSwings": "Wybrany swing nie jest dostępny w tym trybie. Dozwolone wartości: __values__.",
+    "no_horizontalSwings": "Swing nie jest dostępny w tym trybie.",
+    "incorrect_horizontalSwings": "Wybrany swing nie jest dostępny w tym trybie. Dozwolone wartości: __values__.",
+    "setDurationRange": "Maksymalny czas trwania to 24 godziny.",
+    "incorrectCapabilities": "Wybrane ustawienia są niepoprawne.",
+    "invalid_refresh_token": "Wygląda na to, że token odświeżania jest nieprawidłowy. Proszę naprawić swoje urządzenie Tado."
+  }
+}

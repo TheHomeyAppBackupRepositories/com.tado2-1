@@ -1,0 +1,73 @@
+{
+  "deviceNames": {
+    "thermostat": "Termostato Inteligente",
+    "valve": "Termostato de Radiador Inteligente",
+    "ac": "Control Inteligente de AC",
+    "hotWater": "Agua caliente"
+  },
+  "acModes": {
+    "COOL": "Frío",
+    "HEAT": "Calor",
+    "DRY": "Seco",
+    "FAN": "Ventilador",
+    "AUTO": "Auto",
+    "OFF": "Apagado"
+  },
+  "fanSpeeds": {
+    "AUTO": "Auto",
+    "LOW": "Bajo",
+    "MIDDLE": "Medio",
+    "HIGH": "Alto"
+  },
+  "fanLevels": {
+    "AUTO": "Auto",
+    "SILENT": "Silencioso",
+    "LEVEL1": "Nivel 1",
+    "LEVEL2": "Nivel 2",
+    "LEVEL3": "Nivel 3",
+    "LEVEL4": "Nivel 4",
+    "LEVEL5": "Nivel 5"
+  },
+  "swings": {
+    "ON": "Encendido",
+    "OFF": "Apagado"
+  },
+  "verticalSwings": {
+    "ON": "Encendido",
+    "AUTO": "Auto",
+    "UP": "Arriba",
+    "MID_UP": "Medio-Arriba",
+    "MID": "Medio",
+    "MID_DOWN": "Medio-Abajo",
+    "DOWN": "Abajo",
+    "OFF": "Apagado"
+  },
+  "horizontalSwings": {
+    "ON": "Encendido",
+    "AUTO": "Auto",
+    "LEFT": "Izquierda",
+    "MID_LEFT": "Medio-Izquierda",
+    "MID": "Medio",
+    "MID_RIGHT": "Medio-Derecha",
+    "RIGHT": "Derecha",
+    "OFF": "Apagado"
+  },
+  "errors": {
+    "notConnected": "El dispositivo no está conectado.",
+    "notFound": "El dispositivo no se puede encontrar.",
+    "setTempRange": "La temperatura establecida está fuera de rango. Mínimo: __min__, Máximo: __max__.",
+    "no_fanSpeeds": "La velocidad del ventilador no es seleccionable en este modo.",
+    "incorrect_fanSpeeds": "La velocidad del ventilador seleccionada no está disponible para este modo. Valores permitidos: __values__.",
+    "no_fanLevels": "La velocidad del ventilador no es seleccionable en este modo.",
+    "incorrect_fanLevels": "La velocidad del ventilador seleccionada no está disponible para este modo. Valores permitidos: __values__.",
+    "no_swings": "El balanceo no es seleccionable en este modo.",
+    "incorrect_swings": "El balanceo seleccionado no está disponible para este modo. Valores permitidos: __values__.",
+    "no_verticalSwings": "El balanceo no es seleccionable en este modo.",
+    "incorrect_verticalSwings": "El balanceo seleccionado no está disponible para este modo. Valores permitidos: __values__.",
+    "no_horizontalSwings": "El balanceo no es seleccionable en este modo.",
+    "incorrect_horizontalSwings": "El balanceo seleccionado no está disponible para este modo. Valores permitidos: __values__.",
+    "setDurationRange": "La duración máxima es de 24 horas.",
+    "incorrectCapabilities": "La configuración seleccionada no es correcta.",
+    "invalid_refresh_token": "Parece que el token de actualización no es válido. Por favor, repara tu dispositivo Tado."
+  }
+}

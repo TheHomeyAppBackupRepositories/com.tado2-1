@@ -1,0 +1,73 @@
+{
+  "deviceNames": {
+    "thermostat": "Smart Termostat",
+    "valve": "Smart Radiator Termostat",
+    "ac": "Smart AC Control",
+    "hotWater": "Varmt vand"
+  },
+  "acModes": {
+    "COOL": "Køl",
+    "HEAT": "Varme",
+    "DRY": "Tør",
+    "FAN": "Blæser",
+    "AUTO": "Auto",
+    "OFF": "Fra"
+  },
+  "fanSpeeds": {
+    "AUTO": "Auto",
+    "LOW": "Lav",
+    "MIDDLE": "Middel",
+    "HIGH": "Høj"
+  },
+  "fanLevels": {
+    "AUTO": "Auto",
+    "SILENT": "Stille",
+    "LEVEL1": "Niveau 1",
+    "LEVEL2": "Niveau 2",
+    "LEVEL3": "Niveau 3",
+    "LEVEL4": "Niveau 4",
+    "LEVEL5": "Niveau 5"
+  },
+  "swings": {
+    "ON": "Til",
+    "OFF": "Fra"
+  },
+  "verticalSwings": {
+    "ON": "Til",
+    "AUTO": "Auto",
+    "UP": "Op",
+    "MID_UP": "Midt-Op",
+    "MID": "Midt",
+    "MID_DOWN": "Midt-Ned",
+    "DOWN": "Ned",
+    "OFF": "Fra"
+  },
+  "horizontalSwings": {
+    "ON": "Til",
+    "AUTO": "Auto",
+    "LEFT": "Venstre",
+    "MID_LEFT": "Midt-Venstre",
+    "MID": "Midt",
+    "MID_RIGHT": "Midt-Højre",
+    "RIGHT": "Højre",
+    "OFF": "Fra"
+  },
+  "errors": {
+    "notConnected": "Enheden er ikke tilsluttet.",
+    "notFound": "Enheden kan ikke findes.",
+    "setTempRange": "Den indstillede temperatur er uden for rækkevidde. Minimum: __min__, Maksimum: __max__.",
+    "no_fanSpeeds": "Blæserhastighed kan ikke vælges i denne tilstand.",
+    "incorrect_fanSpeeds": "Den valgte blæserhastighed er ikke tilgængelig for denne tilstand. Tilladte værdier: __values__.",
+    "no_fanLevels": "Blæserhastighed kan ikke vælges i denne tilstand.",
+    "incorrect_fanLevels": "Den valgte blæserhastighed er ikke tilgængelig for denne tilstand. Tilladte værdier: __values__.",
+    "no_swings": "Sving kan ikke vælges i denne tilstand.",
+    "incorrect_swings": "Det valgte sving er ikke tilgængeligt for denne tilstand. Tilladte værdier: __values__.",
+    "no_verticalSwings": "Sving kan ikke vælges i denne tilstand.",
+    "incorrect_verticalSwings": "Det valgte sving er ikke tilgængeligt for denne tilstand. Tilladte værdier: __values__.",
+    "no_horizontalSwings": "Sving kan ikke vælges i denne tilstand.",
+    "incorrect_horizontalSwings": "Det valgte sving er ikke tilgængeligt for denne tilstand. Tilladte værdier: __values__.",
+    "setDurationRange": "Maksimal varighed er 24 timer.",
+    "incorrectCapabilities": "De valgte indstillinger er ikke korrekte.",
+    "invalid_refresh_token": "Det ser ud til, at opdateringstoken er ugyldig. Venligst reparer din Tado enhed."
+  }
+}

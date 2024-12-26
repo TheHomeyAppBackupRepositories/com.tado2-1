@@ -1,0 +1,73 @@
+{
+  "deviceNames": {
+    "thermostat": "Smart Termostat",
+    "valve": "Smart Radiatortermostat",
+    "ac": "Smart AC-kontroll",
+    "hotWater": "Varmvatten"
+  },
+  "acModes": {
+    "COOL": "Kyler",
+    "HEAT": "Värmer",
+    "DRY": "Torkar",
+    "FAN": "Fläkt",
+    "AUTO": "Auto",
+    "OFF": "Av"
+  },
+  "fanSpeeds": {
+    "AUTO": "Auto",
+    "LOW": "Låg",
+    "MIDDLE": "Mellan",
+    "HIGH": "Hög"
+  },
+  "fanLevels": {
+    "AUTO": "Auto",
+    "SILENT": "Tyst",
+    "LEVEL1": "Nivå 1",
+    "LEVEL2": "Nivå 2",
+    "LEVEL3": "Nivå 3",
+    "LEVEL4": "Nivå 4",
+    "LEVEL5": "Nivå 5"
+  },
+  "swings": {
+    "ON": "På",
+    "OFF": "Av"
+  },
+  "verticalSwings": {
+    "ON": "På",
+    "AUTO": "Auto",
+    "UP": "Upp",
+    "MID_UP": "Mitten-Upp",
+    "MID": "Mitten",
+    "MID_DOWN": "Mitten-Ner",
+    "DOWN": "Ner",
+    "OFF": "Av"
+  },
+  "horizontalSwings": {
+    "ON": "På",
+    "AUTO": "Auto",
+    "LEFT": "Vänster",
+    "MID_LEFT": "Mitten-Vänster",
+    "MID": "Mitten",
+    "MID_RIGHT": "Mitten-Höger",
+    "RIGHT": "Höger",
+    "OFF": "Av"
+  },
+  "errors": {
+    "notConnected": "Enheten är inte ansluten.",
+    "notFound": "Enheten kan inte hittas.",
+    "setTempRange": "Den inställda temperaturen är utanför intervallet. Minsta: __min__, Max: __max__.",
+    "no_fanSpeeds": "Fläkthastigheten är inte valbar i det här läget.",
+    "incorrect_fanSpeeds": "Den valda fläkthastigheten är inte tillgänglig för detta läge. Tillåtna värden: __values__.",
+    "no_fanLevels": "Fläkthastigheten är inte valbar i det här läget.",
+    "incorrect_fanLevels": "Den valda fläkthastigheten är inte tillgänglig för detta läge. Tillåtna värden: __values__.",
+    "no_swings": "Svängning är inte valbar i det här läget.",
+    "incorrect_swings": "Den valda svängningen är inte tillgänglig för detta läge. Tillåtna värden: __values__.",
+    "no_verticalSwings": "Svängning är inte valbar i det här läget.",
+    "incorrect_verticalSwings": "Den valda svängningen är inte tillgänglig för detta läge. Tillåtna värden: __values__.",
+    "no_horizontalSwings": "Svängning är inte valbar i det här läget.",
+    "incorrect_horizontalSwings": "Den valda svängningen är inte tillgänglig för detta läge. Tillåtna värden: __values__.",
+    "setDurationRange": "Den maximala varaktigheten är 24 timmar.",
+    "incorrectCapabilities": "De valda inställningarna är inte korrekta.",
+    "invalid_refresh_token": "Det verkar som att förnyelsestoken är ogiltig. Vänligen reparera din Tado-enhet."
+  }
+}

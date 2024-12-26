@@ -65,6 +65,7 @@
     "no_horizontalSwings": "Swing ist in diesem Modus nicht wählbar.",
     "incorrect_horizontalSwings": "Der ausgewählte Schwung ist für diesen Modus nicht verfügbar. Die verfügbaren Optionen sind: __values__.",
     "setDurationRange": "Die maximale Dauer beträgt 24 Stunden.",
-    "incorrectCapabilities": "Die ausgewählten Einstellungen sind nicht korrekt."
+    "incorrectCapabilities": "Die ausgewählten Einstellungen sind nicht korrekt.",
+    "invalid_refresh_token": "Das Refresh-Token ist ungültig. Repariere dein Tado-Gerät, um das zu beheben."
   }
 }

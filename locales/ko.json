@@ -1,0 +1,73 @@
+{
+  "deviceNames": {
+    "thermostat": "스마트 온도 조절기",
+    "valve": "스마트 라디에이터 온도 조절기",
+    "ac": "스마트 에어컨 제어기",
+    "hotWater": "온수"
+  },
+  "acModes": {
+    "COOL": "냉방",
+    "HEAT": "난방",
+    "DRY": "제습",
+    "FAN": "송풍",
+    "AUTO": "자동",
+    "OFF": "끄기"
+  },
+  "fanSpeeds": {
+    "AUTO": "자동",
+    "LOW": "낮음",
+    "MIDDLE": "중간",
+    "HIGH": "높음"
+  },
+  "fanLevels": {
+    "AUTO": "자동",
+    "SILENT": "무음",
+    "LEVEL1": "레벨 1",
+    "LEVEL2": "레벨 2",
+    "LEVEL3": "레벨 3",
+    "LEVEL4": "레벨 4",
+    "LEVEL5": "레벨 5"
+  },
+  "swings": {
+    "ON": "켜짐",
+    "OFF": "꺼짐"
+  },
+  "verticalSwings": {
+    "ON": "켜짐",
+    "AUTO": "자동",
+    "UP": "위",
+    "MID_UP": "중간-위",
+    "MID": "중간",
+    "MID_DOWN": "중간-아래",
+    "DOWN": "아래",
+    "OFF": "꺼짐"
+  },
+  "horizontalSwings": {
+    "ON": "켜짐",
+    "AUTO": "자동",
+    "LEFT": "왼쪽",
+    "MID_LEFT": "중간-왼쪽",
+    "MID": "중간",
+    "MID_RIGHT": "중간-오른쪽",
+    "RIGHT": "오른쪽",
+    "OFF": "꺼짐"
+  },
+  "errors": {
+    "notConnected": "장치가 연결되지 않았습니다.",
+    "notFound": "장치를 찾을 수 없습니다.",
+    "setTempRange": "설정 온도가 범위를 벗어났습니다. 최소: __min__, 최대: __max__.",
+    "no_fanSpeeds": "이 모드에서는 팬 속도를 선택할 수 없습니다.",
+    "incorrect_fanSpeeds": "선택한 팬 속도는 이 모드에서 사용할 수 없습니다. 허용 값: __values__.",
+    "no_fanLevels": "이 모드에서는 팬 속도를 선택할 수 없습니다.",
+    "incorrect_fanLevels": "선택한 팬 속도는 이 모드에서 사용할 수 없습니다. 허용 값: __values__.",
+    "no_swings": "이 모드에서는 스윙을 선택할 수 없습니다.",
+    "incorrect_swings": "선택한 스윙은 이 모드에서 사용할 수 없습니다. 허용 값: __values__.",
+    "no_verticalSwings": "이 모드에서는 스윙을 선택할 수 없습니다.",
+    "incorrect_verticalSwings": "선택한 스윙은 이 모드에서 사용할 수 없습니다. 허용 값: __values__.",
+    "no_horizontalSwings": "이 모드에서는 스윙을 선택할 수 없습니다.",
+    "incorrect_horizontalSwings": "선택한 스윙은 이 모드에서 사용할 수 없습니다. 허용 값: __values__.",
+    "setDurationRange": "최대 지속 시간은 24시간입니다.",
+    "incorrectCapabilities": "선택한 설정이 올바르지 않습니다.",
+    "invalid_refresh_token": "갱신 토큰이 잘못된 것 같습니다. Tado 장치를 수리해 주세요."
+  }
+}

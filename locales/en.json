@@ -67,6 +67,7 @@
     "no_horizontalSwings": "Swing is not selectable in this mode.",
     "incorrect_horizontalSwings": "The selected swing is not available for this mode. Allowed values: __values__.",
     "setDurationRange": "The maximum duration is 24 hours.",
-    "incorrectCapabilities": "The selected settings are not correct."
+    "incorrectCapabilities": "The selected settings are not correct.",
+    "invalid_refresh_token": "It seems the refresh token is invalid. Please repair your Tado device."
   }
 }

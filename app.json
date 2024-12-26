@@ -8,7 +8,16 @@
   "description": {
     "en": "Everyone's comfort zone",
     "nl": "Comfortzones voor iedereen",
-    "de": "Komfortzonen für alle"
+    "de": "Komfortzonen für alle",
+    "da": "Alles komfortzone",
+    "es": "La zona de confort de todos",
+    "fr": "La zone de confort de tout le monde",
+    "it": "La zona di comfort di tutti",
+    "no": "Alles komfortsone",
+    "sv": "Allas komfortzon",
+    "pl": "Strefa komfortu dla wszystkich",
+    "ru": "Зона комфорта для всех",
+    "ko": "모두의 안락 지대"
   },
   "brandColor": "#FFB121",
   "tags": {
@@ -28,6 +37,86 @@
       "warm water",
       "airconditioning",
       "airco"
+    ],
+    "da": [
+      "tado",
+      "termostat",
+      "radiatortermostat",
+      "opvarmning",
+      "varmt vand",
+      "aircondition"
+    ],
+    "de": [
+      "tado",
+      "thermostat",
+      "heizkörperthermostat",
+      "heizung",
+      "warmwasser",
+      "klimaanlage"
+    ],
+    "es": [
+      "tado",
+      "termostato",
+      "termostato de radiador",
+      "calefacción",
+      "agua caliente",
+      "aire acondicionado"
+    ],
+    "fr": [
+      "tado",
+      "thermostat",
+      "thermostat de radiateur",
+      "chauffage",
+      "eau chaude",
+      "climatisation"
+    ],
+    "it": [
+      "tado",
+      "termostato",
+      "termostato del radiatore",
+      "riscaldamento",
+      "acqua calda",
+      "aria condizionata"
+    ],
+    "no": [
+      "tado",
+      "termostat",
+      "radiatortermostat",
+      "oppvarming",
+      "varmt vann",
+      "klimaanlegg"
+    ],
+    "sv": [
+      "tado",
+      "termostat",
+      "radiatortermostat",
+      "uppvärmning",
+      "varmvatten",
+      "luftkonditionering"
+    ],
+    "pl": [
+      "tado",
+      "termostat",
+      "termostat grzejnikowy",
+      "ogrzewanie",
+      "ciepła woda",
+      "klimatyzacja"
+    ],
+    "ru": [
+      "tado",
+      "термостат",
+      "радиаторный термостат",
+      "отопление",
+      "горячая вода",
+      "кондиционер"
+    ],
+    "ko": [
+      "tado",
+      "온도 조절기",
+      "라디에이터 온도 조절기",
+      "난방",
+      "온수",
+      "에어컨"
     ]
   },
   "platforms": [
@@ -35,7 +124,7 @@
     "cloud"
   ],
   "category": "climate",
-  "version": "1.1.3",
+  "version": "1.3.1",
   "compatibility": ">=5",
   "author": {
     "name": "Athom B.V."
@@ -53,14 +142,33 @@
         "title": {
           "en": "Open window is detected",
           "nl": "Open raam is gedetecteerd",
-          "de": "Offenes Fenster wird erkannt"
+          "de": "Offenes Fenster wird erkannt",
+          "da": "Åbent vindue er registreret",
+          "es": "Ventana abierta detectada",
+          "fr": "Fenêtre ouverte détectée",
+          "it": "Finestra aperta rilevata",
+          "no": "Åpent vindu er oppdaget",
+          "sv": "Öppet fönster upptäckt",
+          "pl": "Wykryto otwarte okno",
+          "ru": "Обнаружено открытое окно",
+          "ko": "열린 창이 감지되었습니다"
         },
         "args": [
           {
             "type": "device",
             "name": "device",
             "title": {
-              "en": "Device"
+              "en": "Device",
+              "da": "Enhed",
+              "de": "Gerät",
+              "es": "Dispositivo",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "no": "Enhet",
+              "sv": "Enhet",
+              "pl": "Urządzenie",
+              "ru": "Устройство",
+              "ko": "장치"
             },
             "filter": "driver_id=thermostat|airconditioning|valve&capabilities=detect_open_window"
           }
@@ -71,14 +179,33 @@
         "title": {
           "en": "Turned off",
           "nl": "Uitgezet",
-          "de": "Ausgeschaltet"
+          "de": "Ausgeschaltet",
+          "da": "Slukket",
+          "es": "Apagado",
+          "fr": "Éteint",
+          "it": "Spento",
+          "no": "Slått av",
+          "sv": "Avstängd",
+          "pl": "Wyłączono",
+          "ru": "Выключено",
+          "ko": "꺼짐"
         },
         "args": [
           {
             "type": "device",
             "name": "device",
             "title": {
-              "en": "Device"
+              "en": "Device",
+              "da": "Enhed",
+              "de": "Gerät",
+              "es": "Dispositivo",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "no": "Enhet",
+              "sv": "Enhet",
+              "pl": "Urządzenie",
+              "ru": "Устройство",
+              "ko": "장치"
             },
             "filter": "driver_id=thermostat|valve&capabilities=power_mode"
           }
@@ -89,14 +216,33 @@
         "title": {
           "en": "Turned on",
           "nl": "Aangezet",
-          "de": "Angeschaltet"
+          "de": "Angeschaltet",
+          "da": "Tændt",
+          "es": "Encendido",
+          "fr": "Allumé",
+          "it": "Acceso",
+          "no": "Slått på",
+          "sv": "Påslagen",
+          "pl": "Włączony",
+          "ru": "Включено",
+          "ko": "켜짐"
         },
         "args": [
           {
             "type": "device",
             "name": "device",
             "title": {
-              "en": "Device"
+              "en": "Device",
+              "da": "Enhed",
+              "de": "Gerät",
+              "es": "Dispositivo",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "no": "Enhet",
+              "sv": "Enhet",
+              "pl": "Urządzenie",
+              "ru": "Устройство",
+              "ko": "장치"
             },
             "filter": "driver_id=thermostat|valve&capabilities=power_mode"
           }
@@ -107,14 +253,33 @@
         "title": {
           "en": "Smart Schedule is activated",
           "nl": "Slimme Schema is geactiveerd",
-          "de": "Intelligenter Zeitplan ist aktiviert"
+          "de": "Intelligenter Zeitplan ist aktiviert",
+          "da": "Smart Schedule er aktiveret",
+          "es": "El horario inteligente está activado",
+          "fr": "Le programme intelligent est activé",
+          "it": "Il programma intelligente è attivato",
+          "no": "Smart Schedule er aktivert",
+          "sv": "Smart Schema är aktiverat",
+          "pl": "Smart Schedule jest aktywowany",
+          "ru": "Умное расписание активировано",
+          "ko": "스마트 일정이 활성화되었습니다"
         },
         "args": [
           {
             "type": "device",
             "name": "device",
             "title": {
-              "en": "Device"
+              "en": "Device",
+              "da": "Enhed",
+              "de": "Gerät",
+              "es": "Dispositivo",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "no": "Enhet",
+              "sv": "Enhet",
+              "pl": "Urządzenie",
+              "ru": "Устройство",
+              "ko": "장치"
             },
             "filter": "driver_id=airconditioning|thermostat|valve"
           }
@@ -125,14 +290,34 @@
         "title": {
           "en": "Smart Schedule is deactivated",
           "nl": "Slimme Schema is gedeactiveerd",
-          "de": "Intelligenter Zeitplan ist deaktiviert"
+          "de": "Intelligenter Zeitplan ist deaktiviert",
+          "da": "Smart Schedule er deaktiveret",
+          "es": "El horario inteligente está desactivado",
+          "fr": "Le programme intelligent est désactivé",
+          "it": "Il programma intelligente è disattivato",
+          "no": "Smartplan er deaktivert",
+          "sv": "Smart Schema är inaktiverad",
+          "pl": "Inteligentny harmonogram jest dezaktywowany",
+          "ru": "Умный график отключен",
+          "ko": "스마트 일정이 비활성화되었습니다"
         },
         "args": [
           {
             "type": "device",
             "name": "device",
             "title": {
-              "en": "Device"
+              "en": "Device",
+              "nl": "Apparaat",
+              "da": "Enhed",
+              "de": "Gerät",
+              "es": "Dispositivo",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "no": "Enhet",
+              "sv": "Enhet",
+              "pl": "Urządzenie",
+              "ru": "Устройство",
+              "ko": "기기"
             },
             "filter": "driver_id=airconditioning|thermostat|valve"
           }
@@ -143,7 +328,16 @@
         "title": {
           "en": "Air conditioning mode changed",
           "nl": "Airco modus is veranderd",
-          "de": "Klimamodus hat sich geändert"
+          "de": "Klimamodus hat sich geändert",
+          "da": "Aircondition-tilstand ændret",
+          "es": "Se cambió el modo del aire acondicionado",
+          "fr": "Mode de climatisation modifié",
+          "it": "Modalità aria condizionata modificata",
+          "no": "Klimamodus endret",
+          "sv": "Luftkonditioneringsläget har ändrats",
+          "pl": "Zmieniono tryb klimatyzacji",
+          "ru": "Режим кондиционирования воздуха изменен",
+          "ko": "에어컨 모드가 변경되었습니다"
         },
         "tokens": [
           {
@@ -152,7 +346,16 @@
             "title": {
               "en": "Mode",
               "nl": "Modus",
-              "de": "Modus"
+              "de": "Modus",
+              "da": "Mode",
+              "es": "Modo",
+              "fr": "Mode",
+              "it": "Modalità",
+              "no": "Modus",
+              "sv": "Läge",
+              "pl": "Tryb",
+              "ru": "Режим",
+              "ko": "방법"
             },
             "example": {
               "en": "Cool"
@@ -172,7 +375,16 @@
         "title": {
           "en": "Fan speed changed",
           "nl": "Ventilator snelheid is veranderd",
-          "de": "Lüftergeschwindigkeit hat sich geändert"
+          "de": "Lüftergeschwindigkeit hat sich geändert",
+          "da": "Blæserhastighed ændret",
+          "es": "La velocidad del ventilador cambió",
+          "fr": "La vitesse du ventilateur a été modifiée",
+          "it": "La velocità della ventola è cambiata",
+          "no": "Viftehastighet endret",
+          "sv": "Fläkthastigheten ändrades",
+          "pl": "Zmieniono prędkość wentylatora",
+          "ru": "Скорость вентилятора изменена",
+          "ko": "팬 속도가 변경되었습니다"
         },
         "tokens": [
           {
@@ -181,7 +393,16 @@
             "title": {
               "en": "Fan speed",
               "nl": "Ventilator snelheid",
-              "de": "Lüftergeschwindigkeit"
+              "de": "Lüftergeschwindigkeit",
+              "da": "Blæserhastighed",
+              "es": "La velocidad del ventilador",
+              "fr": "La vitesse du ventilateur",
+              "it": "La velocità della ventola",
+              "no": "Viftehastighet",
+              "sv": "Fläkthastigheten",
+              "pl": "Prędkość wentylatora",
+              "ru": "Скорость вентилятора",
+              "ko": "팬 속도"
             },
             "example": {
               "en": "Low",
@@ -203,7 +424,16 @@
         "title": {
           "en": "Fan speed changed",
           "nl": "Ventilator snelheid is veranderd",
-          "de": "Lüftergeschwindigkeit hat sich geändert"
+          "de": "Lüftergeschwindigkeit hat sich geändert",
+          "da": "Blæserhastighed ændret",
+          "es": "La velocidad del ventilador cambió",
+          "fr": "La vitesse du ventilateur a été modifiée",
+          "it": "La velocità della ventola è cambiata",
+          "no": "Viftehastighet endret",
+          "sv": "Fläkthastigheten ändrades",
+          "pl": "Zmieniono prędkość wentylatora",
+          "ru": "Скорость вентилятора изменена",
+          "ko": "팬 속도가 변경되었습니다"
         },
         "tokens": [
           {
@@ -212,7 +442,16 @@
             "title": {
               "en": "Fan speed",
               "nl": "Ventilator snelheid",
-              "de": "Lüftergeschwindigkeit"
+              "de": "Lüftergeschwindigkeit",
+              "da": "Blæserhastighed",
+              "es": "La velocidad del ventilador",
+              "fr": "La vitesse du ventilateur",
+              "it": "La velocità della ventola",
+              "no": "Viftehastighet",
+              "sv": "Fläkthastigheten",
+              "pl": "Prędkość wentylatora",
+              "ru": "Скорость вентилятора",
+              "ko": "팬 속도"
             },
             "example": {
               "en": "Low",
@@ -234,7 +473,16 @@
         "title": {
           "en": "Swing changed",
           "nl": "Swing is veranderd",
-          "de": "Swing hat sich geändert"
+          "de": "Swing hat sich geändert",
+          "da": "Swing ændret",
+          "es": "El swing ha cambiado",
+          "fr": "Swing changé",
+          "it": "Swing modificato",
+          "no": "Swing endret",
+          "sv": "Swing ändrad",
+          "pl": "Zmiana huśtawki",
+          "ru": "Свинг изменился",
+          "ko": "스윙이 바뀌다"
         },
         "tokens": [
           {
@@ -263,7 +511,16 @@
         "title": {
           "en": "Vertical swing changed",
           "nl": "Verticale swing is veranderd",
-          "de": "Vertikaler swing hat sich geändert"
+          "de": "Vertikaler swing hat sich geändert",
+          "da": "Lodret sving ændret",
+          "es": "Se modificó el balanceo vertical",
+          "fr": "Changement de l'oscillation verticale",
+          "it": "Oscillazione verticale modificata",
+          "no": "Vertikal sving endret",
+          "sv": "Vertikal sving ändrad",
+          "pl": "Zmieniono pionowy ruch wahadłowy",
+          "ru": "Вертикальный размах изменен",
+          "ko": "수직 스윙이 변경되었습니다"
         },
         "tokens": [
           {
@@ -272,7 +529,16 @@
             "title": {
               "en": "Vertical swing",
               "nl": "Verticale swing",
-              "de": "Vertikaler swing"
+              "de": "Vertikaler swing",
+              "da": "Lodret gynge",
+              "es": "Oscilación vertical",
+              "fr": "Balançoire verticale",
+              "it": "Oscillazione verticale",
+              "no": "Vertikal sving",
+              "sv": "Vertikal gunga",
+              "pl": "Huśtawka pionowa",
+              "ru": "Вертикальный Качающийся",
+              "ko": "수직 스윙"
             },
             "example": {
               "en": "On",
@@ -294,7 +560,16 @@
         "title": {
           "en": "Horizontal swing changed",
           "nl": "Horizontale swing is veranderd",
-          "de": "Horizontaler swing hat sich geändert"
+          "de": "Horizontaler swing hat sich geändert",
+          "da": "Vandret sving ændret",
+          "es": "Se modificó el giro horizontal",
+          "fr": "Changement de balancement horizontal",
+          "it": "L'oscillazione orizzontale è cambiata",
+          "no": "Horisontal sving endret",
+          "sv": "Horisontell sving ändrad",
+          "pl": "Zmieniono huśtawkę poziomą",
+          "ru": "Горизонтальный размах изменен",
+          "ko": "수평 스윙 변경됨"
         },
         "tokens": [
           {
@@ -303,7 +578,16 @@
             "title": {
               "en": "Horizontal swing",
               "nl": "Horizontale swing",
-              "de": "Horizontaler swing"
+              "de": "Horizontaler swing",
+              "da": "Vandret sving",
+              "es": "Oscilación horizontal",
+              "fr": "Balançoire horizontale",
+              "it": "Oscillazione orizzontale",
+              "no": "Horisontal sving",
+              "sv": "Horisontell gunga",
+              "pl": "Huśtawka pozioma",
+              "ru": "Горизонтальное качание",
+              "ko": "수평 스윙"
             },
             "example": {
               "en": "On",
@@ -325,7 +609,16 @@
         "title": {
           "en": "Hot water is switched on",
           "nl": "Warm water wordt ingeschakeld",
-          "de": "Warmwasser ist eingeschaltet"
+          "de": "Warmwasser ist eingeschaltet",
+          "da": "Varmt vand er tændt",
+          "es": "El agua caliente está encendida",
+          "fr": "L'eau chaude est allumée",
+          "it": "L'acqua calda è accesa",
+          "no": "Varmt vann er slått på",
+          "sv": "Varmvatten är påslaget",
+          "pl": "Gorąca woda jest włączona",
+          "ru": "Горячая вода включена",
+          "ko": "온수가 켜졌습니다"
         },
         "args": [
           {
@@ -340,7 +633,16 @@
         "title": {
           "en": "Hot water is switched off",
           "nl": "Warm water wordt uitgeschakeld",
-          "de": "Warmwasser ist abgeschaltet"
+          "de": "Warmwasser ist abgeschaltet",
+          "da": "Varmt vand er slukket",
+          "es": "El agua caliente está apagada",
+          "fr": "L'eau chaude est éteinte",
+          "it": "L'acqua calda è spenta",
+          "no": "Varmt vann er slått av",
+          "sv": "Varmvatten är avstängt",
+          "pl": "Gorąca woda jest wyłączona",
+          "ru": "Горячая вода выключена",
+          "ko": "온수가 꺼졌습니다"
         },
         "args": [
           {
@@ -355,7 +657,16 @@
         "title": {
           "en": "The Hot Water temperature changed",
           "nl": "De warmwatertemperatuur is gewijzigd",
-          "de": "Die Warmwassertemperatur hat sich geändert"
+          "de": "Die Warmwassertemperatur hat sich geändert",
+          "da": "Varmvands temperaturen er ændret",
+          "es": "La temperatura del agua caliente ha cambiado",
+          "fr": "La température de l'eau chaude a changé",
+          "it": "La temperatura dell'acqua calda è cambiata",
+          "no": "Varmtvanns temperaturen er endret",
+          "sv": "Varmvatten temperaturen har ändrats",
+          "pl": "Temperatura gorącej wody zmieniła się",
+          "ru": "Температура горячей воды изменилась",
+          "ko": "온수 온도가 변경되었습니다"
         },
         "tokens": [
           {
@@ -363,7 +674,16 @@
             "title": {
               "en": "Hot Water temperature",
               "nl": "Warmwatertemperatuur",
-              "de": "Warmwassertemperatur"
+              "de": "Warmwassertemperatur",
+              "da": "Varmtvands temperatur",
+              "es": "Temperatura del agua caliente",
+              "fr": "Température de l'eau chaude",
+              "it": "Temperatura dell'acqua calda",
+              "no": "Varmtvanns temperatur",
+              "sv": "Varmvatten temperatur",
+              "pl": "Temperatura gorącej wody",
+              "ru": "Температура горячей воды",
+              "ko": "온수 온도"
             },
             "type": "number",
             "example": 50
@@ -384,24 +704,60 @@
         "title": {
           "en": "The humidity !{{is between|is not between}}",
           "nl": "De luchtvochtigheid !{{ligt tussen|ligt niet tussen}}",
-          "de": "Die Luftfeuchtigkeit !{{liegt zwischen|liegt nicht zwischen}}"
+          "de": "Die Luftfeuchtigkeit !{{liegt zwischen|liegt nicht zwischen}}",
+          "da": "Fugtigheden !{{er mellem|er ikke mellem}}",
+          "es": "La humedad !{{está entre|no está entre}}",
+          "fr": "L'humidité !{{est entre|n'est pas entre}}",
+          "it": "L'umidità !{{è tra|non è tra}}",
+          "no": "Fuktigheten !{{er mellom|er ikke mellom}}",
+          "sv": "Luftfuktigheten !{{är mellan|är inte mellan}}",
+          "pl": "Wilgotność !{{jest pomiędzy|nie jest pomiędzy}}",
+          "ru": "Влажность !{{между|не между}}",
+          "ko": "습도 !{{사이|사이 아님}}"
         },
         "titleFormatted": {
           "en": "The humidity !{{is between|is not between}} [[humidity_1]] and [[humidity_2]]",
           "nl": "De luchtvochtigheid !{{ligt tussen|ligt niet tussen}} [[humidity_1]] en [[humidity_2]]",
-          "de": "Die Luftfeuchtigkeit !{{liegt zwischen|liegt nicht zwischen}} [[humidity_1]] und [[humidity_2]]"
+          "de": "Die Luftfeuchtigkeit !{{liegt zwischen|liegt nicht zwischen}} [[humidity_1]] und [[humidity_2]]",
+          "da": "Fugtigheden !{{er mellem|er ikke mellem}} [[humidity_1]] og [[humidity_2]]",
+          "es": "La humedad !{{está entre|no está entre}} [[humidity_1]] y [[humidity_2]]",
+          "fr": "L'humidité !{{est entre|n'est pas entre}} [[humidity_1]] et [[humidity_2]]",
+          "it": "L'umidità !{{è tra|non è tra}} [[humidity_1]] e [[humidity_2]]",
+          "no": "Fuktigheten !{{er mellom|er ikke mellom}} [[humidity_1]] og [[humidity_2]]",
+          "sv": "Luftfuktigheten !{{är mellan|är inte mellan}} [[humidity_1]] och [[humidity_2]]",
+          "pl": "Wilgotność !{{jest pomiędzy|nie jest pomiędzy}} [[humidity_1]] i [[humidity_2]]",
+          "ru": "Влажность !{{между|не между}} [[humidity_1]] и [[humidity_2]]",
+          "ko": "습도 !{{사이|사이 아님}} [[humidity_1]]와 [[humidity_2]]"
         },
         "hint": {
           "en": "Use this to determine whether or not the measured humidity is between two values. The specified values are also valid.",
-          "nl": "ebruik dit om te bepalen of gemeten luchtvochtigheid tussen twee waarden ligt. De opgegeven waarden zijn ook geldig.",
-          "de": "Verwenden Sie dies, um festzustellen, ob die gemessene Luftfeuchtigkeit zwischen zwei Werten liegt. Die angegebenen Werte sind ebenfalls gültig."
+          "nl": "Gebruik dit om te bepalen of gemeten luchtvochtigheid tussen twee waarden ligt. De opgegeven waarden zijn ook geldig.",
+          "de": "Verwenden Sie dies, um festzustellen, ob die gemessene Luftfeuchtigkeit zwischen zwei Werten liegt. Die angegebenen Werte sind ebenfalls gültig.",
+          "da": "Brug dette til at afgøre, om den målte fugtighed er mellem to værdier. De angivne værdier er også gyldige.",
+          "es": "Utiliza esto para determinar si la humedad medida está entre dos valores. Los valores especificados también son válidos.",
+          "fr": "Utilisez ceci pour déterminer si l'humidité mesurée est entre deux valeurs. Les valeurs spécifiées sont également valides.",
+          "it": "Usa questo per determinare se l'umidità misurata è compresa tra due valori. I valori specificati sono anch'essi validi.",
+          "no": "Bruk dette for å avgjøre om den målte fuktigheten er mellom to verdier. De spesifiserte verdiene er også gyldige.",
+          "sv": "Använd detta för att avgöra om den uppmätta luftfuktigheten är mellan två värden. De angivna värdena är också giltiga.",
+          "pl": "Użyj tego, aby sprawdzić, czy mierzona wilgotność mieści się pomiędzy dwoma wartościami. Podane wartości są również ważne.",
+          "ru": "Используйте эту функцию, чтобы определить, находится ли измеренная влажность между двумя значениями. Указанные значения также действительны.",
+          "ko": "이를 사용하여 측정된 습도가 두 값 사이에 있는지 여부를 판단할 수 있습니다. 지정된 값도 유효합니다."
         },
         "args": [
           {
             "type": "device",
             "name": "device",
             "title": {
-              "en": "Device"
+              "en": "Device",
+              "da": "Enhed",
+              "es": "Dispositivo",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "no": "Enhet",
+              "sv": "Enhet",
+              "pl": "Urządzenie",
+              "ru": "Устройство",
+              "ko": "기기"
             },
             "filter": "driver_id=airconditioning|thermostat|valve&capabilities=measure_humidity"
           },
@@ -415,11 +771,29 @@
             "title": {
               "en": "Minimum",
               "nl": "Minimum",
-              "de": "Minimum"
+              "de": "Minimum",
+              "da": "Minimum",
+              "es": "Mínimo",
+              "fr": "Minimum",
+              "it": "Minimo",
+              "no": "Minimum",
+              "sv": "Minimum",
+              "pl": "Minimum",
+              "ru": "Минимум",
+              "ko": "최소"
             },
             "placeholder": {
               "en": "%",
-              "nl": "%"
+              "nl": "%",
+              "da": "%",
+              "es": "%",
+              "fr": "%",
+              "it": "%",
+              "no": "%",
+              "sv": "%",
+              "pl": "%",
+              "ru": "%",
+              "ko": "%"
             }
           },
           {
@@ -432,11 +806,29 @@
             "title": {
               "en": "Maximum",
               "nl": "Maximum",
-              "de": "Maximal"
+              "de": "Maximal",
+              "da": "Maksimum",
+              "es": "Máximo",
+              "fr": "Maximum",
+              "it": "Massimo",
+              "no": "Maksimum",
+              "sv": "Maximum",
+              "pl": "Maksimum",
+              "ru": "Максимум",
+              "ko": "최대"
             },
             "placeholder": {
               "en": "%",
-              "nl": "%"
+              "nl": "%",
+              "da": "%",
+              "es": "%",
+              "fr": "%",
+              "it": "%",
+              "no": "%",
+              "sv": "%",
+              "pl": "%",
+              "ru": "%",
+              "ko": "%"
             }
           }
         ]
@@ -446,24 +838,60 @@
         "title": {
           "en": "The temperature !{{is between|is not between}}",
           "nl": "De temperatuur !{{ligt tussen|ligt niet tussen}}",
-          "de": "Die Temperatuur !{{liegt zwischen|liegt nicht zwischen}}"
+          "de": "Die Temperatuur !{{liegt zwischen|liegt nicht zwischen}}",
+          "da": "Temperaturen !{{er mellem|er ikke mellem}}",
+          "es": "La temperatura !{{está entre|no está entre}}",
+          "fr": "La température !{{est entre|n'est pas entre}}",
+          "it": "La temperatura !{{è tra|non è tra}}",
+          "no": "Temperaturen !{{er mellom|er ikke mellom}}",
+          "sv": "Temperaturen !{{är mellan|är inte mellan}}",
+          "pl": "Temperatura !{{jest między|nie jest między}}",
+          "ru": "Температура !{{между|не между}}",
+          "ko": "온도가 !{{사이에 있습니다|사이에 있지 않습니다}}"
         },
         "titleFormatted": {
           "en": "The temperature !{{is between|is not between}} [[temperature_1]] and [[temperature_2]]",
           "nl": "De temperatuur !{{ligt tussen|ligt niet tussen}} [[temperature_1]] en [[temperature_2]]",
-          "de": "Die Temperatuur !{{liegt zwischen|liegt nicht zwischen}} [[temperature_1]] und [[temperature_2]]"
+          "de": "Die Temperatuur !{{liegt zwischen|liegt nicht zwischen}} [[temperature_1]] und [[temperature_2]]",
+          "da": "Temperaturen !{{er mellem|er ikke mellem}} [[temperature_1]] og [[temperature_2]]",
+          "es": "La temperatura !{{está entre|no está entre}} [[temperature_1]] y [[temperature_2]]",
+          "fr": "La température !{{est entre|n'est pas entre}} [[temperature_1]] et [[temperature_2]]",
+          "it": "La temperatura !{{è tra|non è tra}} [[temperature_1]] e [[temperature_2]]",
+          "no": "Temperaturen !{{er mellom|er ikke mellom}} [[temperature_1]] og [[temperature_2]]",
+          "sv": "Temperaturen !{{är mellan|är inte mellan}} [[temperature_1]] och [[temperature_2]]",
+          "pl": "Temperatura !{{jest między|nie jest między}} [[temperature_1]] i [[temperature_2]]",
+          "ru": "Температура !{{между|не между}} [[temperature_1]] и [[temperature_2]]",
+          "ko": "온도가 !{{ [[temperature_1]] 사이입니다| [[temperature_2]] 사이가 아닙니다}}"
         },
         "hint": {
           "en": "Use this to determine whether or not the measured temperature is between two values. The specified values are also valid.",
           "nl": "Gebruik dit om te bepalen of gemeten temperatuur tussen twee waarden ligt. De opgegeven waarden zijn ook geldig.",
-          "de": "Verwenden Sie dies, um festzustellen, ob die gemessene Temperatur zwischen zwei Werten liegt. Die angegebenen Werte sind ebenfalls gültig."
+          "de": "Verwenden Sie dies, um festzustellen, ob die gemessene Temperatur zwischen zwei Werten liegt. Die angegebenen Werte sind ebenfalls gültig.",
+          "da": "Brug dette til at bestemme, om den målte temperatur er mellem to værdier. De angivne værdier er også gyldige.",
+          "es": "Utiliza esto para determinar si la temperatura medida está entre dos valores. Los valores especificados también son válidos.",
+          "fr": "Utilisez ceci pour déterminer si la température mesurée est entre deux valeurs. Les valeurs spécifiées sont également valables.",
+          "it": "Usa questo per determinare se la temperatura misurata è tra due valori. I valori specificati sono validi.",
+          "no": "Bruk dette for å bestemme om den målte temperaturen er mellom to verdier. De spesifiserte verdiene er også gyldige.",
+          "sv": "Använd detta för att avgöra om den uppmätta temperaturen är mellan två värden. De angivna värdena är också giltiga.",
+          "pl": "Użyj tego, aby sprawdzić, czy mierzona temperatura mieści się między dwiema wartościami. Podane wartości są również ważne.",
+          "ru": "Используйте это, чтобы определить, находится ли измеренная температура между двумя значениями. Указанные значения также действительны.",
+          "ko": "측정된 온도가 두 값 사이에 있는지 여부를 결정하는 데 사용하세요. 지정한 값도 유효합니다."
         },
         "args": [
           {
             "type": "device",
             "name": "device",
             "title": {
-              "en": "Device"
+              "en": "Device",
+              "da": "Enhed",
+              "es": "Dispositivo",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "no": "Enhet",
+              "sv": "Enhet",
+              "pl": "Urządzenie",
+              "ru": "Устройство",
+              "ko": "장치"
             },
             "filter": "driver_id=airconditioning|thermostat|valve&capabilities=measure_temperature"
           },
@@ -477,7 +905,16 @@
             "title": {
               "en": "Minimum",
               "nl": "Minimum",
-              "de": "Minimum"
+              "de": "Minimum",
+              "da": "Minimum",
+              "es": "Mínimo",
+              "fr": "Minimum",
+              "it": "Minimo",
+              "no": "Minimum",
+              "sv": "Minsta",
+              "pl": "Minimum",
+              "ru": "Минимум",
+              "ko": "최소"
             },
             "placeholder": {
               "en": "°C",
@@ -494,7 +931,16 @@
             "title": {
               "en": "Maximum",
               "nl": "Maximum",
-              "de": "Maximal"
+              "de": "Maximal",
+              "da": "Maksimal",
+              "es": "Máximo",
+              "fr": "Maximum",
+              "it": "Massimo",
+              "no": "Maksimum",
+              "sv": "Max",
+              "pl": "Maksimum",
+              "ru": "Максимум",
+              "ko": "최대"
             },
             "placeholder": {
               "en": "°C",
@@ -508,14 +954,34 @@
         "title": {
           "en": "An open window is !{{|not}} detected",
           "nl": "Een open raam is !{{|niet}} gedetecteerd",
-          "de": "Ein offenes Fenster wird !{{|nicht}} erkannt"
+          "de": "Ein offenes Fenster wird !{{|nicht}} erkannt",
+          "da": "Et åbent vindue er !{{|ikke}} opdaget",
+          "es": "Una ventana abierta no se ha detectado",
+          "fr": "Une fenêtre ouverte n'est pas détectée",
+          "it": "Una finestra aperta non è rilevata",
+          "no": "Et åpent vindu er ikke oppdaget",
+          "sv": "Ett öppet fönster upptäcks inte",
+          "pl": "Otwarte okno nie zostało wykryte",
+          "ru": "Открытое окно не обнаружено",
+          "ko": "창문이 열려 있는 것을 감지하지 못했습니다"
         },
         "args": [
           {
             "type": "device",
             "name": "device",
             "title": {
-              "en": "Device"
+              "en": "Device",
+              "nl": "Apparaat",
+              "da": "Enhed",
+              "de": "Gerät",
+              "es": "Dispositivo",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "no": "Enhet",
+              "sv": "Enhet",
+              "pl": "Urządzenie",
+              "ru": "Устройство",
+              "ko": "장치"
             },
             "filter": "driver_id=thermostat|airconditioning|valve&capabilities=detect_open_window"
           }
@@ -526,14 +992,33 @@
         "title": {
           "en": "Is turned !{{on|off}}",
           "nl": "Is !{{aan|uit}}",
-          "de": "Ist !{{an|aus}}"
+          "de": "Ist !{{an|aus}}",
+          "da": "Er slået !{{til|fra}}",
+          "es": "Está !{{encendido|apagado}}",
+          "fr": "Est !{{allumé|éteint}}",
+          "it": "È !{{acceso|spento}}",
+          "no": "Er !{{på|av}}",
+          "sv": "Är !{{på|av}}",
+          "pl": "Jest !{{włączony|wyłączony}}",
+          "ru": "Включено !{{вкл|выкл}}",
+          "ko": "켜져 있음 !{{켜짐|꺼짐}}"
         },
         "args": [
           {
             "type": "device",
             "name": "device",
             "title": {
-              "en": "Device"
+              "en": "Device",
+              "da": "Enhed",
+              "de": "Gerät",
+              "es": "Dispositivo",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "no": "Enhet",
+              "sv": "Enhet",
+              "pl": "Urządzenie",
+              "ru": "Устройство",
+              "ko": "장치"
             },
             "filter": "driver_id=thermostat|valve&capabilities=power_mode"
           }
@@ -544,14 +1029,34 @@
         "title": {
           "en": "Smart Schedule is !{{|not}} activated",
           "nl": "Slimme Schema is !{{|niet}} geactiveerd",
-          "de": "Intelligenten Zeitplan ist !{{|nicht}} aktiviert"
+          "de": "Intelligenten Zeitplan ist !{{|nicht}} aktiviert",
+          "da": "Smart Schedule er !{{|ikke}} aktiveret",
+          "es": "El Smart Schedule !{{no}} está activado",
+          "fr": "Le planning intelligent est !{{|non}} activé",
+          "it": "La programmazione intelligente !{{|non}} è attivata",
+          "no": "Smart Schedule er !{{|ikke}} aktivert",
+          "sv": "Smart Schedule är !{{|inte}} aktiverad",
+          "pl": "Smart Schedule !{{nie}} jest aktywowany",
+          "ru": "Умное расписание !{{|не}} активировано",
+          "ko": "스마트 일정은 !{{활성화됨|비활성화됨}}입니다"
         },
         "args": [
           {
             "type": "device",
             "name": "device",
             "title": {
-              "en": "Device"
+              "en": "Device",
+              "nl": "Apparaat",
+              "da": "Enhed",
+              "de": "Gerät",
+              "es": "Dispositivo",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "no": "Enhet",
+              "sv": "Enhet",
+              "pl": "Urządzenie",
+              "ru": "Устройство",
+              "ko": "장치"
             },
             "filter": "driver_id=airconditioning|thermostat|valve"
           }
@@ -562,24 +1067,60 @@
         "title": {
           "en": "The target temperature !{{is between|is not between}}",
           "nl": "De ingestelde temeratuur !{{ligt tussen|ligt niet tussen}}",
-          "de": "Die eingestellte Temperatuur !{{liegt zwischen|liegt nicht zwischen}}"
+          "de": "Die eingestellte Temperatuur !{{liegt zwischen|liegt nicht zwischen}}",
+          "da": "Den målte temperatur !{{er mellem|er ikke mellem}}",
+          "es": "La temperatura objetivo !{{está entre|no está entre}}",
+          "fr": "La température cible !{{est entre|n'est pas entre}}",
+          "it": "La temperatura target !{{è tra|non è tra}}",
+          "no": "Den målte temperaturen !{{er mellom|er ikke mellom}}",
+          "sv": "Den inställda temperaturen !{{är mellan|är inte mellan}}",
+          "pl": "Temperatura docelowa !{{jest pomiędzy|nie jest pomiędzy}}",
+          "ru": "Целевая температура !{{между|не между}}",
+          "ko": "목표 온도는 !{{사이|사이가 아닙니다}}"
         },
         "titleFormatted": {
           "en": "The target temperature !{{is between|is not between}} [[temperature_1]] and [[temperature_2]]",
           "nl": "De ingestelde temeratuur !{{ligt tussen|ligt niet tussen}} [[temperature_1]] en [[temperature_2]]",
-          "de": "Die eingestellte Temperatuur !{{liegt zwischen|liegt nicht zwischen}} [[temperature_1]] und [[temperature_2]]"
+          "de": "Die eingestellte Temperatuur !{{liegt zwischen|liegt nicht zwischen}} [[temperature_1]] und [[temperature_2]]",
+          "da": "Den målte temperatur !{{er mellem|er ikke mellem}} [[temperature_1]] og [[temperature_2]]",
+          "es": "La temperatura objetivo !{{está entre|no está entre}} [[temperature_1]] y [[temperature_2]]",
+          "fr": "La température cible !{{est entre|n'est pas entre}} [[temperature_1]] et [[temperature_2]]",
+          "it": "La temperatura target !{{è tra|non è tra}} [[temperature_1]] e [[temperature_2]]",
+          "no": "Den målte temperaturen !{{er mellom|er ikke mellom}} [[temperature_1]] og [[temperature_2]]",
+          "sv": "Den inställda temperaturen !{{är mellan|är inte mellan}} [[temperature_1]] och [[temperature_2]]",
+          "pl": "Temperatura docelowa !{{jest pomiędzy|nie jest pomiędzy}} [[temperature_1]] a [[temperature_2]]",
+          "ru": "Целевая температура !{{между|не между}} [[temperature_1]] и [[temperature_2]]",
+          "ko": "목표 온도는 !{{사이|사이가 아닙니다}} [[temperature_1]] 와 [[temperature_2]] 사이"
         },
         "hint": {
           "en": "Use this to determine whether or not the target temperature is between given values. The specified values are also valid.",
           "nl": "Gebruik dit om te bepalen of ingestelde temperatuur tussen twee waarden ligt. De opgegeven waarden zijn ook geldig.",
-          "de": "Verwenden Sie dies, um festzustellen, ob die eingestellte Temperatur zwischen zwei Werten liegt. Die angegebenen Werte sind ebenfalls gültig."
+          "de": "Verwenden Sie dies, um festzustellen, ob die eingestellte Temperatur zwischen zwei Werten liegt. Die angegebenen Werte sind ebenfalls gültig.",
+          "da": "Brug dette til at afgøre, om den målte temperatur er mellem de angivne værdier. De angivne værdier er også gyldige.",
+          "es": "Usa esto para determinar si la temperatura objetivo está entre los valores dados o no. Los valores especificados también son válidos.",
+          "fr": "Utilisez cela pour déterminer si la température cible est entre les valeurs données ou non. Les valeurs spécifiées sont également valides.",
+          "it": "Usa questo per determinare se la temperatura target è tra i valori indicati o no. I valori specificati sono validi.",
+          "no": "Bruk dette for å avgjøre om den målte temperaturen er mellom de angitte verdiene eller ikke. De spesifiserte verdiene er også gyldige.",
+          "sv": "Använd detta för att avgöra om den inställda temperaturen är mellan givna värden eller inte. De angivna värdena är också giltiga.",
+          "pl": "Użyj tego, aby określić, czy temperatura docelowa mieści się między podanymi wartościami. Podane wartości są również ważne.",
+          "ru": "Используйте это, чтобы определить, находится ли целевая температура между заданными значениями. Указанные значения также действительны.",
+          "ko": "목표 온도가 주어진 값 사이에 있는지 여부를 결정하는 데 사용하십시오. 지정된 값도 유효합니다."
         },
         "args": [
           {
             "type": "device",
             "name": "device",
             "title": {
-              "en": "Device"
+              "en": "Device",
+              "da": "Enhed",
+              "es": "Dispositivo",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "no": "Enhet",
+              "sv": "Enhet",
+              "pl": "Urządzenie",
+              "ru": "Устройство",
+              "ko": "장치"
             },
             "filter": "driver_id=thermostat|valve&capabilities=measure_temperature"
           },
@@ -593,7 +1134,16 @@
             "title": {
               "en": "Minimum",
               "nl": "Minimum",
-              "de": "Minimum"
+              "de": "Minimum",
+              "da": "Minimum",
+              "es": "Mínimo",
+              "fr": "Minimum",
+              "it": "Minimo",
+              "no": "Minimum",
+              "sv": "Minimum",
+              "pl": "Minimum",
+              "ru": "Минимум",
+              "ko": "최소한의"
             },
             "placeholder": {
               "en": "°C",
@@ -610,7 +1160,16 @@
             "title": {
               "en": "Maximum",
               "nl": "Maximum",
-              "de": "Maximal"
+              "de": "Maximal",
+              "da": "Maksimum",
+              "es": "Máximo",
+              "fr": "Maximum",
+              "it": "Massimo",
+              "no": "Maksimum",
+              "sv": "Maximum",
+              "pl": "Maksimum",
+              "ru": "Максимум",
+              "ko": "최대한"
             },
             "placeholder": {
               "en": "°C",
@@ -624,12 +1183,30 @@
         "title": {
           "en": "Air conditioning mode is !{{|not}}",
           "nl": "Airco modus is !{{|niet}}",
-          "de": "Klimaanlagenmodus ist !{{|nicht}}"
+          "de": "Klimaanlagenmodus ist !{{|nicht}}",
+          "da": "Aircondition-tilstand er !{{|ikke}}",
+          "es": "El modo aire acondicionado es !{{|no}}",
+          "fr": "Le mode climatisation est !{{|pas}}",
+          "it": "La modalità aria condizionata è !{{|non}}",
+          "no": "Klimamodus er !{{|ikke}}",
+          "sv": "Luftkonditioneringsläget är !{{|inte}}",
+          "pl": "Tryb klimatyzacji to !{{|nie}}",
+          "ru": "Режим кондиционирования воздуха !{{|not}}",
+          "ko": "에어컨 모드는 !{{|아닙니다}}"
         },
         "titleFormatted": {
           "en": "Air conditioning mode is !{{|not}} [[acMode]]",
           "nl": "Airco modus is !{{|niet}} [[acMode]]",
-          "de": "Klimaanlagenmodus ist !{{|nicht}} [[acMode]]"
+          "de": "Klimaanlagenmodus ist !{{|nicht}} [[acMode]]",
+          "da": "Aircondition-tilstand er !{{|ikke}} [[acMode]]",
+          "es": "El modo de aire acondicionado es !{{|no}} [[acMode]]",
+          "fr": "Le mode climatisation n'est pas [[acMode]]",
+          "it": "La modalità aria condizionata è !{{|non}} [[acMode]]",
+          "no": "Klimamodus er !{{|ikke}} [[acMode]]",
+          "sv": "Luftkonditioneringsläget är !{{|inte}} [[acMode]]",
+          "pl": "Tryb klimatyzacji to !{{|nie}} [[acMode]]",
+          "ru": "Режим кондиционирования воздуха !{{|not}} [[acMode]]",
+          "ko": "에어컨 모드는 !{{|아닙니다}} [[acMode]]"
         },
         "args": [
           {
@@ -643,31 +1220,84 @@
             "title": {
               "en": "Mode",
               "nl": "Modus",
-              "de": "Modus"
+              "de": "Modus",
+              "da": "Mode",
+              "es": "Modo",
+              "fr": "Mode",
+              "it": "Modalità",
+              "no": "Modus",
+              "sv": "Läge",
+              "pl": "Tryb",
+              "ru": "Режим",
+              "ko": "방법"
             },
             "values": [
               {
                 "id": "COOL",
                 "label": {
-                  "en": "Cool"
+                  "en": "Cool",
+                  "nl": "Koelen",
+                  "de": "Modus",
+                  "da": "Afkøle",
+                  "es": "Fresco",
+                  "fr": "Cool",
+                  "it": "Freddo",
+                  "no": "Kjøle",
+                  "sv": "Sval",
+                  "pl": "Fajny",
+                  "ru": "Прохладный",
+                  "ko": "시원한"
                 }
               },
               {
                 "id": "HEAT",
                 "label": {
-                  "en": "Heat"
+                  "en": "Heat",
+                  "nl": "Verwarmen",
+                  "de": "Modus",
+                  "da": "Varme",
+                  "es": "Calor",
+                  "fr": "Chaleur",
+                  "it": "Calore",
+                  "no": "Varme",
+                  "sv": "Värme",
+                  "pl": "Ciepło",
+                  "ru": "Нагревать",
+                  "ko": "열"
                 }
               },
               {
                 "id": "DRY",
                 "label": {
-                  "en": "Dry"
+                  "en": "Dry",
+                  "nl": "Drogen",
+                  "de": "Modus",
+                  "da": "Tørre",
+                  "es": "Seco",
+                  "fr": "Sec",
+                  "it": "Asciutto",
+                  "no": "Tørke",
+                  "sv": "Torka",
+                  "pl": "Suchy",
+                  "ru": "Сухой",
+                  "ko": "마른"
                 }
               },
               {
                 "id": "FAN",
                 "label": {
-                  "en": "Fan"
+                  "en": "Fan",
+                  "nl": "Ventilator",
+                  "de": "Modus",
+                  "da": "Ventilator",
+                  "es": "admiradora",
+                  "fr": "ventilateur",
+                  "it": "Fan",
+                  "no": "Fan",
+                  "sv": "Fläkt",
+                  "pl": "Wentylator",
+                  "ru": "Вентилятор",
+                  "ko": "팬"
                 }
               },
               {
@@ -681,7 +1311,16 @@
                 "label": {
                   "en": "Off",
                   "nl": "Uit",
-                  "de": "Aus"
+                  "de": "Aus",
+                  "da": "Slukket",
+                  "es": "Apagado",
+                  "fr": "Désactivé",
+                  "it": "Spento",
+                  "no": "Av",
+                  "sv": "Av",
+                  "pl": "Wyłączony",
+                  "ru": "Выключенный",
+                  "ko": "끄다"
                 }
               }
             ]
@@ -698,7 +1337,16 @@
         "titleFormatted": {
           "en": "Fan speed is !{{|not}} [[fanSpeed]]",
           "nl": "Ventilator snelheid is !{{|niet}} [[fanSpeed]]",
-          "de": "Lüftergeschwindigkeit ist !{{|nicht}} [[fanSpeed]]"
+          "de": "Lüftergeschwindigkeit ist !{{|nicht}} [[fanSpeed]]",
+          "da": "Blæserhastigheden er !{{|ikke}} [[fanSpeed]]",
+          "es": "La velocidad del ventilador es !{{|no}} [[fanSpeed]]",
+          "fr": "La vitesse du ventilateur n'est !{{|pas}} [[fanSpeed]]",
+          "it": "La velocità della ventola è !{{|non}} [[fanSpeed]]",
+          "no": "Viftehastigheten er !{{|ikke}} [[fanSpeed]]",
+          "sv": "Fläkthastigheten är !{{|inte}} [[fanSpeed]]",
+          "pl": "Prędkość wentylatora to !{{|not}} [[fanSpeed]]",
+          "ru": "Скорость вентилятора !{{|not}} [[fanSpeed]]",
+          "ko": "팬 속도는 !{{|아님}} [[fanSpeed]]입니다."
         },
         "args": [
           {
@@ -712,7 +1360,16 @@
             "title": {
               "en": "Fan speed",
               "nl": "Ventilator snelheid",
-              "de": "Lüftergeschwindigkeit"
+              "de": "Lüftergeschwindigkeit",
+              "da": "Blæserhastighed",
+              "es": "La velocidad del ventilador",
+              "fr": "La vitesse du ventilateur",
+              "it": "La velocità della ventola",
+              "no": "Viftehastighet",
+              "sv": "Fläkthastigheten",
+              "pl": "Prędkość wentylatora",
+              "ru": "Скорость вентилятора",
+              "ko": "팬 속도"
             },
             "values": [
               {
@@ -728,7 +1385,16 @@
                 "label": {
                   "en": "Low",
                   "nl": "Laag",
-                  "de": "Niedrig"
+                  "de": "Niedrig",
+                  "da": "Lav",
+                  "es": "Bajo",
+                  "fr": "Faible",
+                  "it": "Basso",
+                  "no": "Lav",
+                  "sv": "Låg",
+                  "pl": "Niski",
+                  "ru": "Низкий",
+                  "ko": "낮은"
                 }
               },
               {
@@ -736,7 +1402,16 @@
                 "label": {
                   "en": "Middle",
                   "nl": "Middel",
-                  "de": "Mitte"
+                  "de": "Mitte",
+                  "da": "Midten",
+                  "es": "Medio",
+                  "fr": "Milieu",
+                  "it": "Mezzo",
+                  "no": "Midten",
+                  "sv": "Mitten",
+                  "pl": "Środek",
+                  "ru": "Середина",
+                  "ko": "가운데"
                 }
               },
               {
@@ -744,7 +1419,16 @@
                 "label": {
                   "en": "High",
                   "nl": "Hoog",
-                  "de": "Hoch"
+                  "de": "Hoch",
+                  "da": "Høj",
+                  "es": "Alto",
+                  "fr": "Haut",
+                  "it": "Alto",
+                  "no": "Høy",
+                  "sv": "Hög",
+                  "pl": "Wysoki",
+                  "ru": "Высокий",
+                  "ko": "높은"
                 }
               }
             ]
@@ -761,7 +1445,16 @@
         "titleFormatted": {
           "en": "Fan speed is !{{|not}} [[fanLevel]]",
           "nl": "Ventilator snelheid is !{{|niet}} [[fanLevel]]",
-          "de": "Lüftergeschwindigkeit ist !{{|nicht}} [[fanLevel]]"
+          "de": "Lüftergeschwindigkeit ist !{{|nicht}} [[fanLevel]]",
+          "da": "Blæserhastigheden er !{{|ikke}} [[fanLevel]]",
+          "es": "La velocidad del ventilador es !{{|no}} [[fanLevel]]",
+          "fr": "La vitesse du ventilateur n'est !{{|pas}} [[fanLevel]]",
+          "it": "La velocità della ventola è !{{|non}} [[fanLevel]]",
+          "no": "Viftehastigheten er !{{|ikke}} [[fanLevel]]",
+          "sv": "Fläkthastigheten är !{{|inte}} [[fanLevel]]",
+          "pl": "Prędkość wentylatora to !{{|not}} [[fanLevel]]",
+          "ru": "Скорость вентилятора !{{|not}} [[fanLevel]]",
+          "ko": "팬 속도는 !{{|아님}} [[fanLevel]]입니다."
         },
         "args": [
           {
@@ -775,7 +1468,16 @@
             "title": {
               "en": "Fan speed",
               "nl": "Ventilator snelheid",
-              "de": "Lüftergeschwindigkeit"
+              "de": "Lüftergeschwindigkeit",
+              "da": "Blæserhastighed",
+              "es": "La velocidad del ventilador",
+              "fr": "La vitesse du ventilateur",
+              "it": "La velocità della ventola",
+              "no": "Viftehastighet",
+              "sv": "Fläkthastigheten",
+              "pl": "Prędkość wentylatora",
+              "ru": "Скорость вентилятора",
+              "ko": "팬 속도"
             },
             "values": [
               {
@@ -791,7 +1493,16 @@
                 "label": {
                   "en": "Silent",
                   "nl": "Stil",
-                  "de": "Leise"
+                  "de": "Leise",
+                  "da": "Stille",
+                  "es": "Silencioso",
+                  "fr": "Silencieux",
+                  "it": "Silenzioso",
+                  "no": "Stille",
+                  "sv": "Tyst",
+                  "pl": "Cichy",
+                  "ru": "Тихий",
+                  "ko": "조용한"
                 }
               },
               {
@@ -799,7 +1510,16 @@
                 "label": {
                   "en": "Level 1",
                   "nl": "Niveau 1",
-                  "de": "Level 1"
+                  "de": "Level 1",
+                  "da": "Niveau 1",
+                  "es": "Nivel 1",
+                  "fr": "Niveau 1",
+                  "it": "Livello 1",
+                  "no": "Nivå 1",
+                  "sv": "Nivå 1",
+                  "pl": "Poziom 1",
+                  "ru": "Уровень 1",
+                  "ko": "레벨 1"
                 }
               },
               {
@@ -807,7 +1527,16 @@
                 "label": {
                   "en": "Level 2",
                   "nl": "Niveau 2",
-                  "de": "Level 2"
+                  "de": "Level 2",
+                  "da": "Niveau 2",
+                  "es": "Nivel 2",
+                  "fr": "Niveau 2",
+                  "it": "Livello 2",
+                  "no": "Nivå 2",
+                  "sv": "Nivå 2",
+                  "pl": "Poziom 2",
+                  "ru": "Уровень 2",
+                  "ko": "레벨 2"
                 }
               },
               {
@@ -815,7 +1544,16 @@
                 "label": {
                   "en": "Level 3",
                   "nl": "Niveau 3",
-                  "de": "Level 3"
+                  "de": "Level 3",
+                  "da": "Niveau 3",
+                  "es": "Nivel 3",
+                  "fr": "Niveau 3",
+                  "it": "Livello 3",
+                  "no": "Nivå 3",
+                  "sv": "Nivå 3",
+                  "pl": "Poziom 3",
+                  "ru": "Уровень 3",
+                  "ko": "레벨 3"
                 }
               },
               {
@@ -823,7 +1561,16 @@
                 "label": {
                   "en": "Level 4",
                   "nl": "Niveau 4",
-                  "de": "Level 4"
+                  "de": "Level 4",
+                  "da": "Niveau 4",
+                  "es": "Nivel 4",
+                  "fr": "Niveau 4",
+                  "it": "Livello 4",
+                  "no": "Nivå 4",
+                  "sv": "Nivå 4",
+                  "pl": "Poziom 4",
+                  "ru": "Уровень 4",
+                  "ko": "레벨 4"
                 }
               },
               {
@@ -831,7 +1578,16 @@
                 "label": {
                   "en": "Level 5",
                   "nl": "Niveau 5",
-                  "de": "Level 5"
+                  "de": "Level 5",
+                  "da": "Niveau 5",
+                  "es": "Nivel 5",
+                  "fr": "Niveau 5",
+                  "it": "Livello 5",
+                  "no": "Nivå 5",
+                  "sv": "Nivå 5",
+                  "pl": "Poziom 5",
+                  "ru": "Уровень 5",
+                  "ko": "레벨 5"
                 }
               }
             ]
@@ -848,7 +1604,16 @@
         "titleFormatted": {
           "en": "Swing is !{{|not}} [[swing]]",
           "nl": "Swing is !{{|niet}} [[swing]]",
-          "de": "Swing ist !{{|nicht}} [[swing]]"
+          "de": "Swing ist !{{|nicht}} [[swing]]",
+          "da": "Gynge er !{{|ikke}} [[swing]]",
+          "es": "El swing es !{{|not}} [[swing]]",
+          "fr": "Le swing est !{{|pas}} [[swing]]",
+          "it": "Swing è !{{|non}} [[swing]]",
+          "no": "Swing er !{{|ikke}} [[swing]]",
+          "sv": "Swing är !{{|inte}} [[swing]]",
+          "pl": "Swing to !{{nie}} [[swing]]",
+          "ru": "Свинг — это !{{not}} [[swing]]",
+          "ko": "스윙은 !{{아닙니다}}[[swing]]"
         },
         "args": [
           {
@@ -870,7 +1635,16 @@
                 "label": {
                   "en": "On",
                   "nl": "Aan",
-                  "de": "Ein"
+                  "de": "Ein",
+                  "da": "På",
+                  "es": "En",
+                  "fr": "Sur",
+                  "it": "Su",
+                  "no": "På",
+                  "sv": "På",
+                  "pl": "Na",
+                  "ru": "В",
+                  "ko": "~에"
                 }
               },
               {
@@ -878,7 +1652,16 @@
                 "label": {
                   "en": "Off",
                   "nl": "Uit",
-                  "de": "Aus"
+                  "de": "Aus",
+                  "da": "Slukket",
+                  "es": "Apagado",
+                  "fr": "Désactivé",
+                  "it": "Spento",
+                  "no": "Av",
+                  "sv": "Av",
+                  "pl": "Wyłączony",
+                  "ru": "Выключенный",
+                  "ko": "끄다"
                 }
               }
             ]
@@ -895,7 +1678,16 @@
         "titleFormatted": {
           "en": "Vertical swing is !{{|not}} [[verticalSwing]]",
           "nl": "Verticale swing is !{{|niet}} [[verticalSwing]]",
-          "de": "Vertikaler swing ist !{{|nicht}} [[verticalSwing]]"
+          "de": "Vertikaler swing ist !{{|nicht}} [[verticalSwing]]",
+          "da": "Lodret sving er !{{|ikke}} [[verticalSwing]]",
+          "es": "El giro vertical es !{{|not}} [[verticalSwing]]",
+          "fr": "Le swing vertical est !{{|pas}} [[verticalSwing]]",
+          "it": "L'oscillazione verticale è !{{|non}} [[verticalSwing]]",
+          "no": "Vertikal sving er !{{|ikke}} [[verticalSwing]]",
+          "sv": "Vertikal swing är !{{|not}} [[verticalSwing]]",
+          "pl": "Pionowy swing to !{{nie}} [[verticalSwing]]",
+          "ru": "Вертикальный свинг — это !{{not}} [[verticalSwing]]",
+          "ko": "수직 스윙은 !{{아닙니다}} [[verticalSwing]]"
         },
         "args": [
           {
@@ -909,7 +1701,16 @@
             "title": {
               "en": "Vertical swing",
               "nl": "Verticale swing",
-              "de": "Vertikaler swing"
+              "de": "Vertikaler swing",
+              "da": "Lodret gynge",
+              "es": "Oscilación vertical",
+              "fr": "Balançoire verticale",
+              "it": "Oscillazione verticale",
+              "no": "Vertikal sving",
+              "sv": "Vertikal gunga",
+              "pl": "Huśtawka pionowa",
+              "ru": "Вертикальный Качающийся",
+              "ko": "수직 스윙"
             },
             "values": [
               {
@@ -917,7 +1718,16 @@
                 "label": {
                   "en": "On",
                   "nl": "Aan",
-                  "de": "Ein"
+                  "de": "Ein",
+                  "da": "På",
+                  "es": "En",
+                  "fr": "Sur",
+                  "it": "Su",
+                  "no": "På",
+                  "sv": "På",
+                  "pl": "Na",
+                  "ru": "В",
+                  "ko": "~에"
                 }
               },
               {
@@ -933,7 +1743,16 @@
                 "label": {
                   "en": "Up",
                   "nl": "Omhoog",
-                  "de": "Oben"
+                  "de": "Oben",
+                  "da": "Op",
+                  "es": "Arriba",
+                  "fr": "En haut",
+                  "it": "Su",
+                  "no": "Opp",
+                  "sv": "Upp",
+                  "pl": "W górę",
+                  "ru": "Вверх",
+                  "ko": "~위로 향하여"
                 }
               },
               {
@@ -941,7 +1760,16 @@
                 "label": {
                   "en": "Mid-Up",
                   "nl": "Midden-Omhoog",
-                  "de": "Mitte-Oben"
+                  "de": "Mitte-Oben",
+                  "da": "Midt op",
+                  "es": "A mitad de camino",
+                  "fr": "Milieu vers le haut",
+                  "it": "Al centro",
+                  "no": "Midt opp",
+                  "sv": "Mitten upp",
+                  "pl": "Centrum w górę",
+                  "ru": "Центр вверх",
+                  "ko": "~센터업"
                 }
               },
               {
@@ -949,7 +1777,16 @@
                 "label": {
                   "en": "Mid",
                   "nl": "Midden",
-                  "de": "Mitte"
+                  "de": "Mitte",
+                  "da": "Midten",
+                  "es": "Medio",
+                  "fr": "Milieu",
+                  "it": "Mezzo",
+                  "no": "Midten",
+                  "sv": "Mitten",
+                  "pl": "Środek",
+                  "ru": "Середина",
+                  "ko": "가운데"
                 }
               },
               {
@@ -957,7 +1794,16 @@
                 "label": {
                   "en": "Mid-Down",
                   "nl": "Midden-Beneden",
-                  "de": "Mitte-Unten"
+                  "de": "Mitte-Unten",
+                  "da": "Midt nede",
+                  "es": "Medio-abajo",
+                  "fr": "Milieu-bas",
+                  "it": "Medio-basso",
+                  "no": "Midt nede",
+                  "sv": "Mitten ner",
+                  "pl": "Wyśrodkuj w dół",
+                  "ru": "Центр вниз",
+                  "ko": "중앙 아래로"
                 }
               },
               {
@@ -965,7 +1811,16 @@
                 "label": {
                   "en": "Down",
                   "nl": "Beneden",
-                  "de": "Unten"
+                  "de": "Unten",
+                  "da": "Ned",
+                  "es": "Abajo",
+                  "fr": "Bas",
+                  "it": "Basso",
+                  "no": "Ned",
+                  "sv": "Ner",
+                  "pl": "W dół",
+                  "ru": "Вниз",
+                  "ko": "아래에"
                 }
               },
               {
@@ -973,7 +1828,16 @@
                 "label": {
                   "en": "Off",
                   "nl": "Uit",
-                  "de": "Aus"
+                  "de": "Aus",
+                  "da": "Slukket",
+                  "es": "Apagado",
+                  "fr": "Désactivé",
+                  "it": "Spento",
+                  "no": "Av",
+                  "sv": "Av",
+                  "pl": "Wyłączony",
+                  "ru": "Выключенный",
+                  "ko": "끄다"
                 }
               }
             ]
@@ -990,7 +1854,16 @@
         "titleFormatted": {
           "en": "Horizontal swing is !{{|not}} [[horizontalSwing]]",
           "nl": "Horizontale swing is !{{|niet}} [[horizontalSwing]]",
-          "de": "Horizontaler swing ist !{{|nicht}} [[horizontalSwing]]"
+          "de": "Horizontaler swing ist !{{|nicht}} [[horizontalSwing]]",
+          "da": "Vandret sving er !{{|ikke}} [[horizontalSwing]]",
+          "es": "El giro horizontal es !{{|not}} [[horizontalSwing]]",
+          "fr": "Le swing horizontal est !{{|pas}} [[horizontalSwing]]",
+          "it": "L'oscillazione orizzontale è !{{|non}} [[horizontalSwing]]",
+          "no": "Horisontal sving er !{{|ikke}} [[horizontalSwing]]",
+          "sv": "Horisontell swing är !{{|not}} [[horizontalSwing]]",
+          "pl": "Swing poziomy to !{{nie}} [[horizontalSwing]]",
+          "ru": "Горизонтальный Swing — это !{{not}} [[horizontalSwing]]",
+          "ko": "수평 스윙은 !{{아닙니다}} [[horizontalSwing]]"
         },
         "args": [
           {
@@ -1004,7 +1877,16 @@
             "title": {
               "en": "Horizontal swing",
               "nl": "Horizontale swing",
-              "de": "Horizontaler swing"
+              "de": "Horizontaler swing",
+              "da": "Vandret sving",
+              "es": "Oscilación horizontal",
+              "fr": "Balançoire horizontale",
+              "it": "Oscillazione orizzontale",
+              "no": "Horisontal sving",
+              "sv": "Horisontell gunga",
+              "pl": "Huśtawka pozioma",
+              "ru": "Горизонтальное качание",
+              "ko": "수평 스윙"
             },
             "values": [
               {
@@ -1012,7 +1894,16 @@
                 "label": {
                   "en": "On",
                   "nl": "Aan",
-                  "de": "Ein"
+                  "de": "Ein",
+                  "da": "På",
+                  "es": "En",
+                  "fr": "Sur",
+                  "it": "Su",
+                  "no": "På",
+                  "sv": "På",
+                  "pl": "Na",
+                  "ru": "В",
+                  "ko": "~에"
                 }
               },
               {
@@ -1028,7 +1919,16 @@
                 "label": {
                   "en": "Left",
                   "nl": "Links",
-                  "de": "Links"
+                  "de": "Links",
+                  "da": "Venstre",
+                  "es": "Izquierda",
+                  "fr": "Gauche",
+                  "it": "Sinistra",
+                  "no": "Igjen",
+                  "sv": "Vänster",
+                  "pl": "Lewy",
+                  "ru": "Левый",
+                  "ko": "왼쪽"
                 }
               },
               {
@@ -1036,7 +1936,16 @@
                 "label": {
                   "en": "Mid-Left",
                   "nl": "Midden-Links",
-                  "de": "Mitte-Links"
+                  "de": "Mitte-Links",
+                  "da": "Midt Venstre",
+                  "es": "Medio-Izquierda",
+                  "fr": "Milieu-Gauche",
+                  "it": "Centro-sinistra",
+                  "no": "Midt-venstre",
+                  "sv": "Mitt-vänster",
+                  "pl": "Środkowa lewica",
+                  "ru": "Центр слева",
+                  "ko": "중앙 왼쪽"
                 }
               },
               {
@@ -1044,7 +1953,16 @@
                 "label": {
                   "en": "Mid",
                   "nl": "Midden",
-                  "de": "Mitte"
+                  "de": "Mitte",
+                  "da": "Midten",
+                  "es": "Medio",
+                  "fr": "Milieu",
+                  "it": "Mezzo",
+                  "no": "Midten",
+                  "sv": "Mitten",
+                  "pl": "Środek",
+                  "ru": "Середина",
+                  "ko": "가운데"
                 }
               },
               {
@@ -1052,7 +1970,16 @@
                 "label": {
                   "en": "Mid-Right",
                   "nl": "Midden-Rechts",
-                  "de": "Mitte-Rechts"
+                  "de": "Mitte-Rechts",
+                  "da": "Midten højre",
+                  "es": "Medio-derecho",
+                  "fr": "Milieu-Droite",
+                  "it": "Centro-destra",
+                  "no": "Midt-høyre",
+                  "sv": "Mitten-höger",
+                  "pl": "Centrum po prawej",
+                  "ru": "Центр справа",
+                  "ko": "중앙 오른쪽"
                 }
               },
               {
@@ -1060,7 +1987,16 @@
                 "label": {
                   "en": "Right",
                   "nl": "Rechts",
-                  "de": "Rechts"
+                  "de": "Rechts",
+                  "da": "Højre",
+                  "es": "Derecho",
+                  "fr": "Droite",
+                  "it": "Destra",
+                  "no": "Høyre",
+                  "sv": "Höger",
+                  "pl": "Prawidłowy",
+                  "ru": "Верно",
+                  "ko": "오른쪽"
                 }
               },
               {
@@ -1068,7 +2004,16 @@
                 "label": {
                   "en": "Off",
                   "nl": "Uit",
-                  "de": "Aus"
+                  "de": "Aus",
+                  "da": "Slukket",
+                  "es": "Apagado",
+                  "fr": "Désactivé",
+                  "it": "Spento",
+                  "no": "Av",
+                  "sv": "Av",
+                  "pl": "Wyłączony",
+                  "ru": "Выключенный",
+                  "ko": "끄다"
                 }
               }
             ]
@@ -1080,7 +2025,16 @@
         "title": {
           "en": "Hot water is !{{on|off}}",
           "nl": "Warm water is !{{ingeschakeld|uitgeschakeld}}",
-          "de": "Warmwasser ist !{{eingeschaltet|abgeschaltet}}"
+          "de": "Warmwasser ist !{{eingeschaltet|abgeschaltet}}",
+          "da": "Varmt vand er !{{tændt|slukket}}",
+          "es": "El agua caliente está !{{encendida|apagada}}",
+          "fr": "L'eau chaude est !{{allumée|éteinte}}",
+          "it": "L'acqua calda è !{{accesa|spenta}}",
+          "no": "Varmt vann er !{{slått på|slått av}}",
+          "sv": "Varmvatten är !{{påslaget|avstängt}}",
+          "pl": "Gorąca woda jest !{{włączona|wyłączona}}",
+          "ru": "Горячая вода !{{включена|выключена}}",
+          "ko": "온수가 !{{켜짐|꺼짐}} 상태입니다"
         },
         "args": [
           {
@@ -1097,14 +2051,33 @@
         "title": {
           "en": "Boost heating",
           "nl": "Maximaal verwarmen",
-          "de": "Maximale Erwärmung"
+          "de": "Maximale Erwärmung",
+          "da": "Boost opvarmning",
+          "es": "Aumentar calefacción",
+          "fr": "Boost chauffage",
+          "it": "Aumenta il riscaldamento",
+          "no": "Øk oppvarming",
+          "sv": "Boost uppvärmning",
+          "pl": "Zwiększ ogrzewanie",
+          "ru": "Увеличить отопление",
+          "ko": "난방 강화"
         },
         "args": [
           {
             "type": "device",
             "name": "device",
             "title": {
-              "en": "Device"
+              "en": "Device",
+              "da": "Enhed",
+              "de": "Gerät",
+              "es": "Dispositivo",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "no": "Enhet",
+              "sv": "Enhet",
+              "pl": "Urządzenie",
+              "ru": "Устройство",
+              "ko": "장치"
             },
             "filter": "driver_id=thermostat|valve&capabilities=target_temperature"
           }
@@ -1115,7 +2088,16 @@
         "title": {
           "en": "Turn off",
           "nl": "Zet uit",
-          "de": "Ausschalten"
+          "de": "Ausschalten",
+          "da": "Sluk",
+          "es": "Apagar",
+          "fr": "Éteindre",
+          "it": "Spegnere",
+          "no": "Slå av",
+          "sv": "Stäng av",
+          "pl": "Wyłącz",
+          "ru": "Выключить",
+          "ko": "끄다"
         },
         "duration": true,
         "args": [
@@ -1123,7 +2105,18 @@
             "type": "device",
             "name": "device",
             "title": {
-              "en": "Device"
+              "en": "Device",
+              "da": "Enhed",
+              "de": "Gerät",
+              "es": "Dispositivo",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "nl": "Apparaat",
+              "no": "Enhet",
+              "sv": "Enhet",
+              "pl": "Urządzenie",
+              "ru": "Устройство",
+              "ko": "장치"
             },
             "filter": "driver_id=thermostat|valve&capabilities=power_mode"
           }
@@ -1134,7 +2127,16 @@
         "title": {
           "en": "Turn on",
           "nl": "Zet aan",
-          "de": "Einschalten"
+          "de": "Einschalten",
+          "da": "Tænd",
+          "es": "Encender",
+          "fr": "Allumer",
+          "it": "Accendere",
+          "no": "Slå på",
+          "sv": "Slå på",
+          "pl": "Włącz",
+          "ru": "Включить",
+          "ko": "켜기"
         },
         "duration": true,
         "args": [
@@ -1142,7 +2144,18 @@
             "type": "device",
             "name": "device",
             "title": {
-              "en": "Device"
+              "en": "Device",
+              "nl": "Apparaat",
+              "da": "Enhed",
+              "de": "Gerät",
+              "es": "Dispositivo",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "no": "Enhet",
+              "sv": "Enhet",
+              "pl": "Urządzenie",
+              "ru": "Устройство",
+              "ko": "장치"
             },
             "filter": "driver_id=thermostat|valve&capabilities=power_mode"
           }
@@ -1153,14 +2166,34 @@
         "title": {
           "en": "Resume Smart Schedule",
           "nl": "Slimme Schema hervatten",
-          "de": "Intelligenten Zeitplan fortsetzen"
+          "de": "Intelligenten Zeitplan fortsetzen",
+          "da": "Genoptag Smart Skema",
+          "es": "Reanudar Horario Inteligente",
+          "fr": "Reprendre le Planning Intelligente",
+          "it": "Riprendi Programma Intelligente",
+          "no": "Gjenoppta Smart Plan",
+          "sv": "Återuppta Smart Schema",
+          "pl": "Wznów Inteligentny Harmonogram",
+          "ru": "Возобновить Умное Расписание",
+          "ko": "스마트 일정 재개"
         },
         "args": [
           {
             "type": "device",
             "name": "device",
             "title": {
-              "en": "Device"
+              "en": "Device",
+              "nl": "Apparaat",
+              "da": "Enhed",
+              "de": "Gerät",
+              "es": "Dispositivo",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "no": "Enhet",
+              "sv": "Enhet",
+              "pl": "Urządzenie",
+              "ru": "Устройство",
+              "ko": "장치"
             },
             "filter": "driver_id=airconditioning|thermostat|valve"
           }
@@ -1177,7 +2210,16 @@
         "titleFormatted": {
           "en": "Set Air conditioning mode to [[acMode]]",
           "nl": "Zet Airco modus naar [[acMode]]",
-          "de": "Stell den Klimaanlagenmodus auf [[acMode]]"
+          "de": "Stell den Klimaanlagenmodus auf [[acMode]]",
+          "da": "Indstil airconditiontilstand til [[acMode]]",
+          "es": "Establezca el modo de aire acondicionado en [[acMode]]",
+          "fr": "Réglez le mode de climatisation sur [[acMode]]",
+          "it": "Imposta la modalità aria condizionata su [[acMode]]",
+          "no": "Sett Air condition-modus til [[acMode]]",
+          "sv": "Ställ in luftkonditioneringsläget på [[acMode]]",
+          "pl": "Ustaw tryb klimatyzacji na [[acMode]]",
+          "ru": "Установите режим кондиционирования воздуха на [[acMode]]",
+          "ko": "에어컨 모드를 [[acMode]]로 설정하세요"
         },
         "args": [
           {
@@ -1191,31 +2233,84 @@
             "title": {
               "en": "Mode",
               "nl": "Modus",
-              "de": "Modus"
+              "de": "Modus",
+              "da": "Mode",
+              "es": "Modo",
+              "fr": "Mode",
+              "it": "Modalità",
+              "no": "Modus",
+              "sv": "Läge",
+              "pl": "Tryb",
+              "ru": "Режим",
+              "ko": "방법"
             },
             "values": [
               {
                 "id": "COOL",
                 "label": {
-                  "en": "Cool"
+                  "en": "Cool",
+                  "nl": "Koelen",
+                  "de": "Modus",
+                  "da": "Afkøle",
+                  "es": "Fresco",
+                  "fr": "Cool",
+                  "it": "Freddo",
+                  "no": "Kjøle",
+                  "sv": "Sval",
+                  "pl": "Fajny",
+                  "ru": "Прохладный",
+                  "ko": "시원한"
                 }
               },
               {
                 "id": "HEAT",
                 "label": {
-                  "en": "Heat"
+                  "en": "Heat",
+                  "nl": "Verwarmen",
+                  "de": "Modus",
+                  "da": "Varme",
+                  "es": "Calor",
+                  "fr": "Chaleur",
+                  "it": "Calore",
+                  "no": "Varme",
+                  "sv": "Värme",
+                  "pl": "Ciepło",
+                  "ru": "Нагревать",
+                  "ko": "열"
                 }
               },
               {
                 "id": "DRY",
                 "label": {
-                  "en": "Dry"
+                  "en": "Dry",
+                  "nl": "Drogen",
+                  "de": "Modus",
+                  "da": "Tørre",
+                  "es": "Seco",
+                  "fr": "Sec",
+                  "it": "Asciutto",
+                  "no": "Tørke",
+                  "sv": "Torka",
+                  "pl": "Suchy",
+                  "ru": "Сухой",
+                  "ko": "마른"
                 }
               },
               {
                 "id": "FAN",
                 "label": {
-                  "en": "Fan"
+                  "en": "Fan",
+                  "nl": "Ventilator",
+                  "de": "Modus",
+                  "da": "Ventilator",
+                  "es": "admiradora",
+                  "fr": "ventilateur",
+                  "it": "Fan",
+                  "no": "Fan",
+                  "sv": "Fläkt",
+                  "pl": "Wentylator",
+                  "ru": "Вентилятор",
+                  "ko": "팬"
                 }
               },
               {
@@ -1229,7 +2324,16 @@
                 "label": {
                   "en": "Off",
                   "nl": "Uit",
-                  "de": "Aus"
+                  "de": "Aus",
+                  "da": "Slukket",
+                  "es": "Apagado",
+                  "fr": "Désactivé",
+                  "it": "Spento",
+                  "no": "Av",
+                  "sv": "Av",
+                  "pl": "Wyłączony",
+                  "ru": "Выключенный",
+                  "ko": "끄다"
                 }
               }
             ]
@@ -1247,7 +2351,16 @@
         "titleFormatted": {
           "en": "Set fan speed to [[fanSpeed]]",
           "nl": "Zet ventilator snelheid naar [[fanSpeed]]",
-          "de": "Stell die Lüftergeschwindigkeit auf [[fanSpeed]]"
+          "de": "Stell die Lüftergeschwindigkeit auf [[fanSpeed]]",
+          "da": "Indstil blæserhastigheden til [[fanSpeed]]",
+          "es": "Establezca la velocidad del ventilador en [[fanSpeed]]",
+          "fr": "Régler la vitesse du ventilateur sur [[fanSpeed]]",
+          "it": "Imposta la velocità della ventola su [[fanSpeed]]",
+          "no": "Sett viftehastigheten til [[fanSpeed]]",
+          "sv": "Ställ in fläkthastigheten till [[fanSpeed]]",
+          "pl": "Ustaw prędkość wentylatora na [[fanSpeed]]",
+          "ru": "Установите скорость вентилятора на [[fanSpeed]]",
+          "ko": "팬 속도를 [[fanSpeed]]로 설정하세요"
         },
         "args": [
           {
@@ -1261,7 +2374,16 @@
             "title": {
               "en": "Fan speed",
               "nl": "Ventilator snelheid",
-              "de": "Lüftergeschwindigkeit"
+              "de": "Lüftergeschwindigkeit",
+              "da": "Blæserhastighed",
+              "es": "La velocidad del ventilador",
+              "fr": "La vitesse du ventilateur",
+              "it": "La velocità della ventola",
+              "no": "Viftehastighet",
+              "sv": "Fläkthastigheten",
+              "pl": "Prędkość wentylatora",
+              "ru": "Скорость вентилятора",
+              "ko": "팬 속도"
             },
             "values": [
               {
@@ -1277,7 +2399,16 @@
                 "label": {
                   "en": "Low",
                   "nl": "Laag",
-                  "de": "Niedrig"
+                  "de": "Niedrig",
+                  "da": "Lav",
+                  "es": "Bajo",
+                  "fr": "Faible",
+                  "it": "Basso",
+                  "no": "Lav",
+                  "sv": "Låg",
+                  "pl": "Niski",
+                  "ru": "Низкий",
+                  "ko": "낮은"
                 }
               },
               {
@@ -1285,7 +2416,16 @@
                 "label": {
                   "en": "Middle",
                   "nl": "Middel",
-                  "de": "Mitte"
+                  "de": "Mitte",
+                  "da": "Midten",
+                  "es": "Medio",
+                  "fr": "Milieu",
+                  "it": "Mezzo",
+                  "no": "Midten",
+                  "sv": "Mitten",
+                  "pl": "Środek",
+                  "ru": "Середина",
+                  "ko": "가운데"
                 }
               },
               {
@@ -1293,7 +2433,16 @@
                 "label": {
                   "en": "High",
                   "nl": "Hoog",
-                  "de": "Hoch"
+                  "de": "Hoch",
+                  "da": "Høj",
+                  "es": "Alto",
+                  "fr": "Haut",
+                  "it": "Alto",
+                  "no": "Høy",
+                  "sv": "Hög",
+                  "pl": "Wysoki",
+                  "ru": "Высокий",
+                  "ko": "높은"
                 }
               }
             ]
@@ -1311,7 +2460,16 @@
         "titleFormatted": {
           "en": "Set fan speed to [[fanLevel]]",
           "nl": "Zet ventilator snelheid naar [[fanLevel]]",
-          "de": "Stell die Lüftergeschwindigkeit auf [[fanLevel]]"
+          "de": "Stell die Lüftergeschwindigkeit auf [[fanLevel]]",
+          "da": "Indstil blæserhastigheden til [[fanLevel]]",
+          "es": "Establezca la velocidad del ventilador en [[fanLevel]]",
+          "fr": "Régler la vitesse du ventilateur sur [[fanLevel]]",
+          "it": "Imposta la velocità della ventola su [[fanLevel]]",
+          "no": "Sett viftehastigheten til [[fanLevel]]",
+          "sv": "Ställ in fläkthastigheten till [[fanLevel]]",
+          "pl": "Ustaw prędkość wentylatora na [[fanLevel]]",
+          "ru": "Установите скорость вентилятора на [[fanLevel]]",
+          "ko": "팬 속도를 [[fanLevel]]로 설정하세요"
         },
         "args": [
           {
@@ -1325,7 +2483,16 @@
             "title": {
               "en": "Fan speed",
               "nl": "Ventilator snelheid",
-              "de": "Lüftergeschwindigkeit"
+              "de": "Lüftergeschwindigkeit",
+              "da": "Blæserhastighed",
+              "es": "La velocidad del ventilador",
+              "fr": "La vitesse du ventilateur",
+              "it": "La velocità della ventola",
+              "no": "Viftehastighet",
+              "sv": "Fläkthastigheten",
+              "pl": "Prędkość wentylatora",
+              "ru": "Скорость вентилятора",
+              "ko": "팬 속도"
             },
             "values": [
               {
@@ -1341,7 +2508,16 @@
                 "label": {
                   "en": "Silent",
                   "nl": "Stil",
-                  "de": "Leise"
+                  "de": "Leise",
+                  "da": "Stille",
+                  "es": "Silencioso",
+                  "fr": "Silencieux",
+                  "it": "Silenzioso",
+                  "no": "Stille",
+                  "sv": "Tyst",
+                  "pl": "Cichy",
+                  "ru": "Тихий",
+                  "ko": "조용한"
                 }
               },
               {
@@ -1349,7 +2525,16 @@
                 "label": {
                   "en": "Level 1",
                   "nl": "Niveau 1",
-                  "de": "Level 1"
+                  "de": "Level 1",
+                  "da": "Niveau 1",
+                  "es": "Nivel 1",
+                  "fr": "Niveau 1",
+                  "it": "Livello 1",
+                  "no": "Nivå 1",
+                  "sv": "Nivå 1",
+                  "pl": "Poziom 1",
+                  "ru": "Уровень 1",
+                  "ko": "레벨 1"
                 }
               },
               {
@@ -1357,7 +2542,16 @@
                 "label": {
                   "en": "Level 2",
                   "nl": "Niveau 2",
-                  "de": "Level 2"
+                  "de": "Level 2",
+                  "da": "Niveau 2",
+                  "es": "Nivel 2",
+                  "fr": "Niveau 2",
+                  "it": "Livello 2",
+                  "no": "Nivå 2",
+                  "sv": "Nivå 2",
+                  "pl": "Poziom 2",
+                  "ru": "Уровень 2",
+                  "ko": "레벨 2"
                 }
               },
               {
@@ -1365,7 +2559,16 @@
                 "label": {
                   "en": "Level 3",
                   "nl": "Niveau 3",
-                  "de": "Level 3"
+                  "de": "Level 3",
+                  "da": "Niveau 3",
+                  "es": "Nivel 3",
+                  "fr": "Niveau 3",
+                  "it": "Livello 3",
+                  "no": "Nivå 3",
+                  "sv": "Nivå 3",
+                  "pl": "Poziom 3",
+                  "ru": "Уровень 3",
+                  "ko": "레벨 3"
                 }
               },
               {
@@ -1373,7 +2576,16 @@
                 "label": {
                   "en": "Level 4",
                   "nl": "Niveau 4",
-                  "de": "Level 4"
+                  "de": "Level 4",
+                  "da": "Niveau 4",
+                  "es": "Nivel 4",
+                  "fr": "Niveau 4",
+                  "it": "Livello 4",
+                  "no": "Nivå 4",
+                  "sv": "Nivå 4",
+                  "pl": "Poziom 4",
+                  "ru": "Уровень 4",
+                  "ko": "레벨 4"
                 }
               },
               {
@@ -1381,7 +2593,16 @@
                 "label": {
                   "en": "Level 5",
                   "nl": "Niveau 5",
-                  "de": "Level 5"
+                  "de": "Level 5",
+                  "da": "Niveau 5",
+                  "es": "Nivel 5",
+                  "fr": "Niveau 5",
+                  "it": "Livello 5",
+                  "no": "Nivå 5",
+                  "sv": "Nivå 5",
+                  "pl": "Poziom 5",
+                  "ru": "Уровень ",
+                  "ko": "레벨 5"
                 }
               }
             ]
@@ -1399,7 +2620,16 @@
         "titleFormatted": {
           "en": "Set swing to [[swing]]",
           "nl": "Zet swing naar [[swing]]",
-          "de": "Stell swing auf [[swing]]"
+          "de": "Stell swing auf [[swing]]",
+          "da": "Indstil swing til [[swing]]",
+          "es": "Establezca el swing en [[swing]]",
+          "fr": "Régler le swing sur [[swing]]",
+          "it": "Imposta lo swing su [[swing]]",
+          "no": "Sett swing til [[swing]]",
+          "sv": "Ställ in svingen på [[swing]]",
+          "pl": "Ustaw swing na [[swing]]",
+          "ru": "Установить свинг на [[swing]]",
+          "ko": "스윙을 [[swing]]으로 설정하세요"
         },
         "args": [
           {
@@ -1421,7 +2651,16 @@
                 "label": {
                   "en": "On",
                   "nl": "Aan",
-                  "de": "Ein"
+                  "de": "Ein",
+                  "da": "På",
+                  "es": "En",
+                  "fr": "Sur",
+                  "it": "Su",
+                  "no": "På",
+                  "sv": "På",
+                  "pl": "Na",
+                  "ru": "В",
+                  "ko": "~에"
                 }
               },
               {
@@ -1429,7 +2668,16 @@
                 "label": {
                   "en": "Off",
                   "nl": "Uit",
-                  "de": "Aus"
+                  "de": "Aus",
+                  "da": "Slukket",
+                  "es": "Apagado",
+                  "fr": "Désactivé",
+                  "it": "Spento",
+                  "no": "Av",
+                  "sv": "Av",
+                  "pl": "Wyłączony",
+                  "ru": "Выключенный",
+                  "ko": "끄다"
                 }
               }
             ]
@@ -1447,7 +2695,16 @@
         "titleFormatted": {
           "en": "Set vertical swing to [[verticalSwing]]",
           "nl": "Zet verticale swing naar [[verticalSwing]]",
-          "de": "Stell vertikaler swing auf [[verticalSwing]]"
+          "de": "Stell vertikaler swing auf [[verticalSwing]]",
+          "da": "Indstil lodret sving til [[verticalSwing]]",
+          "es": "Establezca el balanceo vertical en [[verticalSwing]]",
+          "fr": "Régler le swing vertical sur [[verticalSwing]]",
+          "it": "Imposta l'oscillazione verticale su [[verticalSwing]]",
+          "no": "Sett vertikal sving til [[verticalSwing]]",
+          "sv": "Ställ in vertikal svängning på [[verticalSwing]]",
+          "pl": "Ustaw ruch pionowy na [[verticalSwing]]",
+          "ru": "Установите вертикальное колебание на [[verticalSwing]]",
+          "ko": "수직 스윙을 [[verticalSwing]]으로 설정"
         },
         "args": [
           {
@@ -1461,7 +2718,16 @@
             "title": {
               "en": "Vertical swing",
               "nl": "Verticale swing",
-              "de": "Vertikaler swing"
+              "de": "Vertikaler swing",
+              "da": "Lodret gynge",
+              "es": "Oscilación vertical",
+              "fr": "Balançoire verticale",
+              "it": "Oscillazione verticale",
+              "no": "Vertikal sving",
+              "sv": "Vertikal gunga",
+              "pl": "Huśtawka pionowa",
+              "ru": "Вертикальный Качающийся",
+              "ko": "수직 스윙"
             },
             "values": [
               {
@@ -1469,7 +2735,16 @@
                 "label": {
                   "en": "On",
                   "nl": "Aan",
-                  "de": "Ein"
+                  "de": "Ein",
+                  "da": "På",
+                  "es": "En",
+                  "fr": "Sur",
+                  "it": "Su",
+                  "no": "På",
+                  "sv": "På",
+                  "pl": "Na",
+                  "ru": "В",
+                  "ko": "~에"
                 }
               },
               {
@@ -1485,7 +2760,16 @@
                 "label": {
                   "en": "Up",
                   "nl": "Omhoog",
-                  "de": "Oben"
+                  "de": "Oben",
+                  "da": "Op",
+                  "es": "Arriba",
+                  "fr": "En haut",
+                  "it": "Su",
+                  "no": "Opp",
+                  "sv": "Upp",
+                  "pl": "W górę",
+                  "ru": "Вверх",
+                  "ko": "~위로 향하여"
                 }
               },
               {
@@ -1493,7 +2777,16 @@
                 "label": {
                   "en": "Mid-Up",
                   "nl": "Midden-Omhoog",
-                  "de": "Mitte-Oben"
+                  "de": "Mitte-Oben",
+                  "da": "Midt op",
+                  "es": "A mitad de camino",
+                  "fr": "Milieu vers le haut",
+                  "it": "Al centro",
+                  "no": "Midt opp",
+                  "sv": "Mitten upp",
+                  "pl": "Centrum w górę",
+                  "ru": "Центр вверх",
+                  "ko": "~센터업"
                 }
               },
               {
@@ -1501,7 +2794,16 @@
                 "label": {
                   "en": "Mid",
                   "nl": "Midden",
-                  "de": "Mitte"
+                  "de": "Mitte",
+                  "da": "Midten",
+                  "es": "Medio",
+                  "fr": "Milieu",
+                  "it": "Mezzo",
+                  "no": "Midten",
+                  "sv": "Mitten",
+                  "pl": "Środek",
+                  "ru": "Середина",
+                  "ko": "가운데"
                 }
               },
               {
@@ -1509,7 +2811,16 @@
                 "label": {
                   "en": "Mid-Down",
                   "nl": "Midden-Beneden",
-                  "de": "Mitte-Unten"
+                  "de": "Mitte-Unten",
+                  "da": "Midt nede",
+                  "es": "Medio-abajo",
+                  "fr": "Milieu-bas",
+                  "it": "Medio-basso",
+                  "no": "Midt nede",
+                  "sv": "Mitten ner",
+                  "pl": "Wyśrodkuj w dół",
+                  "ru": "Центр вниз",
+                  "ko": "중앙 아래로"
                 }
               },
               {
@@ -1517,7 +2828,16 @@
                 "label": {
                   "en": "Down",
                   "nl": "Beneden",
-                  "de": "Unten"
+                  "de": "Unten",
+                  "da": "Ned",
+                  "es": "Abajo",
+                  "fr": "Bas",
+                  "it": "Basso",
+                  "no": "Ned",
+                  "sv": "Ner",
+                  "pl": "W dół",
+                  "ru": "Вниз",
+                  "ko": "아래에"
                 }
               },
               {
@@ -1525,7 +2845,16 @@
                 "label": {
                   "en": "Off",
                   "nl": "Uit",
-                  "de": "Aus"
+                  "de": "Aus",
+                  "da": "Slukket",
+                  "es": "Apagado",
+                  "fr": "Désactivé",
+                  "it": "Spento",
+                  "no": "Av",
+                  "sv": "Av",
+                  "pl": "Wyłączony",
+                  "ru": "Выключенный",
+                  "ko": "끄다"
                 }
               }
             ]
@@ -1543,7 +2872,16 @@
         "titleFormatted": {
           "en": "Set horizontal swing to [[horizontalSwing]]",
           "nl": "Zet horizontale swing naar [[horizontalSwing]]",
-          "de": "Stell horizontaler swing auf [[horizontalSwing]]"
+          "de": "Stell horizontaler swing auf [[horizontalSwing]]",
+          "da": "Indstil vandret sving til [[horizontalSwing]]",
+          "es": "Establezca el balanceo horizontal en [[horizontalSwing]]",
+          "fr": "Régler le swing horizontal sur [[horizontalSwing]]",
+          "it": "Imposta l'oscillazione orizzontale su [[horizontalSwing]]",
+          "no": "Sett horisontal sving til [[horizontalSwing]]",
+          "sv": "Ställ in horisontell svängning på [[horizontalSwing]]",
+          "pl": "Ustaw obrót poziomy na [[horizontalSwing]]",
+          "ru": "Установите горизонтальное колебание на [[horizontalSwing]]",
+          "ko": "수평 스윙을 [[horizontalSwing]]으로 설정"
         },
         "args": [
           {
@@ -1557,7 +2895,16 @@
             "title": {
               "en": "Horizontal swing",
               "nl": "Horizontale swing",
-              "de": "Horizontaler swing"
+              "de": "Horizontaler swing",
+              "da": "Vandret sving",
+              "es": "Oscilación horizontal",
+              "fr": "Balançoire horizontale",
+              "it": "Oscillazione orizzontale",
+              "no": "Horisontal sving",
+              "sv": "Horisontell gunga",
+              "pl": "Huśtawka pozioma",
+              "ru": "Горизонтальное качание",
+              "ko": "수평 스윙"
             },
             "values": [
               {
@@ -1565,7 +2912,16 @@
                 "label": {
                   "en": "On",
                   "nl": "Aan",
-                  "de": "Ein"
+                  "de": "Ein",
+                  "da": "På",
+                  "es": "En",
+                  "fr": "Sur",
+                  "it": "Su",
+                  "no": "På",
+                  "sv": "På",
+                  "pl": "Na",
+                  "ru": "В",
+                  "ko": "~에"
                 }
               },
               {
@@ -1581,7 +2937,16 @@
                 "label": {
                   "en": "Left",
                   "nl": "Links",
-                  "de": "Links"
+                  "de": "Links",
+                  "da": "Venstre",
+                  "es": "Izquierda",
+                  "fr": "Gauche",
+                  "it": "Sinistra",
+                  "no": "Igjen",
+                  "sv": "Vänster",
+                  "pl": "Lewy",
+                  "ru": "Левый",
+                  "ko": "왼쪽"
                 }
               },
               {
@@ -1589,7 +2954,16 @@
                 "label": {
                   "en": "Mid-Left",
                   "nl": "Midden-Links",
-                  "de": "Mitte-Links"
+                  "de": "Mitte-Links",
+                  "da": "Midt Venstre",
+                  "es": "Medio-Izquierda",
+                  "fr": "Milieu-Gauche",
+                  "it": "Centro-sinistra",
+                  "no": "Midt-venstre",
+                  "sv": "Mitt-vänster",
+                  "pl": "Środkowa lewica",
+                  "ru": "Центр слева",
+                  "ko": "중앙 왼쪽"
                 }
               },
               {
@@ -1597,7 +2971,16 @@
                 "label": {
                   "en": "Mid",
                   "nl": "Midden",
-                  "de": "Mitte"
+                  "de": "Mitte",
+                  "da": "Midten",
+                  "es": "Medio",
+                  "fr": "Milieu",
+                  "it": "Mezzo",
+                  "no": "Midten",
+                  "sv": "Mitten",
+                  "pl": "Środek",
+                  "ru": "Середина",
+                  "ko": "가운데"
                 }
               },
               {
@@ -1605,7 +2988,16 @@
                 "label": {
                   "en": "Mid-Right",
                   "nl": "Midden-Rechts",
-                  "de": "Mitte-Rechts"
+                  "de": "Mitte-Rechts",
+                  "da": "Midten højre",
+                  "es": "Medio-derecho",
+                  "fr": "Milieu-Droite",
+                  "it": "Centro-destra",
+                  "no": "Midt-høyre",
+                  "sv": "Mitten-höger",
+                  "pl": "Centrum po prawej",
+                  "ru": "Центр справа",
+                  "ko": "중앙 오른쪽"
                 }
               },
               {
@@ -1613,7 +3005,16 @@
                 "label": {
                   "en": "Right",
                   "nl": "Rechts",
-                  "de": "Rechts"
+                  "de": "Rechts",
+                  "da": "Højre",
+                  "es": "Derecho",
+                  "fr": "Droite",
+                  "it": "Destra",
+                  "no": "Høyre",
+                  "sv": "Höger",
+                  "pl": "Prawidłowy",
+                  "ru": "Верно",
+                  "ko": "오른쪽"
                 }
               },
               {
@@ -1621,7 +3022,16 @@
                 "label": {
                   "en": "Off",
                   "nl": "Uit",
-                  "de": "Aus"
+                  "de": "Aus",
+                  "da": "Slukket",
+                  "es": "Apagado",
+                  "fr": "Désactivé",
+                  "it": "Spento",
+                  "no": "Av",
+                  "sv": "Av",
+                  "pl": "Wyłączony",
+                  "ru": "Выключенный",
+                  "ko": "끄다"
                 }
               }
             ]
@@ -1634,7 +3044,16 @@
         "title": {
           "en": "Switch the Hot Water on",
           "nl": "Schakel het warm water in",
-          "de": "Schalte das heiße Wasser ein"
+          "de": "Schalte das heiße Wasser ein",
+          "da": "Tænd for varmt vand",
+          "es": "Encienda el agua caliente",
+          "fr": "Allumez l'eau chaude",
+          "it": "Accendi l'acqua calda",
+          "no": "Slå på varmt vann",
+          "sv": "Slå på varmvatten",
+          "pl": "Włącz gorącą wodę",
+          "ru": "Включить горячую воду",
+          "ko": "온수를 켜세요"
         },
         "args": [
           {
@@ -1650,7 +3069,16 @@
         "title": {
           "en": "Switch the Hot Water off",
           "nl": "Schakel het warm water uit",
-          "de": "Schalte das heiße Wasser aus"
+          "de": "Schalte das heiße Wasser aus",
+          "da": "Sluk varmt vand",
+          "es": "Apague el agua caliente",
+          "fr": "Éteignez l'eau chaude",
+          "it": "Spegni l'acqua calda",
+          "no": "Slå av varmt vann",
+          "sv": "Stäng av varmvatten",
+          "pl": "Wyłącz gorącą wodę",
+          "ru": "Выключить горячую воду",
+          "ko": "온수를 끄세요"
         },
         "args": [
           {
@@ -1666,12 +3094,30 @@
         "title": {
           "en": "Set the Hot Water temperature to",
           "nl": "Zet de warmwatertemperatuur naar",
-          "de": "Stell die Warmwassertemperatur auf"
+          "de": "Stell die Warmwassertemperatur auf",
+          "da": "Indstil varmtvandstemperaturen til",
+          "es": "Ajusta la temperatura del agua caliente a",
+          "fr": "Réglez la température de l'eau chaude à",
+          "it": "Imposta la temperatura dell'acqua calda a",
+          "no": "Sett varmtvannstemperaturen til",
+          "sv": "Ställ in varmvatten temperaturen till",
+          "pl": "Ustaw temperaturę gorącej wody na",
+          "ru": "Установить температуру горячей воды на",
+          "ko": "온수 온도를 설정하세요."
         },
         "titleFormatted": {
           "en": "Set the Hot Water temperature to [[hotWaterTemperature]]",
           "nl": "Zet de warmwatertemperatuur naar [[hotWaterTemperature]]",
-          "de": "Stell die Warmwassertemperatur auf [[hotWaterTemperature]]"
+          "de": "Stell die Warmwassertemperatur auf [[hotWaterTemperature]]",
+          "da": "Indstil varmtvandstemperaturen til [[hotWaterTemperature]]",
+          "es": "Ajusta la temperatura del agua caliente a [[hotWaterTemperature]]",
+          "fr": "Réglez la température de l'eau chaude à [[hotWaterTemperature]]",
+          "it": "Imposta la temperatura dell'acqua calda a [[hotWaterTemperature]]",
+          "no": "Sett varmtvannstemperaturen til [[hotWaterTemperature]]",
+          "sv": "Ställ in varmvatten temperaturen till [[hotWaterTemperature]]",
+          "pl": "Ustaw temperaturę gorącej wody na [[hotWaterTemperature]]",
+          "ru": "Установить температуру горячей воды на [[hotWaterTemperature]]",
+          "ko": "온수 온도를 [[hotWaterTemperature]]로 설정하세요."
         },
         "args": [
           {
@@ -1684,7 +3130,16 @@
             "title": {
               "en": "Hot Water temperature",
               "nl": "Warmwatertemperatuur",
-              "de": "Warmwassertemperatur"
+              "de": "Warmwassertemperatur",
+              "da": "Varmtvands temperatur",
+              "es": "Temperatura del agua caliente",
+              "fr": "Température de l'eau chaude",
+              "it": "Temperatura dell'acqua calda",
+              "no": "Varmtvanns temperatur",
+              "sv": "Varmvatten temperatur",
+              "pl": "Temperatura gorącej wody",
+              "ru": "Температура горячей воды",
+              "ko": "온수 온도"
             },
             "type": "range",
             "min": 30,
@@ -1739,7 +3194,16 @@
       "name": {
         "en": "Smart Air conditioning",
         "nl": "Slimme Airconditioning",
-        "de": "Smarte Klimaanlage"
+        "de": "Smarte Klimaanlage",
+        "da": "Smart Air conditioning",
+        "es": "Aire acondicionado inteligente",
+        "fr": "Climatisation intelligente",
+        "it": "Condizionatore intelligente",
+        "no": "Smart Air conditioning",
+        "sv": "Smart Air conditioning",
+        "pl": "Inteligentna klimatyzacja",
+        "ru": "Умный кондиционер",
+        "ko": "스마트 에어컨"
       },
       "id": "airconditioning",
       "settings": [
@@ -1749,7 +3213,16 @@
           "label": {
             "en": "Operation",
             "nl": "Bediening",
-            "de": "Betrieb"
+            "de": "Betrieb",
+            "da": "Betjening",
+            "es": "Operación",
+            "fr": "Fonctionnement",
+            "it": "Operazione",
+            "no": "Drift",
+            "sv": "Drift",
+            "pl": "Operacja",
+            "ru": "Операция",
+            "ko": "작동"
           },
           "collapsed": false,
           "children": [
@@ -1759,7 +3232,16 @@
               "label": {
                 "en": "Manual control",
                 "nl": "Handmatige bediening",
-                "de": "Manuelle Kontrolle"
+                "de": "Manuelle Kontrolle",
+                "da": "Manuel kontrol",
+                "es": "Control manual",
+                "fr": "Contrôle manuel",
+                "it": "Controllo manuale",
+                "no": "Manuell kontroll",
+                "sv": "Manuell kontroll",
+                "pl": "Ręczne sterowanie",
+                "ru": "Ручное управление",
+                "ko": "수동 제어"
               },
               "value": "MANUAL",
               "values": [
@@ -1768,13 +3250,31 @@
                   "label": {
                     "en": "Until ended by user",
                     "nl": "Tot beëindiging  gebruiker",
-                    "de": "Bis vom Benutzer beendet"
+                    "de": "Bis vom Benutzer beendet",
+                    "da": "Indtil afsluttet af bruger",
+                    "es": "Hasta que termine el usuario",
+                    "fr": "Jusqu'à la fin par l'utilisateur",
+                    "it": "Fino a terminato dall'utente",
+                    "no": "Til avsluttet av bruker",
+                    "sv": "Tills avslutad av användaren",
+                    "pl": "Do zakończenia przez użytkownika",
+                    "ru": "До завершения пользователем",
+                    "ko": "사용자가 종료할 때까지"
                   }
                 },
                 {
                   "id": "TIMER",
                   "label": {
-                    "en": "Timer"
+                    "en": "Timer",
+                    "da": "Timer",
+                    "es": "Temporizador",
+                    "fr": "Minuterie",
+                    "it": "Timer",
+                    "no": "Tidtaker",
+                    "sv": "Timer",
+                    "pl": "Minutnik",
+                    "ru": "Таймер",
+                    "ko": "타이머"
                   }
                 },
                 {
@@ -1782,14 +3282,32 @@
                   "label": {
                     "en": "Until next change",
                     "nl": "Tot de volgende wijziging",
-                    "de": "Bis zur nächsten Änderung"
+                    "de": "Bis zur nächsten Änderung",
+                    "da": "Indtil næste ændring",
+                    "es": "Hasta el próximo cambio",
+                    "fr": "Jusqu'au prochain changement",
+                    "it": "Fino al prossimo cambiamento",
+                    "no": "Til neste endring",
+                    "sv": "Till nästa ändring",
+                    "pl": "Do następnej zmiany",
+                    "ru": "До следующего изменения",
+                    "ko": "다음 변경될 때까지"
                   }
                 }
               ],
               "hint": {
                 "en": "This sets the default behaviour when operating the device.",
                 "nl": "Dit stelt het standaardgedrag in bij het bedienen van het apparaat.",
-                "de": "Damit wird das Standardverhalten beim Betrieb des Geräts festgelegt."
+                "de": "Damit wird das Standardverhalten beim Betrieb des Geräts festgelegt.",
+                "da": "Dette indstiller standardadfærden ved betjening af enheden.",
+                "es": "Esto establece el comportamiento predeterminado al operar el dispositivo.",
+                "fr": "Cela définit le comportement par défaut lors de l'utilisation de l'appareil.",
+                "it": "Questo imposta il comportamento predefinito durante il funzionamento del dispositivo.",
+                "no": "Dette setter standardadferden når du bruker enheten.",
+                "sv": "Detta ställer in standardbeteendet vid drift av enheten.",
+                "pl": "Ustawia domyślne zachowanie podczas obsługi urządzenia.",
+                "ru": "Это задает поведение по умолчанию при работе с устройством.",
+                "ko": "이것은 장치를 작동할 때 기본 동작을 설정합니다."
               }
             },
             {
@@ -1798,7 +3316,16 @@
               "label": {
                 "en": "Timer duration",
                 "nl": "Timerduur",
-                "de": "Timer-Dauer"
+                "de": "Timer-Dauer",
+                "da": "Timer varighed",
+                "es": "Duración del temporizador",
+                "fr": "Durée de la minuterie",
+                "it": "Durata del timer",
+                "no": "Tidsur varighet",
+                "sv": "Timer varaktighet",
+                "pl": "Czas trwania timera",
+                "ru": "Продолжительность таймера",
+                "ko": "타이머 지속 시간"
               },
               "value": 10,
               "min": 1,
@@ -1806,12 +3333,30 @@
               "units": {
                 "en": "minutes",
                 "nl": "minuten",
-                "de": "Minuten"
+                "de": "Minuten",
+                "da": "minutter",
+                "es": "minutos",
+                "fr": "minutes",
+                "it": "minuti",
+                "no": "minutter",
+                "sv": "minuter",
+                "pl": "minut",
+                "ru": "минуты",
+                "ko": "분"
               },
               "hint": {
                 "en": "This sets the default duration when selecting: Timer.",
                 "nl": "Dit stelt de standaard duur in bij het selecteren van: Timer.",
-                "de": "Dies legt die Standarddauer bei der Auswahl fest: Timer."
+                "de": "Dies legt die Standarddauer bei der Auswahl fest: Timer.",
+                "da": "Dette indstiller standardvarigheden ved valg: Timer.",
+                "es": "Esto establece la duración predeterminada al seleccionar: temporizador.",
+                "fr": "Cela définit la durée par défaut lors de la sélection : Minuterie.",
+                "it": "Questo imposta la durata predefinita quando si seleziona: Timer.",
+                "no": "Dette setter standardvarigheten når du velger: Timer.",
+                "sv": "Detta ställer in standardvaraktigheten när du väljer: Timer.",
+                "pl": "To ustawia domyślny czas trwania przy wyborze: Timer.",
+                "ru": "Это задает продолжительность по умолчанию при выборе: Таймер.",
+                "ko": "타이머를 선택할 때 기본 지속 시간으로 설정됩니다."
               }
             }
           ]
@@ -1822,7 +3367,16 @@
           "label": {
             "en": "Device",
             "nl": "Apparaat",
-            "de": "Gerät"
+            "de": "Gerät",
+            "da": "Enhed",
+            "es": "Dispositivo",
+            "fr": "Appareil",
+            "it": "Dispositivo",
+            "no": "Enhet",
+            "sv": "Enhet",
+            "pl": "Urządzenie",
+            "ru": "Устройство",
+            "ko": "장치"
           },
           "collapsed": false,
           "children": [
@@ -1832,12 +3386,131 @@
               "label": {
                 "en": "Serial Number",
                 "nl": "Serienummer",
-                "de": "Seriennummer"
+                "de": "Seriennummer",
+                "da": "Serienummer",
+                "es": "Número de serie",
+                "fr": "Numéro de série",
+                "it": "Numero di serie",
+                "no": "Serienummer",
+                "sv": "Serienummer",
+                "pl": "Numer seryjny",
+                "ru": "Серийный номер",
+                "ko": "일련 번호"
               }
             }
           ]
         }
       ]
+    },
+    {
+      "name": {
+        "en": "Smart Radiator Thermostat X",
+        "nl": "Slimme Radiatorknop X",
+        "de": "Smartes Heizkörper-Thermostat X",
+        "da": "Smart Radiator Termostat X",
+        "es": "Termostato Inteligente de Radiador X",
+        "fr": "Thermostat de Radiateur Intelligent X",
+        "it": "Termostato Intelligente del Radiatore X",
+        "no": "Smart Radiator Termostat X",
+        "sv": "Smart Radiatortermostat X",
+        "pl": "Inteligentny Termostat Grzejnikowy X",
+        "ru": "Умный радиаторный термостат X",
+        "ko": "스마트 라디에이터 온도 조절기 X"
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "matter"
+      ],
+      "class": "thermostat",
+      "capabilities": [
+        "thermostat_mode",
+        "target_temperature",
+        "measure_temperature"
+      ],
+      "images": {
+        "xlarge": "/drivers/smart_radiator_thermostat_x/assets/images/xlarge.png",
+        "large": "/drivers/smart_radiator_thermostat_x/assets/images/large.png",
+        "small": "/drivers/smart_radiator_thermostat_x/assets/images/small.png"
+      },
+      "matter": {
+        "vendorId": 4942,
+        "productId": 1,
+        "learnmode": {
+          "image": "/drivers/smart_radiator_thermostat_x/assets/pair.svg",
+          "instruction": {
+            "en": "Ensure the connection symbol is blinking",
+            "nl": "Verzeker je ervan dat het verbindingssymbool knippert",
+            "da": "Sørg for, at tilslutningssymbolet blinker",
+            "de": "Stellen Sie sicher, dass das Verbindungssymbol blinkt",
+            "es": "Asegúrate de que el símbolo de conexión parpadea",
+            "fr": "Assurez-vous que le symbole de connexion clignote",
+            "it": "Assicurati che il simbolo di connessione stia lampeggiando",
+            "no": "Sørg for at tilkoblingssymbolet blinker",
+            "sv": "Se till att anslutningssymbolen blinkar",
+            "pl": "Upewnij się, że symbol połączenia miga",
+            "ru": "Убедитесь, что символ подключения мигает",
+            "ko": "연결 기호가 깜박이는지 확인하세요"
+          }
+        }
+      },
+      "id": "smart_radiator_thermostat_x"
+    },
+    {
+      "name": {
+        "en": "Smart Thermostat X",
+        "nl": "Slimme Thermostaat X",
+        "de": "Smartes Thermostat X",
+        "da": "Smart Termostat X",
+        "es": "Termostato Inteligente X",
+        "fr": "Thermostat Intelligent X",
+        "it": "Termostato Intelligente X",
+        "no": "Smart Termostat X",
+        "sv": "Smart Termostat X",
+        "pl": "Inteligentny Termostat X",
+        "ru": "Умный Термоcтат X",
+        "ko": "스마트 온도조절기 X"
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "matter"
+      ],
+      "class": "thermostat",
+      "capabilities": [
+        "thermostat_mode",
+        "target_temperature",
+        "measure_temperature"
+      ],
+      "images": {
+        "xlarge": "/drivers/smart_thermostat_x/assets/images/xlarge.png",
+        "large": "/drivers/smart_thermostat_x/assets/images/large.png",
+        "small": "/drivers/smart_thermostat_x/assets/images/small.png"
+      },
+      "matter": {
+        "vendorId": 4942,
+        "productId": 2,
+        "learnmode": {
+          "image": "/drivers/smart_thermostat_x/assets/pair.svg",
+          "instruction": {
+            "en": "Ensure the connection symbol is blinking",
+            "nl": "Verzeker je ervan dat het verbindingssymbool knippert",
+            "da": "Sørg for at forbindelsessymbolet blinker",
+            "de": "Stellen Sie sicher, dass das Verbindungssymbol blinkt",
+            "es": "Asegúrate de que el símbolo de conexión parpadee",
+            "fr": "Assurez-vous que le symbole de connexion clignote",
+            "it": "Assicurati che il simbolo di connessione lampeggi",
+            "no": "Sørg for at tilkoblingssymbolet blinker",
+            "sv": "Se till att anslutningssymbolen blinkar",
+            "pl": "Upewnij się, że symbol połączenia mruga",
+            "ru": "Убедитесь, что символ соединения мигает",
+            "ko": "연결 기호가 깜박이는지 확인하세요"
+          }
+        }
+      },
+      "id": "smart_thermostat_x"
     },
     {
       "capabilities": [],
@@ -1880,7 +3553,16 @@
       "name": {
         "en": "Smart Thermostat",
         "nl": "Slimme Thermostaat",
-        "de": "Smartes Thermostat"
+        "de": "Smartes Thermostat",
+        "da": "Smart Termostat",
+        "es": "Termostato Inteligente",
+        "fr": "Thermostat Intelligent",
+        "it": "Termostato Intelligente",
+        "no": "Smart Termostat",
+        "sv": "Smart Termostat",
+        "pl": "Inteligentny Termostat",
+        "ru": "Умный Термостат",
+        "ko": "스마트 온도조절기"
       },
       "id": "thermostat",
       "settings": [
@@ -1890,7 +3572,16 @@
           "label": {
             "en": "Operation",
             "nl": "Bediening",
-            "de": "Betrieb"
+            "de": "Betrieb",
+            "da": "Betjening",
+            "es": "Operación",
+            "fr": "Fonctionnement",
+            "it": "Operazione",
+            "no": "Drift",
+            "sv": "Drift",
+            "pl": "Operacja",
+            "ru": "Операция",
+            "ko": "작동"
           },
           "collapsed": false,
           "children": [
@@ -1900,7 +3591,16 @@
               "label": {
                 "en": "Manual control",
                 "nl": "Handmatige bediening",
-                "de": "Manuelle Kontrolle"
+                "de": "Manuelle Kontrolle",
+                "da": "Manuel kontrol",
+                "es": "Control manual",
+                "fr": "Contrôle manuel",
+                "it": "Controllo manuale",
+                "no": "Manuell kontroll",
+                "sv": "Manuell kontroll",
+                "pl": "Ręczne sterowanie",
+                "ru": "Ручное управление",
+                "ko": "수동 제어"
               },
               "value": "MANUAL",
               "values": [
@@ -1909,13 +3609,31 @@
                   "label": {
                     "en": "Until ended by user",
                     "nl": "Tot beëindiging  gebruiker",
-                    "de": "Bis vom Benutzer beendet"
+                    "de": "Bis vom Benutzer beendet",
+                    "da": "Indtil afsluttet af bruger",
+                    "es": "Hasta que termine el usuario",
+                    "fr": "Jusqu'à la fin par l'utilisateur",
+                    "it": "Fino a terminato dall'utente",
+                    "no": "Til avsluttet av bruker",
+                    "sv": "Tills avslutad av användaren",
+                    "pl": "Do zakończenia przez użytkownika",
+                    "ru": "До завершения пользователем",
+                    "ko": "사용자가 종료할 때까지"
                   }
                 },
                 {
                   "id": "TIMER",
                   "label": {
-                    "en": "Timer"
+                    "en": "Timer",
+                    "da": "Timer",
+                    "es": "Temporizador",
+                    "fr": "Minuterie",
+                    "it": "Timer",
+                    "no": "Tidtaker",
+                    "sv": "Timer",
+                    "pl": "Minutnik",
+                    "ru": "Таймер",
+                    "ko": "타이머"
                   }
                 },
                 {
@@ -1923,14 +3641,32 @@
                   "label": {
                     "en": "Until next change",
                     "nl": "Tot de volgende wijziging",
-                    "de": "Bis zur nächsten Änderung"
+                    "de": "Bis zur nächsten Änderung",
+                    "da": "Indtil næste ændring",
+                    "es": "Hasta el próximo cambio",
+                    "fr": "Jusqu'au prochain changement",
+                    "it": "Fino al prossimo cambiamento",
+                    "no": "Til neste endring",
+                    "sv": "Till nästa ändring",
+                    "pl": "Do następnej zmiany",
+                    "ru": "До следующего изменения",
+                    "ko": "다음 변경될 때까지"
                   }
                 }
               ],
               "hint": {
                 "en": "This sets the default behaviour when operating the device.",
                 "nl": "Dit stelt het standaardgedrag in bij het bedienen van het apparaat.",
-                "de": "Damit wird das Standardverhalten beim Betrieb des Geräts festgelegt."
+                "de": "Damit wird das Standardverhalten beim Betrieb des Geräts festgelegt.",
+                "da": "Dette indstiller standardadfærden ved betjening af enheden.",
+                "es": "Esto establece el comportamiento predeterminado al operar el dispositivo.",
+                "fr": "Cela définit le comportement par défaut lors de l'utilisation de l'appareil.",
+                "it": "Questo imposta il comportamento predefinito durante il funzionamento del dispositivo.",
+                "no": "Dette setter standardadferden når du bruker enheten.",
+                "sv": "Detta ställer in standardbeteendet vid drift av enheten.",
+                "pl": "Ustawia domyślne zachowanie podczas obsługi urządzenia.",
+                "ru": "Это задает поведение по умолчанию при работе с устройством.",
+                "ko": "이것은 장치를 작동할 때 기본 동작을 설정합니다."
               }
             },
             {
@@ -1939,7 +3675,16 @@
               "label": {
                 "en": "Timer duration",
                 "nl": "Timerduur",
-                "de": "Timer-Dauer"
+                "de": "Timer-Dauer",
+                "da": "Timer varighed",
+                "es": "Duración del temporizador",
+                "fr": "Durée de la minuterie",
+                "it": "Durata del timer",
+                "no": "Tidsur varighet",
+                "sv": "Timer varaktighet",
+                "pl": "Czas trwania timera",
+                "ru": "Продолжительность таймера",
+                "ko": "타이머 지속 시간"
               },
               "value": 10,
               "min": 1,
@@ -1947,12 +3692,30 @@
               "units": {
                 "en": "minutes",
                 "nl": "minuten",
-                "de": "Minuten"
+                "de": "Minuten",
+                "da": "minutter",
+                "es": "minutos",
+                "fr": "minutes",
+                "it": "minuti",
+                "no": "minutter",
+                "sv": "minuter",
+                "pl": "minut",
+                "ru": "минуты",
+                "ko": "분"
               },
               "hint": {
                 "en": "This sets the default duration when selecting: Timer.",
                 "nl": "Dit stelt de standaard duur in bij het selecteren van: Timer.",
-                "de": "Dies legt die Standarddauer bei der Auswahl fest: Timer."
+                "de": "Dies legt die Standarddauer bei der Auswahl fest: Timer.",
+                "da": "Dette indstiller standardvarigheden ved valg: Timer.",
+                "es": "Esto establece la duración predeterminada al seleccionar: temporizador.",
+                "fr": "Cela définit la durée par défaut lors de la sélection : Minuterie.",
+                "it": "Questo imposta la durata predefinita quando si seleziona: Timer.",
+                "no": "Dette setter standardvarigheten når du velger: Timer.",
+                "sv": "Detta ställer in standardvaraktigheten när du väljer: Timer.",
+                "pl": "To ustawia domyślny czas trwania przy wyborze: Timer.",
+                "ru": "Это задает продолжительность по умолчанию при выборе: Таймер.",
+                "ko": "타이머를 선택할 때 기본 지속 시간으로 설정됩니다."
               }
             }
           ]
@@ -1963,7 +3726,16 @@
           "label": {
             "en": "Device",
             "nl": "Apparaat",
-            "de": "Gerät"
+            "de": "Gerät",
+            "da": "Enhed",
+            "es": "Dispositivo",
+            "fr": "Appareil",
+            "it": "Dispositivo",
+            "no": "Enhet",
+            "sv": "Enhet",
+            "pl": "Urządzenie",
+            "ru": "Устройство",
+            "ko": "장치"
           },
           "collapsed": false,
           "children": [
@@ -1973,7 +3745,16 @@
               "label": {
                 "en": "Serial Number",
                 "nl": "Serienummer",
-                "de": "Seriennummer"
+                "de": "Seriennummer",
+                "da": "Serienummer",
+                "es": "Número de serie",
+                "fr": "Numéro de série",
+                "it": "Numero di serie",
+                "no": "Serienummer",
+                "sv": "Serienummer",
+                "pl": "Numer seryjny",
+                "ru": "Серийный номер",
+                "ko": "일련 번호"
               }
             }
           ]
@@ -2021,7 +3802,16 @@
       "name": {
         "en": "Smart Radiator Thermostat",
         "nl": "Slimme Radiatorknop",
-        "de": "Smartes Heizkörper-Thermostat"
+        "de": "Smartes Heizkörper-Thermostat",
+        "da": "Smart Radiator Termostat",
+        "es": "Termostato de Radiador Inteligente",
+        "fr": "Thermostat de Radiateur Intelligent",
+        "it": "Termostato Radiatore Intelligente",
+        "no": "Smart Radiator Termostat",
+        "sv": "Smart Radiator Termostat",
+        "pl": "Inteligentny Termostat Grzejnikowy",
+        "ru": "Умный Радиаторный Термостат",
+        "ko": "스마트 라디에이터 온도조절기"
       },
       "id": "valve",
       "settings": [
@@ -2031,7 +3821,16 @@
           "label": {
             "en": "Operation",
             "nl": "Bediening",
-            "de": "Betrieb"
+            "de": "Betrieb",
+            "da": "Betjening",
+            "es": "Operación",
+            "fr": "Fonctionnement",
+            "it": "Operazione",
+            "no": "Drift",
+            "sv": "Drift",
+            "pl": "Operacja",
+            "ru": "Операция",
+            "ko": "작동"
           },
           "collapsed": false,
           "children": [
@@ -2041,7 +3840,16 @@
               "label": {
                 "en": "Manual control",
                 "nl": "Handmatige bediening",
-                "de": "Manuelle Kontrolle"
+                "de": "Manuelle Kontrolle",
+                "da": "Manuel kontrol",
+                "es": "Control manual",
+                "fr": "Contrôle manuel",
+                "it": "Controllo manuale",
+                "no": "Manuell kontroll",
+                "sv": "Manuell kontroll",
+                "pl": "Ręczne sterowanie",
+                "ru": "Ручное управление",
+                "ko": "수동 제어"
               },
               "value": "MANUAL",
               "values": [
@@ -2050,13 +3858,31 @@
                   "label": {
                     "en": "Until ended by user",
                     "nl": "Tot beëindiging  gebruiker",
-                    "de": "Bis vom Benutzer beendet"
+                    "de": "Bis vom Benutzer beendet",
+                    "da": "Indtil afsluttet af bruger",
+                    "es": "Hasta que termine el usuario",
+                    "fr": "Jusqu'à la fin par l'utilisateur",
+                    "it": "Fino a terminato dall'utente",
+                    "no": "Til avsluttet av bruker",
+                    "sv": "Tills avslutad av användaren",
+                    "pl": "Do zakończenia przez użytkownika",
+                    "ru": "До завершения пользователем",
+                    "ko": "사용자가 종료할 때까지"
                   }
                 },
                 {
                   "id": "TIMER",
                   "label": {
-                    "en": "Timer"
+                    "en": "Timer",
+                    "da": "Timer",
+                    "es": "Temporizador",
+                    "fr": "Minuterie",
+                    "it": "Timer",
+                    "no": "Tidtaker",
+                    "sv": "Timer",
+                    "pl": "Minutnik",
+                    "ru": "Таймер",
+                    "ko": "타이머"
                   }
                 },
                 {
@@ -2064,14 +3890,32 @@
                   "label": {
                     "en": "Until next change",
                     "nl": "Tot de volgende wijziging",
-                    "de": "Bis zur nächsten Änderung"
+                    "de": "Bis zur nächsten Änderung",
+                    "da": "Indtil næste ændring",
+                    "es": "Hasta el próximo cambio",
+                    "fr": "Jusqu'au prochain changement",
+                    "it": "Fino al prossimo cambiamento",
+                    "no": "Til neste endring",
+                    "sv": "Till nästa ändring",
+                    "pl": "Do następnej zmiany",
+                    "ru": "До следующего изменения",
+                    "ko": "다음 변경될 때까지"
                   }
                 }
               ],
               "hint": {
                 "en": "This sets the default behaviour when operating the device.",
                 "nl": "Dit stelt het standaardgedrag in bij het bedienen van het apparaat.",
-                "de": "Damit wird das Standardverhalten beim Betrieb des Geräts festgelegt."
+                "de": "Damit wird das Standardverhalten beim Betrieb des Geräts festgelegt.",
+                "da": "Dette indstiller standardadfærden ved betjening af enheden.",
+                "es": "Esto establece el comportamiento predeterminado al operar el dispositivo.",
+                "fr": "Cela définit le comportement par défaut lors de l'utilisation de l'appareil.",
+                "it": "Questo imposta il comportamento predefinito durante il funzionamento del dispositivo.",
+                "no": "Dette setter standardadferden når du bruker enheten.",
+                "sv": "Detta ställer in standardbeteendet vid drift av enheten.",
+                "pl": "Ustawia domyślne zachowanie podczas obsługi urządzenia.",
+                "ru": "Это задает поведение по умолчанию при работе с устройством.",
+                "ko": "이것은 장치를 작동할 때 기본 동작을 설정합니다."
               }
             },
             {
@@ -2080,7 +3924,16 @@
               "label": {
                 "en": "Timer duration",
                 "nl": "Timerduur",
-                "de": "Timer-Dauer"
+                "de": "Timer-Dauer",
+                "da": "Timer varighed",
+                "es": "Duración del temporizador",
+                "fr": "Durée de la minuterie",
+                "it": "Durata del timer",
+                "no": "Tidsur varighet",
+                "sv": "Timer varaktighet",
+                "pl": "Czas trwania timera",
+                "ru": "Продолжительность таймера",
+                "ko": "타이머 지속 시간"
               },
               "value": 10,
               "min": 1,
@@ -2088,12 +3941,30 @@
               "units": {
                 "en": "minutes",
                 "nl": "minuten",
-                "de": "Minuten"
+                "de": "Minuten",
+                "da": "minutter",
+                "es": "minutos",
+                "fr": "minutes",
+                "it": "minuti",
+                "no": "minutter",
+                "sv": "minuter",
+                "pl": "minut",
+                "ru": "минуты",
+                "ko": "분"
               },
               "hint": {
                 "en": "This sets the default duration when selecting: Timer.",
                 "nl": "Dit stelt de standaard duur in bij het selecteren van: Timer.",
-                "de": "Dies legt die Standarddauer bei der Auswahl fest: Timer."
+                "de": "Dies legt die Standarddauer bei der Auswahl fest: Timer.",
+                "da": "Dette indstiller standardvarigheden ved valg: Timer.",
+                "es": "Esto establece la duración predeterminada al seleccionar: temporizador.",
+                "fr": "Cela définit la durée par défaut lors de la sélection : Minuterie.",
+                "it": "Questo imposta la durata predefinita quando si seleziona: Timer.",
+                "no": "Dette setter standardvarigheten når du velger: Timer.",
+                "sv": "Detta ställer in standardvaraktigheten när du väljer: Timer.",
+                "pl": "To ustawia domyślny czas trwania przy wyborze: Timer.",
+                "ru": "Это задает продолжительность по умолчанию при выборе: Таймер.",
+                "ko": "타이머를 선택할 때 기본 지속 시간으로 설정됩니다."
               }
             }
           ]
@@ -2104,7 +3975,16 @@
           "label": {
             "en": "Device",
             "nl": "Apparaat",
-            "de": "Gerät"
+            "de": "Gerät",
+            "da": "Enhed",
+            "es": "Dispositivo",
+            "fr": "Appareil",
+            "it": "Dispositivo",
+            "no": "Enhet",
+            "sv": "Enhet",
+            "pl": "Urządzenie",
+            "ru": "Устройство",
+            "ko": "장치"
           },
           "collapsed": false,
           "children": [
@@ -2114,7 +3994,16 @@
               "label": {
                 "en": "Serial Number",
                 "nl": "Serienummer",
-                "de": "Seriennummer"
+                "de": "Seriennummer",
+                "da": "Serienummer",
+                "es": "Número de serie",
+                "fr": "Numéro de série",
+                "it": "Numero di serie",
+                "no": "Serienummer",
+                "sv": "Serienummer",
+                "pl": "Numer seryjny",
+                "ru": "Серийный номер",
+                "ko": "일련 번호"
               }
             }
           ]
@@ -2127,7 +4016,16 @@
       "title": {
         "en": "Light ",
         "nl": "Licht",
-        "de": "Licht"
+        "de": "Licht",
+        "da": "Lys",
+        "es": "Luz",
+        "fr": "Lumière",
+        "it": "Luce",
+        "no": "Lys",
+        "sv": "Ljus",
+        "pl": "Światło",
+        "ru": "Свет",
+        "ko": "빛"
       },
       "type": "enum",
       "getable": true,
@@ -2140,7 +4038,16 @@
           "title": {
             "en": "On",
             "nl": "Aan",
-            "de": "Ein"
+            "de": "Ein",
+            "da": "Tændt",
+            "es": "Encendido",
+            "fr": "Allumé",
+            "it": "Acceso",
+            "no": "På",
+            "sv": "På",
+            "pl": "Włączony",
+            "ru": "Вкл",
+            "ko": "켜기"
           }
         },
         {
@@ -2148,7 +4055,16 @@
           "title": {
             "en": "Off",
             "nl": "Uit",
-            "de": "Aus"
+            "de": "Aus",
+            "da": "Slukket",
+            "es": "Apagado",
+            "fr": "Éteint",
+            "it": "Spento",
+            "no": "Av",
+            "sv": "Av",
+            "pl": "Wyłączony",
+            "ru": "Выкл",
+            "ko": "끄기"
           }
         }
       ]
@@ -2157,7 +4073,16 @@
       "title": {
         "en": "Mode",
         "nl": "Modus",
-        "de": "Modus"
+        "de": "Modus",
+        "da": "Tilstand",
+        "es": "Modo",
+        "fr": "Mode",
+        "it": "Modalità",
+        "no": "Modus",
+        "sv": "Läge",
+        "pl": "Tryb",
+        "ru": "Режим",
+        "ko": "모드"
       },
       "type": "enum",
       "getable": true,
@@ -2168,31 +4093,81 @@
         {
           "id": "COOL",
           "title": {
-            "en": "Cool"
+            "en": "Cool",
+            "da": "Kølig",
+            "de": "Cool",
+            "es": "Frío",
+            "fr": "Frais",
+            "it": "Freddo",
+            "no": "Kjølig",
+            "sv": "Kall",
+            "pl": "Chłodny",
+            "ru": "Прохладно",
+            "ko": "시원한"
           }
         },
         {
           "id": "HEAT",
           "title": {
-            "en": "Heat"
+            "en": "Heat",
+            "da": "Varme",
+            "de": "Heizung",
+            "es": "Calor",
+            "fr": "Chaleur",
+            "it": "Caldo",
+            "no": "Varm",
+            "sv": "Värme",
+            "pl": "Ciepło",
+            "ru": "Тепло",
+            "ko": "따뜻한"
           }
         },
         {
           "id": "DRY",
           "title": {
-            "en": "Dry"
+            "en": "Dry",
+            "da": "Tør",
+            "de": "Trocken",
+            "es": "Seco",
+            "fr": "Sec",
+            "it": "Secco",
+            "no": "Tørr",
+            "sv": "Torr",
+            "pl": "Suchy",
+            "ru": "Сухо",
+            "ko": "건조한"
           }
         },
         {
           "id": "FAN",
           "title": {
-            "en": "Fan"
+            "en": "Fan",
+            "da": "Blæser",
+            "de": "Ventilator",
+            "es": "Ventilador",
+            "fr": "Ventilateur",
+            "it": "Ventilatore",
+            "no": "Vifte",
+            "sv": "Fläkt",
+            "pl": "Wentylator",
+            "ru": "Вентилятор",
+            "ko": "팬"
           }
         },
         {
           "id": "AUTO",
           "title": {
-            "en": "Auto"
+            "en": "Auto",
+            "da": "Auto",
+            "de": "Automatisch",
+            "es": "Auto",
+            "fr": "Auto",
+            "it": "Auto",
+            "no": "Auto",
+            "sv": "Auto",
+            "pl": "Auto",
+            "ru": "Авто",
+            "ko": "자동"
           }
         },
         {
@@ -2200,7 +4175,16 @@
           "title": {
             "en": "Off",
             "nl": "Uit",
-            "de": "Aus"
+            "de": "Aus",
+            "da": "Slukket",
+            "es": "Apagado",
+            "fr": "Éteint",
+            "it": "Spento",
+            "no": "Av",
+            "sv": "Av",
+            "pl": "Wyłączony",
+            "ru": "Выключено",
+            "ko": "끄기"
           }
         }
       ]
@@ -2210,7 +4194,16 @@
       "title": {
         "en": "Open window detection",
         "nl": "Open raam detectie",
-        "de": "Offenes-Fenster-Erkennung"
+        "de": "Offenes-Fenster-Erkennung",
+        "da": "Åbent vindue detektion",
+        "es": "Detección de ventana abierta",
+        "fr": "Détection de fenêtre ouverte",
+        "it": "Rilevamento finestra aperta",
+        "no": "Åpen vindu deteksjon",
+        "sv": "Öppna fönsterdetektion",
+        "pl": "Wykrywanie otwartego okna",
+        "ru": "Обнаружение открытого окна",
+        "ko": "창문 열림 감지"
       },
       "icon": "/assets/capabilities/detect_open_window.svg",
       "getable": true,
@@ -2220,7 +4213,16 @@
       "title": {
         "en": "Fan level",
         "nl": "Ventilator niveau",
-        "de": "Lüftergeschwindigkeit"
+        "de": "Lüftergeschwindigkeit",
+        "da": "Ventilaturniveau",
+        "es": "Nivel del ventilador",
+        "fr": "Niveau du ventilateur",
+        "it": "Livello della ventola",
+        "no": "Viftens nivå",
+        "sv": "Fläkthastighet",
+        "pl": "Poziom wentylatora",
+        "ru": "Уровень вентилятора",
+        "ko": "팬 레벨"
       },
       "type": "enum",
       "getable": true,
@@ -2233,7 +4235,16 @@
           "title": {
             "en": "Auto",
             "nl": "Automatisch",
-            "de": "Automatisch"
+            "de": "Automatisch",
+            "da": "Auto",
+            "es": "Auto",
+            "fr": "Auto",
+            "it": "Auto",
+            "no": "Auto",
+            "sv": "Auto",
+            "pl": "Auto",
+            "ru": "Авто",
+            "ko": "자동"
           }
         },
         {
@@ -2241,7 +4252,16 @@
           "title": {
             "en": "Silent",
             "nl": "Stil",
-            "de": "Leise"
+            "de": "Leise",
+            "da": "Stille",
+            "es": "Silencioso",
+            "fr": "Silencieux",
+            "it": "Silenzioso",
+            "no": "Stille",
+            "sv": "Tyst",
+            "pl": "Cichy",
+            "ru": "Тихий",
+            "ko": "조용한"
           }
         },
         {
@@ -2249,7 +4269,16 @@
           "title": {
             "en": "Level 1",
             "nl": "Niveau 1",
-            "de": "Level 1"
+            "de": "Level 1",
+            "da": "Niveau 1",
+            "es": "Nivel 1",
+            "fr": "Niveau 1",
+            "it": "Livello 1",
+            "no": "Nivå 1",
+            "sv": "Nivå 1",
+            "pl": "Poziom 1",
+            "ru": "Уровень 1",
+            "ko": "레벨 1"
           }
         },
         {
@@ -2257,7 +4286,16 @@
           "title": {
             "en": "Level 2",
             "nl": "Niveau 2",
-            "de": "Level 2"
+            "de": "Level 2",
+            "da": "Niveau 2",
+            "es": "Nivel 2",
+            "fr": "Niveau 2",
+            "it": "Livello 2",
+            "no": "Nivå 2",
+            "sv": "Nivå 2",
+            "pl": "Poziom 2",
+            "ru": "Уровень 2",
+            "ko": "레벨 2"
           }
         },
         {
@@ -2265,7 +4303,16 @@
           "title": {
             "en": "Level 3",
             "nl": "Niveau 3",
-            "de": "Level 3"
+            "de": "Level 3",
+            "da": "Niveau 3",
+            "es": "Nivel 3",
+            "fr": "Niveau 3",
+            "it": "Livello 3",
+            "no": "Nivå 3",
+            "sv": "Nivå 3",
+            "pl": "Poziom 3",
+            "ru": "Уровень 3",
+            "ko": "레벨 3"
           }
         },
         {
@@ -2273,7 +4320,16 @@
           "title": {
             "en": "Level 4",
             "nl": "Niveau 4",
-            "de": "Level 4"
+            "de": "Level 4",
+            "da": "Niveau 4",
+            "es": "Nivel 4",
+            "fr": "Niveau 4",
+            "it": "Livello 4",
+            "no": "Nivå 4",
+            "sv": "Nivå 4",
+            "pl": "Poziom 4",
+            "ru": "Уровень 4",
+            "ko": "레벨 4"
           }
         },
         {
@@ -2281,7 +4337,16 @@
           "title": {
             "en": "Level 5",
             "nl": "Niveau 5",
-            "de": "Level 5"
+            "de": "Level 5",
+            "da": "Niveau 5",
+            "es": "Nivel 5",
+            "fr": "Niveau 5",
+            "it": "Livello 5",
+            "no": "Nivå 5",
+            "sv": "Nivå 5",
+            "pl": "Poziom 5",
+            "ru": "Уровень 5",
+            "ko": "레벨 5"
           }
         }
       ]
@@ -2290,7 +4355,16 @@
       "title": {
         "en": "Fan Speed",
         "nl": "Ventilator snelheid",
-        "de": "Lüftergeschwindigkeit"
+        "de": "Lüftergeschwindigkeit",
+        "da": "Ventilatorhastighed",
+        "es": "Velocidad del ventilador",
+        "fr": "Vitesse du ventilateur",
+        "it": "Velocità della ventola",
+        "no": "Viftehastighet",
+        "sv": "Fläkthastighet",
+        "pl": "Prędkość wentylatora",
+        "ru": "Скорость вентилятора",
+        "ko": "팬 속도"
       },
       "type": "enum",
       "getable": true,
@@ -2303,7 +4377,16 @@
           "title": {
             "en": "Auto",
             "nl": "Automatisch",
-            "de": "Automatisch"
+            "de": "Automatisch",
+            "da": "Auto",
+            "es": "Auto",
+            "fr": "Auto",
+            "it": "Auto",
+            "no": "Auto",
+            "sv": "Auto",
+            "pl": "Auto",
+            "ru": "Авто",
+            "ko": "자동"
           }
         },
         {
@@ -2311,7 +4394,16 @@
           "title": {
             "en": "Low",
             "nl": "Laag",
-            "de": "Niedrig"
+            "de": "Niedrig",
+            "da": "Lav",
+            "es": "Bajo",
+            "fr": "Bas",
+            "it": "Basso",
+            "no": "Lav",
+            "sv": "Låg",
+            "pl": "Niski",
+            "ru": "Низкий",
+            "ko": "낮음"
           }
         },
         {
@@ -2319,7 +4411,16 @@
           "title": {
             "en": "Middle",
             "nl": "Middel",
-            "de": "Mitte"
+            "de": "Mitte",
+            "da": "Midt",
+            "es": "Medio",
+            "fr": "Moyen",
+            "it": "Medio",
+            "no": "Midten",
+            "sv": "Mellan",
+            "pl": "Średni",
+            "ru": "Средний",
+            "ko": "중간"
           }
         },
         {
@@ -2327,7 +4428,16 @@
           "title": {
             "en": "High",
             "nl": "Hoog",
-            "de": "Hoch"
+            "de": "Hoch",
+            "da": "Høj",
+            "es": "Alto",
+            "fr": "Haut",
+            "it": "Alto",
+            "no": "Høy",
+            "sv": "Hög",
+            "pl": "Wysoki",
+            "ru": "Высокий",
+            "ko": "높음"
           }
         }
       ]
@@ -2337,13 +4447,32 @@
       "title": {
         "en": "Heating capacity",
         "nl": "Verwarming capaciteit",
-        "de": "Heizkapazität"
+        "de": "Heizkapazität",
+        "da": "Opvarmningskapacitet",
+        "es": "Capacidad de calefacción",
+        "fr": "Capacité de chauffage",
+        "it": "Capacità di riscaldamento",
+        "no": "Oppvarmingskapasitet",
+        "sv": "Uppvärmningskapacitet",
+        "pl": "Moc grzewcza",
+        "ru": "Отопительная мощность",
+        "ko": "난방 용량"
       },
       "icon": "/assets/capabilities/heating_power.svg",
       "getable": true,
       "setable": false,
       "units": {
-        "en": "%"
+        "en": "%",
+        "da": "%",
+        "de": "%",
+        "es": "%",
+        "fr": "%",
+        "it": "%",
+        "no": "%",
+        "sv": "%",
+        "pl": "%",
+        "ru": "%",
+        "ko": "%"
       },
       "step": 1,
       "min": 0,
@@ -2353,7 +4482,16 @@
       "title": {
         "en": "Horizontal swing",
         "nl": "Horizontale swing",
-        "de": "Horizontaler swing"
+        "de": "Horizontaler swing",
+        "da": "Vandret sving",
+        "es": "Balanceo horizontal",
+        "fr": "Balancement horizontal",
+        "it": "Oscillazione orizzontale",
+        "no": "Horisontal sving",
+        "sv": "Horisontell sväng",
+        "pl": "Horyzontalny swing",
+        "ru": "Горизонтальные колебания",
+        "ko": "수평 스윙"
       },
       "type": "enum",
       "getable": true,
@@ -2366,7 +4504,16 @@
           "title": {
             "en": "On",
             "nl": "Aan",
-            "de": "Ein"
+            "de": "Ein",
+            "da": "På",
+            "es": "Encendido",
+            "fr": "Allumé",
+            "it": "Acceso",
+            "no": "På",
+            "sv": "På",
+            "pl": "Włączony",
+            "ru": "Вкл",
+            "ko": "켜기"
           }
         },
         {
@@ -2374,7 +4521,16 @@
           "title": {
             "en": "Auto",
             "nl": "Automatisch",
-            "de": "Automatisch"
+            "de": "Automatisch",
+            "da": "Auto",
+            "es": "Automático",
+            "fr": "Auto",
+            "it": "Automatico",
+            "no": "Auto",
+            "sv": "Auto",
+            "pl": "Automatyczny",
+            "ru": "Авто",
+            "ko": "자동"
           }
         },
         {
@@ -2382,7 +4538,16 @@
           "title": {
             "en": "Left",
             "nl": "Links",
-            "de": "Links"
+            "de": "Links",
+            "da": "Venstre",
+            "es": "Izquierda",
+            "fr": "Gauche",
+            "it": "Sinistra",
+            "no": "Venstre",
+            "sv": "Vänster",
+            "pl": "Lewo",
+            "ru": "Влево",
+            "ko": "왼쪽"
           }
         },
         {
@@ -2390,7 +4555,16 @@
           "title": {
             "en": "Mid-Left",
             "nl": "Midden-Links",
-            "de": "Mitte-Links"
+            "de": "Mitte-Links",
+            "da": "Midt-Venstre",
+            "es": "Medio-Izquierda",
+            "fr": "Milieu-Gauche",
+            "it": "Mid-Sinistra",
+            "no": "Midt-Venstre",
+            "sv": "Mitten-Vänster",
+            "pl": "Środek-Lewo",
+            "ru": "Центр-Лево",
+            "ko": "중간-왼쪽"
           }
         },
         {
@@ -2398,7 +4572,16 @@
           "title": {
             "en": "Mid",
             "nl": "Midden",
-            "de": "Mitte"
+            "de": "Mitte",
+            "da": "Midt",
+            "es": "Medio",
+            "fr": "Milieu",
+            "it": "Centro",
+            "no": "Midt",
+            "sv": "Mitten",
+            "pl": "Środek",
+            "ru": "Центр",
+            "ko": "중간"
           }
         },
         {
@@ -2406,7 +4589,16 @@
           "title": {
             "en": "Mid-Right",
             "nl": "Midden-Rechts",
-            "de": "Mitte-Rechts"
+            "de": "Mitte-Rechts",
+            "da": "Midt-Højre",
+            "es": "Medio-Derecha",
+            "fr": "Milieu-Droite",
+            "it": "Mid-Destra",
+            "no": "Midt-Høyre",
+            "sv": "Mitten-Höger",
+            "pl": "Środek-Prawo",
+            "ru": "Центр-Право",
+            "ko": "중간-오른쪽"
           }
         },
         {
@@ -2414,7 +4606,16 @@
           "title": {
             "en": "Right",
             "nl": "Rechts",
-            "de": "Rechts"
+            "de": "Rechts",
+            "da": "Højre",
+            "es": "Derecha",
+            "fr": "Droite",
+            "it": "Destra",
+            "no": "Høyre",
+            "sv": "Höger",
+            "pl": "Prawo",
+            "ru": "Вправо",
+            "ko": "오른쪽"
           }
         },
         {
@@ -2422,7 +4623,16 @@
           "title": {
             "en": "Off",
             "nl": "Uit",
-            "de": "Aus"
+            "de": "Aus",
+            "da": "Fra",
+            "es": "Apagado",
+            "fr": "Éteint",
+            "it": "Spento",
+            "no": "Av",
+            "sv": "Av",
+            "pl": "Wyłączony",
+            "ru": "Выкл",
+            "ko": "끄기"
           }
         }
       ]
@@ -2432,7 +4642,16 @@
       "title": {
         "en": "Hot Water",
         "nl": "Warm Water",
-        "de": "Warmwasser"
+        "de": "Warmwasser",
+        "da": "Varmt Vand",
+        "es": "Agua Caliente",
+        "fr": "Eau Chaude",
+        "it": "Acqua Calda",
+        "no": "Varmt Vann",
+        "sv": "Varmt Vatten",
+        "pl": "Gorąca Woda",
+        "ru": "Горячая Вода",
+        "ko": "뜨거운 물"
       },
       "getable": true,
       "setable": true
@@ -2441,7 +4660,16 @@
       "title": {
         "en": "Thermostat mode",
         "nl": "Thermostaat modus",
-        "de": "Thermostat-Modus"
+        "de": "Thermostat-Modus",
+        "da": "Termostattilstand",
+        "es": "Modo termostato",
+        "fr": "Mode thermostat",
+        "it": "Modalità termostato",
+        "no": "Termostatmodus",
+        "sv": "Termostatläge",
+        "pl": "Tryb termostatu",
+        "ru": "Режим термостата",
+        "ko": "온도조절기 모드"
       },
       "type": "enum",
       "getable": true,
@@ -2454,7 +4682,16 @@
           "title": {
             "en": "On",
             "nl": "Aan",
-            "de": "Ein"
+            "de": "Ein",
+            "da": "Tændt",
+            "es": "Encendido",
+            "fr": "Allumé",
+            "it": "Acceso",
+            "no": "På",
+            "sv": "På",
+            "pl": "Włączony",
+            "ru": "Вкл",
+            "ko": "켜짐"
           }
         },
         {
@@ -2462,7 +4699,16 @@
           "title": {
             "en": "Off",
             "nl": "Uit",
-            "de": "Aus"
+            "de": "Aus",
+            "da": "Slukket",
+            "es": "Apagado",
+            "fr": "Éteint",
+            "it": "Spento",
+            "no": "Av",
+            "sv": "Av",
+            "pl": "Wyłączony",
+            "ru": "Выкл",
+            "ko": "꺼짐"
           }
         }
       ]
@@ -2471,7 +4717,16 @@
       "title": {
         "en": "Swing mode",
         "nl": "Swing-modus",
-        "de": "Swing-Modus"
+        "de": "Swing-Modus",
+        "da": "Svingtilstand",
+        "es": "Modo de oscilación",
+        "fr": "Mode swing",
+        "it": "Modalità oscillazione",
+        "no": "Svingmodus",
+        "sv": "Svängläge",
+        "pl": "Tryb wahadła",
+        "ru": "Режим колебания",
+        "ko": "스윙 모드"
       },
       "type": "enum",
       "getable": true,
@@ -2484,7 +4739,16 @@
           "title": {
             "en": "On",
             "nl": "Aan",
-            "de": "Ein"
+            "de": "Ein",
+            "da": "Tændt",
+            "es": "Encendido",
+            "fr": "Allumé",
+            "it": "Acceso",
+            "no": "På",
+            "sv": "På",
+            "pl": "Włączony",
+            "ru": "Вкл",
+            "ko": "켜기"
           }
         },
         {
@@ -2492,7 +4756,16 @@
           "title": {
             "en": "Off",
             "nl": "Uit",
-            "de": "Aus"
+            "de": "Aus",
+            "da": "Slukket",
+            "es": "Apagado",
+            "fr": "Éteint",
+            "it": "Spento",
+            "no": "Av",
+            "sv": "Av",
+            "pl": "Wyłączony",
+            "ru": "Выкл",
+            "ko": "끄기"
           }
         }
       ]
@@ -2501,7 +4774,16 @@
       "title": {
         "en": "Vertical swing",
         "nl": "Verticale swing",
-        "de": "Vertikaler swing"
+        "de": "Vertikaler swing",
+        "da": "Vertikal sving",
+        "es": "Oscilación vertical",
+        "fr": "Oscillation verticale",
+        "it": "Oscillazione verticale",
+        "no": "Vertikal sving",
+        "sv": "Vertikal sving",
+        "pl": "Pionowy obrót",
+        "ru": "Вертикальное качание",
+        "ko": "수직 스윙"
       },
       "type": "enum",
       "getable": true,
@@ -2514,7 +4796,16 @@
           "title": {
             "en": "On",
             "nl": "Aan",
-            "de": "Ein"
+            "de": "Ein",
+            "da": "På",
+            "es": "Encendido",
+            "fr": "Activé",
+            "it": "Acceso",
+            "no": "På",
+            "sv": "På",
+            "pl": "Włączono",
+            "ru": "Вкл",
+            "ko": "켜짐"
           }
         },
         {
@@ -2522,7 +4813,16 @@
           "title": {
             "en": "Auto",
             "nl": "Automatisch",
-            "de": "Automatisch"
+            "de": "Automatisch",
+            "da": "Auto",
+            "es": "Automático",
+            "fr": "Auto",
+            "it": "Auto",
+            "no": "Auto",
+            "sv": "Auto",
+            "pl": "Automatyczne",
+            "ru": "Авто",
+            "ko": "자동"
           }
         },
         {
@@ -2530,7 +4830,16 @@
           "title": {
             "en": "Up",
             "nl": "Omhoog",
-            "de": "Oben"
+            "de": "Oben",
+            "da": "Op",
+            "es": "Arriba",
+            "fr": "Haut",
+            "it": "Su",
+            "no": "Opp",
+            "sv": "Upp",
+            "pl": "W górę",
+            "ru": "Вверх",
+            "ko": "위"
           }
         },
         {
@@ -2538,7 +4847,16 @@
           "title": {
             "en": "Mid-Up",
             "nl": "Midden-Omhoog",
-            "de": "Mitte-Oben"
+            "de": "Mitte-Oben",
+            "da": "Midt-op",
+            "es": "Medio-Arriba",
+            "fr": "Moyen-Haut",
+            "it": "Mezzo-Su",
+            "no": "Midt-opp",
+            "sv": "Mitten-upp",
+            "pl": "Środek-w górę",
+            "ru": "Середина-Вверх",
+            "ko": "중간-위"
           }
         },
         {
@@ -2546,7 +4864,16 @@
           "title": {
             "en": "Mid",
             "nl": "Midden",
-            "de": "Mitte"
+            "de": "Mitte",
+            "da": "Midt",
+            "es": "Medio",
+            "fr": "Milieu",
+            "it": "Mezzo",
+            "no": "Midt",
+            "sv": "Mitten",
+            "pl": "Środek",
+            "ru": "Середина",
+            "ko": "중간"
           }
         },
         {
@@ -2554,7 +4881,16 @@
           "title": {
             "en": "Mid-Down",
             "nl": "Midden-Beneden",
-            "de": "Mitte-Unten"
+            "de": "Mitte-Unten",
+            "da": "Midt-ned",
+            "es": "Medio-Abajo",
+            "fr": "Milieu-Bas",
+            "it": "Mezzo-Giù",
+            "no": "Midt-ned",
+            "sv": "Mitten-ner",
+            "pl": "Środek-w dół",
+            "ru": "Середина-Вниз",
+            "ko": "중간-아래"
           }
         },
         {
@@ -2562,7 +4898,16 @@
           "title": {
             "en": "Down",
             "nl": "Beneden",
-            "de": "Unten"
+            "de": "Unten",
+            "da": "Ned",
+            "es": "Abajo",
+            "fr": "Bas",
+            "it": "Giù",
+            "no": "Ned",
+            "sv": "Ner",
+            "pl": "W dół",
+            "ru": "Вниз",
+            "ko": "아래"
           }
         },
         {
@@ -2570,7 +4915,16 @@
           "title": {
             "en": "Off",
             "nl": "Uit",
-            "de": "Aus"
+            "de": "Aus",
+            "da": "Fra",
+            "es": "Apagado",
+            "fr": "Éteint",
+            "it": "Spento",
+            "no": "Av",
+            "sv": "Av",
+            "pl": "Wyłączono",
+            "ru": "Выкл",
+            "ko": "꺼짐"
           }
         }
       ]
